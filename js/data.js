@@ -20,215 +20,9 @@ window.SITE = {
 
 window.EVENTS = [
   {
-    "year": 2022,
-    "label": "2022",
-    "kicker": "Sự kiện năm 2022 • Thập kỷ Dấu ấn",
-    "title": "Đại Lễ Kỷ Niệm: 10 Năm Hành Trình Tự Hào Nông Dân Việt Nam (2012 – 2022)",
-    "date": "14/10/2022",
-    "location": "Cung Văn hóa Lao động Hữu nghị Việt Xô, Hà Nội",
-    "cover": "./images/sample-event.png",
-    "summary": "Dấu mốc kỷ niệm tròn 1 thập kỷ chương trình thường niên. Tôn vinh gần 700 gương mặt nông dân qua các thời kỳ, khẳng định vị thế bền bỉ của người bạn đồng hành thủy chung Báo Dân Việt.",
-    "stats": [
-      {
-        "value": 60,
-        "suffix": "",
-        "label": "Bài báo lưu trữ"
-      },
-      {
-        "value": 700,
-        "suffix": "",
-        "label": "Gương mặt qua 10 năm"
-      },
-      {
-        "value": 10,
-        "suffix": "",
-        "label": "Năm hành trình"
-      }
-    ],
-    "link": "https://danviet.vn/dong-su-kien/su-kien-2022.html",
-    "linkLabel": "Xem chuyên trang 2022",
-    "articleCount": 60,
-    "articles": [
-      {
-        "title": "Nhìn lại 10 năm Tự hào Nông dân Việt Nam: Nâng tầm vị thế người nông dân thời kỳ mới",
-        "category": "Thập kỷ dấu ấn",
-        "date": "14/10/2022",
-        "sapo": "Hành trình 10 năm bền bỉ phát hiện, cổ vũ và tôn vinh những người làm nên linh hồn cho nông nghiệp nước nhà.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      },
-      {
-        "title": "Trực tiếp Lễ tôn vinh Nông dân Việt Nam xuất sắc năm 2022 tại Thủ đô Hà Nội",
-        "category": "Lễ trao giải",
-        "date": "14/10/2022",
-        "sapo": "Không khí trang trọng tại Cung Văn hóa Hữu nghị Việt Xô tôn vinh 100 tấm gương nông dân tiêu biểu cả nước.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      },
-      {
-        "title": "Những câu chuyện vượt khó phi thường của nông dân Việt Nam qua 10 mùa vinh danh",
-        "category": "Gương sáng",
-        "date": "10/10/2022",
-        "sapo": "Từ nông dân nghèo khó đến những triệu phú, tỷ phú nông nghiệp khẳng định tinh thần tự lực tự cường của người nông dân Việt.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      }
-    ]
-  },
-  {
-    "year": 2023,
-    "label": "2023",
-    "kicker": "Sự kiện năm 2023 • Kinh tế Tuần hoàn",
-    "title": "Tôn Vinh 2023: Nông Dân Xuất Sắc & Hợp Tác Xã Kiểu Mới",
-    "date": "Tháng 10/2023",
-    "location": "Trung tâm Hội nghị Quốc gia, Hà Nội",
-    "cover": "./images/sample-event.png",
-    "summary": "Đột phá tư duy từ sản xuất nông nghiệp thuần túy sang kinh tế nông nghiệp tuần hoàn; nhân rộng mô hình kinh tế tập thể, liên kết chặt chẽ giữa nông dân và doanh nghiệp chế biến sâu.",
-    "stats": [
-      {
-        "value": 59,
-        "suffix": "",
-        "label": "Bài báo lưu trữ"
-      }
-    ],
-    "link": "https://danviet.vn/dong-su-kien/su-kien-2023.html",
-    "linkLabel": "Xem chuyên trang 2023",
-    "articleCount": 59,
-    "articles": [
-      {
-        "title": "63 Hợp tác xã tiêu biểu toàn quốc: Sức mạnh cộng đồng làm nên kỳ tích nông nghiệp",
-        "category": "HTX Tiêu Biểu",
-        "date": "14/10/2023",
-        "sapo": "Năm đầu tiên chương trình vinh danh các mô hình HTX nông nghiệp kiểu mới hoạt động hiệu quả, đem lại thu nhập cao cho xã viên.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      },
-      {
-        "title": "Kinh tế tuần hoàn không chất thải: Mô hình vườn - ao - chuồng phiên bản công nghệ cao",
-        "category": "Tuần hoàn",
-        "date": "11/10/2023",
-        "sapo": "Tận dụng phế phụ phẩm làm phân bón hữu cơ vi sinh, giảm 40% chi phí đầu vào và bảo vệ môi trường nông thôn.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      },
-      {
-        "title": "Chân dung 100 Nông dân Việt Nam xuất sắc năm 2023: Vượt bão giá, làm giàu bền vững",
-        "category": "Gương sáng",
-        "date": "08/10/2023",
-        "sapo": "Những tấm gương dám nghĩ dám làm, ứng dụng khoa học kỹ thuật để trở thành tỷ phú trên chính mảnh đất quê hương.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      }
-    ]
-  },
-  {
-    "year": 2024,
-    "label": "2024",
-    "kicker": "Sự kiện năm 2024 • Hội nhập Quốc tế",
-    "title": "Chuỗi Sự Kiện 2024: Vươn Tầm Nông Sản Việt & Chuỗi Giá Trị Toàn Cầu",
-    "date": "Tháng 10/2024",
-    "location": "Nhà hát Lớn Hà Nội",
-    "cover": "./images/sample-event.png",
-    "summary": "Chiến dịch truyền thông toàn diện về giải pháp thích ứng biến đổi khí hậu tại ĐBSCL, xây dựng mã số vùng trồng cho sầu riêng, gạo ST25 và thâm nhập các thị trường tiêu chuẩn cao EU, Hoa Kỳ, Nhật Bản.",
-    "stats": [
-      {
-        "value": 62,
-        "suffix": "",
-        "label": "Bài báo lưu trữ"
-      }
-    ],
-    "link": "https://danviet.vn/dong-su-kien/su-kien-2024.html",
-    "linkLabel": "Xem chuyên trang 2024",
-    "articleCount": 62,
-    "articles": [
-      {
-        "title": "Cơn sốt sầu riêng tỷ đô và bài toán mã số vùng trồng chuẩn quốc tế",
-        "category": "Xuất khẩu",
-        "date": "18/10/2024",
-        "sapo": "Hành trình đưa nông sản Việt vượt qua các hàng rào kiểm dịch khắt khe của đối tác nước ngoài để khẳng định thương hiệu quốc gia.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      },
-      {
-        "title": "Đề án 1 triệu hecta lúa chất lượng cao, phát thải thấp: Cú hích cho vựa lúa miền Tây",
-        "category": "ĐBSCL",
-        "date": "15/10/2024",
-        "sapo": "Nông dân vùng châu thổ sông Cửu Long đi tiên phong chuyển đổi sản xuất lúa xanh, thu tín chỉ carbon.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      },
-      {
-        "title": "Liên kết chế biến sâu: Bí quyết giữ giá nông sản khi bước vào vụ thu hoạch rộ",
-        "category": "Chế biến sâu",
-        "date": "13/10/2024",
-        "sapo": "Giải pháp giảm thiểu rủi ro được mùa mất giá nhờ chuỗi nhà máy sấy lạnh và chế biến nông sản đóng hộp.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      }
-    ]
-  },
-  {
-    "year": 2025,
-    "label": "2025",
-    "kicker": "Sự kiện năm 2025 • Diễn đàn Thập kỷ",
-    "title": "Diễn Đàn Quốc Gia Lần Thứ X: Kỷ Nguyên Số & Người Nông Dân 4.0",
-    "date": "Tháng 10/2025",
-    "location": "Cung Văn hóa Hữu nghị Việt Xô, Hà Nội",
-    "cover": "./images/sample-event.png",
-    "summary": "Đối thoại cấp Nhà nước với sự tham gia của Lãnh đạo Chính phủ; giải quyết các điểm nghẽn tích tụ ruộng đất, nguồn vốn tín dụng ưu đãi và ứng dụng trí tuệ nhân tạo (AI) trong quản lý nông nghiệp.",
-    "stats": [
-      {
-        "value": 65,
-        "suffix": "",
-        "label": "Bài báo lưu trữ"
-      }
-    ],
-    "link": "https://danviet.vn/dong-su-kien/su-kien-2025.html",
-    "linkLabel": "Xem chuyên trang 2025",
-    "articleCount": 65,
-    "articles": [
-      {
-        "title": "Ứng dụng AI và cảm biến IoT: Người nông dân quản lý hàng chục hecta trên smartphone",
-        "category": "Chuyển đổi số",
-        "date": "15/10/2025",
-        "sapo": "Các mô hình tự động hóa tưới tiêu thông minh, giám sát sâu bệnh bằng trí tuệ nhân tạo đang giúp nông dân nâng cao hiệu suất vượt trội.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      },
-      {
-        "title": "Diễn đàn Nông dân Quốc gia 2025: Tháo gỡ các nút thắt về vốn và tích tụ ruộng đất",
-        "category": "Đối thoại chính sách",
-        "date": "14/10/2025",
-        "sapo": "Đối thoại trực tiếp giữa người đứng đầu các bộ ngành với đại biểu nông dân xuất sắc cả nước nhằm gỡ khó chính sách tín dụng xanh.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      },
-      {
-        "title": "Khi nông dân trở thành \"KOLs\": Doanh thu tiền tỷ từ các phiên livestream bán nông sản",
-        "category": "Thương mại số",
-        "date": "12/10/2025",
-        "sapo": "Thế hệ nông dân số tự tin đưa đặc sản vùng miền lên các sàn thương mại điện tử quốc tế, chốt đơn hàng nghìn tấn trái cây mỗi vụ.",
-        "url": "https://danviet.vn",
-        "img": "",
-        "location": ""
-      }
-    ]
-  },
-  {
     "year": 2026,
     "special": true,
-    "label": "★ 40 Năm Đổi Mới",
+    "label": "2026",
     "kicker": "Chương trình Tự hào Nông dân Việt Nam • 40 năm Đổi mới (1986 – 2026)",
     "title": "Nông Dân Việt Nam Xuất Sắc 40 Năm Đổi Mới",
     "date": "Tối 12/10/2026",
@@ -1191,6 +985,212 @@ window.EVENTS = [
         "category": "Chính sách & Chuyên gia",
         "location": "Hà Nội",
         "date": ""
+      }
+    ]
+  },
+  {
+    "year": 2025,
+    "label": "2025",
+    "kicker": "Sự kiện năm 2025 • Diễn đàn Thập kỷ",
+    "title": "Diễn Đàn Quốc Gia Lần Thứ X: Kỷ Nguyên Số & Người Nông Dân 4.0",
+    "date": "Tháng 10/2025",
+    "location": "Cung Văn hóa Hữu nghị Việt Xô, Hà Nội",
+    "cover": "./images/sample-event.png",
+    "summary": "Đối thoại cấp Nhà nước với sự tham gia của Lãnh đạo Chính phủ; giải quyết các điểm nghẽn tích tụ ruộng đất, nguồn vốn tín dụng ưu đãi và ứng dụng trí tuệ nhân tạo (AI) trong quản lý nông nghiệp.",
+    "stats": [
+      {
+        "value": 65,
+        "suffix": "",
+        "label": "Bài báo lưu trữ"
+      }
+    ],
+    "link": "https://danviet.vn/dong-su-kien/su-kien-2025.html",
+    "linkLabel": "Xem chuyên trang 2025",
+    "articleCount": 65,
+    "articles": [
+      {
+        "title": "Ứng dụng AI và cảm biến IoT: Người nông dân quản lý hàng chục hecta trên smartphone",
+        "category": "Chuyển đổi số",
+        "date": "15/10/2025",
+        "sapo": "Các mô hình tự động hóa tưới tiêu thông minh, giám sát sâu bệnh bằng trí tuệ nhân tạo đang giúp nông dân nâng cao hiệu suất vượt trội.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      },
+      {
+        "title": "Diễn đàn Nông dân Quốc gia 2025: Tháo gỡ các nút thắt về vốn và tích tụ ruộng đất",
+        "category": "Đối thoại chính sách",
+        "date": "14/10/2025",
+        "sapo": "Đối thoại trực tiếp giữa người đứng đầu các bộ ngành với đại biểu nông dân xuất sắc cả nước nhằm gỡ khó chính sách tín dụng xanh.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      },
+      {
+        "title": "Khi nông dân trở thành \"KOLs\": Doanh thu tiền tỷ từ các phiên livestream bán nông sản",
+        "category": "Thương mại số",
+        "date": "12/10/2025",
+        "sapo": "Thế hệ nông dân số tự tin đưa đặc sản vùng miền lên các sàn thương mại điện tử quốc tế, chốt đơn hàng nghìn tấn trái cây mỗi vụ.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      }
+    ]
+  },
+  {
+    "year": 2024,
+    "label": "2024",
+    "kicker": "Sự kiện năm 2024 • Hội nhập Quốc tế",
+    "title": "Chuỗi Sự Kiện 2024: Vươn Tầm Nông Sản Việt & Chuỗi Giá Trị Toàn Cầu",
+    "date": "Tháng 10/2024",
+    "location": "Nhà hát Lớn Hà Nội",
+    "cover": "./images/sample-event.png",
+    "summary": "Chiến dịch truyền thông toàn diện về giải pháp thích ứng biến đổi khí hậu tại ĐBSCL, xây dựng mã số vùng trồng cho sầu riêng, gạo ST25 và thâm nhập các thị trường tiêu chuẩn cao EU, Hoa Kỳ, Nhật Bản.",
+    "stats": [
+      {
+        "value": 62,
+        "suffix": "",
+        "label": "Bài báo lưu trữ"
+      }
+    ],
+    "link": "https://danviet.vn/dong-su-kien/su-kien-2024.html",
+    "linkLabel": "Xem chuyên trang 2024",
+    "articleCount": 62,
+    "articles": [
+      {
+        "title": "Cơn sốt sầu riêng tỷ đô và bài toán mã số vùng trồng chuẩn quốc tế",
+        "category": "Xuất khẩu",
+        "date": "18/10/2024",
+        "sapo": "Hành trình đưa nông sản Việt vượt qua các hàng rào kiểm dịch khắt khe của đối tác nước ngoài để khẳng định thương hiệu quốc gia.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      },
+      {
+        "title": "Đề án 1 triệu hecta lúa chất lượng cao, phát thải thấp: Cú hích cho vựa lúa miền Tây",
+        "category": "ĐBSCL",
+        "date": "15/10/2024",
+        "sapo": "Nông dân vùng châu thổ sông Cửu Long đi tiên phong chuyển đổi sản xuất lúa xanh, thu tín chỉ carbon.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      },
+      {
+        "title": "Liên kết chế biến sâu: Bí quyết giữ giá nông sản khi bước vào vụ thu hoạch rộ",
+        "category": "Chế biến sâu",
+        "date": "13/10/2024",
+        "sapo": "Giải pháp giảm thiểu rủi ro được mùa mất giá nhờ chuỗi nhà máy sấy lạnh và chế biến nông sản đóng hộp.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      }
+    ]
+  },
+  {
+    "year": 2023,
+    "label": "2023",
+    "kicker": "Sự kiện năm 2023 • Kinh tế Tuần hoàn",
+    "title": "Tôn Vinh 2023: Nông Dân Xuất Sắc & Hợp Tác Xã Kiểu Mới",
+    "date": "Tháng 10/2023",
+    "location": "Trung tâm Hội nghị Quốc gia, Hà Nội",
+    "cover": "./images/sample-event.png",
+    "summary": "Đột phá tư duy từ sản xuất nông nghiệp thuần túy sang kinh tế nông nghiệp tuần hoàn; nhân rộng mô hình kinh tế tập thể, liên kết chặt chẽ giữa nông dân và doanh nghiệp chế biến sâu.",
+    "stats": [
+      {
+        "value": 59,
+        "suffix": "",
+        "label": "Bài báo lưu trữ"
+      }
+    ],
+    "link": "https://danviet.vn/dong-su-kien/su-kien-2023.html",
+    "linkLabel": "Xem chuyên trang 2023",
+    "articleCount": 59,
+    "articles": [
+      {
+        "title": "63 Hợp tác xã tiêu biểu toàn quốc: Sức mạnh cộng đồng làm nên kỳ tích nông nghiệp",
+        "category": "HTX Tiêu Biểu",
+        "date": "14/10/2023",
+        "sapo": "Năm đầu tiên chương trình vinh danh các mô hình HTX nông nghiệp kiểu mới hoạt động hiệu quả, đem lại thu nhập cao cho xã viên.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      },
+      {
+        "title": "Kinh tế tuần hoàn không chất thải: Mô hình vườn - ao - chuồng phiên bản công nghệ cao",
+        "category": "Tuần hoàn",
+        "date": "11/10/2023",
+        "sapo": "Tận dụng phế phụ phẩm làm phân bón hữu cơ vi sinh, giảm 40% chi phí đầu vào và bảo vệ môi trường nông thôn.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      },
+      {
+        "title": "Chân dung 100 Nông dân Việt Nam xuất sắc năm 2023: Vượt bão giá, làm giàu bền vững",
+        "category": "Gương sáng",
+        "date": "08/10/2023",
+        "sapo": "Những tấm gương dám nghĩ dám làm, ứng dụng khoa học kỹ thuật để trở thành tỷ phú trên chính mảnh đất quê hương.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      }
+    ]
+  },
+  {
+    "year": 2022,
+    "label": "2022",
+    "kicker": "Sự kiện năm 2022 • Thập kỷ Dấu ấn",
+    "title": "Đại Lễ Kỷ Niệm: 10 Năm Hành Trình Tự Hào Nông Dân Việt Nam (2012 – 2022)",
+    "date": "14/10/2022",
+    "location": "Cung Văn hóa Lao động Hữu nghị Việt Xô, Hà Nội",
+    "cover": "./images/sample-event.png",
+    "summary": "Dấu mốc kỷ niệm tròn 1 thập kỷ chương trình thường niên. Tôn vinh gần 700 gương mặt nông dân qua các thời kỳ, khẳng định vị thế bền bỉ của người bạn đồng hành thủy chung Báo Dân Việt.",
+    "stats": [
+      {
+        "value": 60,
+        "suffix": "",
+        "label": "Bài báo lưu trữ"
+      },
+      {
+        "value": 700,
+        "suffix": "",
+        "label": "Gương mặt qua 10 năm"
+      },
+      {
+        "value": 10,
+        "suffix": "",
+        "label": "Năm hành trình"
+      }
+    ],
+    "link": "https://danviet.vn/dong-su-kien/su-kien-2022.html",
+    "linkLabel": "Xem chuyên trang 2022",
+    "articleCount": 60,
+    "articles": [
+      {
+        "title": "Nhìn lại 10 năm Tự hào Nông dân Việt Nam: Nâng tầm vị thế người nông dân thời kỳ mới",
+        "category": "Thập kỷ dấu ấn",
+        "date": "14/10/2022",
+        "sapo": "Hành trình 10 năm bền bỉ phát hiện, cổ vũ và tôn vinh những người làm nên linh hồn cho nông nghiệp nước nhà.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      },
+      {
+        "title": "Trực tiếp Lễ tôn vinh Nông dân Việt Nam xuất sắc năm 2022 tại Thủ đô Hà Nội",
+        "category": "Lễ trao giải",
+        "date": "14/10/2022",
+        "sapo": "Không khí trang trọng tại Cung Văn hóa Hữu nghị Việt Xô tôn vinh 100 tấm gương nông dân tiêu biểu cả nước.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
+      },
+      {
+        "title": "Những câu chuyện vượt khó phi thường của nông dân Việt Nam qua 10 mùa vinh danh",
+        "category": "Gương sáng",
+        "date": "10/10/2022",
+        "sapo": "Từ nông dân nghèo khó đến những triệu phú, tỷ phú nông nghiệp khẳng định tinh thần tự lực tự cường của người nông dân Việt.",
+        "url": "https://danviet.vn",
+        "img": "",
+        "location": ""
       }
     ]
   }

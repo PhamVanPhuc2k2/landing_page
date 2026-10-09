@@ -52,7 +52,7 @@
 // Mỗi sự kiện là 1 mốc trên timeline dọc
 .event {
     position: relative;
-    padding: 80px 0 0 80px;
+    padding: 80px 0 0 108px;
     scroll-margin-top: 150px;
 
     // Trục dọc
@@ -61,7 +61,7 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        left: 27px;
+        left: 41px;
         width: 2px;
         background: linear-gradient(180deg, transparent, $gold-600 10%, $gold-600 90%, transparent);
         opacity: 0.6;
@@ -76,13 +76,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 56px;
-        height: 56px;
+        width: 84px;
+        height: 84px;
         border-radius: 50%;
         background: $gradient-gold;
-        box-shadow: 0 0 0 6px $green-900, $shadow-gold;
+        box-shadow: 0 0 0 8px $green-900, $shadow-gold;
         font-weight: 800;
-        font-size: 0.875rem;
+        font-size: 1.3125rem;
         color: $green-900;
     }
 

@@ -2319,7 +2319,7 @@ a:focus {
 
 .event {
   position: relative;
-  padding: 80px 0 0 80px;
+  padding: 80px 0 0 108px;
   scroll-margin-top: 150px;
 }
 .event::before {
@@ -2327,7 +2327,7 @@ a:focus {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 27px;
+  left: 41px;
   width: 2px;
   background: linear-gradient(180deg, transparent, #b08433 10%, #b08433 90%, transparent);
   opacity: 0.6;
@@ -2340,13 +2340,13 @@ a:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 56px;
-  height: 56px;
+  width: 84px;
+  height: 84px;
   border-radius: 50%;
   background: linear-gradient(180deg, #f3dca0 0%, #d4a64a 45%, #b08433 100%);
-  box-shadow: 0 0 0 6px #04261d, 0 0 24px rgba(212, 166, 74, 0.35);
+  box-shadow: 0 0 0 8px #04261d, 0 0 24px rgba(212, 166, 74, 0.35);
   font-weight: 800;
-  font-size: 0.875rem;
+  font-size: 1.3125rem;
   color: #04261d;
 }
 .event__head {
@@ -3195,7 +3195,7 @@ html.intro .curtain {
 .event__comet {
   position: absolute;
   top: calc(var(--p, 0) * 100%);
-  left: 28px;
+  left: 42px;
   z-index: 1;
   width: 10px;
   height: 10px;
@@ -3330,7 +3330,7 @@ html.intro .curtain {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 27px;
+  left: 41px;
   width: 2px;
   background: linear-gradient(180deg, #fbf3dc, #e6c178);
   box-shadow: 0 0 10px rgba(230, 193, 120, 0.8);

@@ -472,7 +472,7 @@ html.intro .curtain {
 .event__comet {
     position: absolute;
     top: calc(var(--p, 0) * 100%);
-    left: 28px;
+    left: 42px;
     z-index: 1;
     width: 10px;
     height: 10px;
@@ -597,7 +597,7 @@ html.intro .curtain {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 27px;
+    left: 41px;
     width: 2px;
     background: linear-gradient(180deg, $gold-100, $gold-400);
     box-shadow: 0 0 10px rgba($gold-400, 0.8);
