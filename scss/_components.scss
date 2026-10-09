@@ -1,0 +1,94 @@
+@use "./variables" as *;
+
+// Tiêu đề section kiểu sân khấu: chữ vàng in hoa + gạch trang trí hai bên
+.heading-primary {
+    font-family: $font-heading;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    background: $gradient-gold;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.heading-ornament {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 12px;
+    color: $gold-500;
+
+    &::before,
+    &::after {
+        content: "";
+        width: 80px;
+        height: 1px;
+        background: $gradient-gold-h;
+    }
+}
+.heading-sub {
+    max-width: 720px;
+    margin: 16px auto 0;
+    text-align: center;
+    color: $color-text-muted;
+    line-height: 1.6;
+}
+
+// Khung thẻ: nền xanh trong, viền vàng mảnh
+.card {
+    position: relative;
+    background: $gradient-card;
+    border: 1px solid $color-border;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: border-color 0.25s $ease, transform 0.25s $ease, box-shadow 0.25s $ease;
+
+    &:hover {
+        border-color: $gold-400;
+        transform: translateY(-4px);
+        box-shadow: $shadow-card, $shadow-gold;
+    }
+}
+
+// Nhãn nhỏ (năm, nguồn báo)
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border: 1px solid $color-border;
+    border-radius: 999px;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: $gold-300;
+    background-color: rgba($green-950, 0.5);
+
+    &--red {
+        border-color: $red-500;
+        background-color: $red-500;
+        color: $white;
+    }
+}
+
+// Hiệu ứng hiện dần khi cuộn tới
+.reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+
+    &.is-visible {
+        opacity: 1;
+        transform: none;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}

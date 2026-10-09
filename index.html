@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tổng quan 5 năm thường niên (2022 – 2026) | Tự hào Nông dân Việt Nam</title>
+        <meta name="description" content="Tổng hợp chuỗi sự kiện thường niên do Báo Điện tử Dân Việt tổ chức qua 5 năm (2022 – 2026) cùng hơn 300 bài báo tư liệu." />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css" />
+        <script>
+            // Bật màn kéo rèm trước khi trang vẽ ra (1 lần/phiên, bỏ qua nếu giảm chuyển động)
+            try {
+                if (!sessionStorage.getItem("intro-seen") && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
+                    document.documentElement.classList.add("intro", "intro-lock");
+                }
+            } catch (e) {}
+        </script>
+    </head>
+    <body>
+        <div class="curtain" aria-hidden="true">
+            <div class="curtain__panel curtain__panel--left"></div>
+            <div class="curtain__panel curtain__panel--right"></div>
+            <div class="curtain__brand">
+                <span class="curtain__line"></span>
+                <span class="curtain__title">Tự hào Nông dân Việt Nam</span>
+                <span class="curtain__sub">2022 – 2026</span>
+                <span class="curtain__line"></span>
+            </div>
+        </div>
+        <div class="scroll-progress" aria-hidden="true"></div>
+        <header class="header">
+            <div class="w-1280 header__inner">
+                <a class="header__logo" href="#top">
+                    <!-- TODO: thay bằng logo thật -->
+                    <span class="fs-18">Dân Việt <span class="text-muted fw-400">| Tự hào Nông dân VN</span></span>
+                </a>
+                <nav class="header__nav">
+                    <a href="#top" class="active">Tổng quan</a>
+                    <a href="#events">Sự kiện 5 năm</a>
+                    <a href="#event-2026">★ 40 năm Đổi mới</a>
+                    <a href="#contact">Liên hệ</a>
+                </nav>
+                <button class="header__toggle" type="button" aria-label="Mở menu">☰</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero" id="top">
+                <div class="hero__glow" aria-hidden="true"></div>
+                <div class="beam beam--left" aria-hidden="true"></div>
+                <div class="beam beam--right" aria-hidden="true"></div>
+                <svg class="medallion" viewBox="0 0 400 400" aria-hidden="true">
+                    <g class="medallion__ring medallion__ring--a">
+                        <circle cx="200" cy="200" r="190" stroke-dasharray="2 10" />
+                        <circle cx="200" cy="200" r="176" />
+                    </g>
+                    <g class="medallion__ring medallion__ring--b">
+                        <circle cx="200" cy="200" r="150" stroke-dasharray="40 8 4 8" />
+                        <circle cx="200" cy="200" r="120" stroke-dasharray="1 6" stroke-width="6" />
+                    </g>
+                    <g class="medallion__ring medallion__ring--c">
+                        <circle cx="200" cy="200" r="95" />
+                        <path d="M200 105 L208 192 L295 200 L208 208 L200 295 L192 208 L105 200 L192 192 Z" />
+                    </g>
+                </svg>
+                <canvas class="sparkles" aria-hidden="true"></canvas>
+                <div class="stage-lights" aria-hidden="true">
+                    <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                </div>
+                <div class="w-1140 hero__inner">
+                    <span class="hero__eyebrow">Lưu trữ truyền thông 5 năm thường niên (2022 – 2026)</span>
+                    <h1 class="hero__title">Hành Trình Tôn Vinh Nông Dân &amp; Đổi Mới Nông Nghiệp Việt Nam</h1>
+                    <p class="hero__desc">Tổng hợp toàn diện chuỗi sự kiện thường niên do Báo Điện tử Dân Việt tổ chức qua 5 năm. Mỗi năm gắn liền với một bước chuyển dịch lớn của nông nghiệp nông thôn Việt Nam.</p>
+                    <div class="hero__actions">
+                        <a class="btn" href="#events">Khám phá 5 năm</a>
+                        <a class="btn-outline" href="#event-2026">★ 40 năm Đổi mới</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stats-band" id="overview">
+                <div class="w-1140">
+                    <div class="stats-band__grid reveal reveal--zoom">
+                        <div class="stat">
+                            <div class="stat__value" data-total="events" data-count="0">0</div>
+                            <div class="stat__label">Sự kiện thường niên</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__value" data-total="articles" data-count="0">0</div>
+                            <div class="stat__label">Bài báo tư liệu</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__value" data-count="96">0</div>
+                            <div class="stat__label">Nông dân xuất sắc 40 năm Đổi mới</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__value" data-count="700" data-suffix="+">0</div>
+                            <div class="stat__label">Gương mặt tôn vinh qua 10 năm đầu</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="events" id="events">
+                <div class="w-1280">
+                    <div class="section-head reveal">
+                        <h2 class="heading-primary">Dấu ấn 5 năm thường niên</h2>
+                        <div class="heading-ornament" aria-hidden="true">✦</div>
+                        <p class="heading-sub">Mỗi năm một chủ đề, một bước chuyển dịch của nông nghiệp nông thôn — được ghi lại bằng những con số và hàng chục bài báo tư liệu trên Báo Điện tử Dân Việt.</p>
+                    </div>
+
+                    <nav class="year-nav" id="year-nav"></nav>
+                    <div id="events-list"></div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="contact">
+            <div class="w-1140">
+                <div class="footer__name">Báo Điện tử Dân Việt</div>
+                <p class="footer__org">Cơ quan Trung ương Hội Nông dân Việt Nam</p>
+                <p class="footer__info">
+                    Giấy phép hoạt động báo điện tử số 115/GP-BTTTT do Bộ Thông tin và Truyền thông cấp ngày 01/03/2019.<br>
+                    Trụ sở Tòa soạn: Lô E2, Khu đô thị mới Cầu Giấy, đường Dương Đình Nghệ, Cầu Giấy, Hà Nội.<br>
+                    Tổng biên tập: Nguyễn Văn Hoài · Hotline: <a href="tel:0857835666">0857.835.666</a> · Email: <a href="mailto:toasoan@danviet.vn">toasoan@danviet.vn</a>
+                </p>
+                <div class="footer__links">
+                    <a href="https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-channel3095/" target="_blank" rel="noopener">Chuyên trang Channel 3095</a>
+                    <a href="https://danviet.vn" target="_blank" rel="noopener">danviet.vn</a>
+                </div>
+                <div class="footer__copy">© 2026 Báo Điện tử Dân Việt. All rights reserved.</div>
+            </div>
+        </footer>
+
+        <button class="back-to-top" type="button" aria-label="Lên đầu trang">↑</button>
+
+        <script src="./js/data.js"></script>
+        <script src="./js/effects.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

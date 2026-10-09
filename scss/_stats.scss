@@ -1,0 +1,62 @@
+@use "./variables" as *;
+
+// Dải số liệu tổng (5 năm, số sự kiện, số bài báo…)
+.stats-band {
+    position: relative;
+    margin-top: -60px;
+    z-index: 2;
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        background: rgba($green-950, 0.85);
+        border: 1px solid $color-border;
+        border-radius: 20px;
+        backdrop-filter: blur(6px);
+        box-shadow: $shadow-card;
+    }
+}
+
+.stat {
+    padding: 32px 16px;
+    text-align: center;
+
+    & + & {
+        border-left: 1px solid $color-border;
+    }
+
+    &__value {
+        font-family: $font-heading;
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 1;
+        background: $gradient-gold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__label {
+        margin-top: 10px;
+        font-size: 0.9375rem;
+        color: $color-text-muted;
+    }
+
+    // Biến thể nhỏ dùng trong từng sự kiện
+    &--sm {
+        padding: 20px 12px;
+        border: 1px solid $color-border;
+        border-radius: 12px;
+        background-color: rgba($green-950, 0.4);
+
+        & + & {
+            border-left: 1px solid $color-border;
+        }
+        .stat__value {
+            font-size: 2rem;
+        }
+        .stat__label {
+            font-size: 0.875rem;
+        }
+    }
+}

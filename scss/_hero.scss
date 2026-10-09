@@ -1,0 +1,130 @@
+@use "./variables" as *;
+
+// Hero mô phỏng sân khấu: nền radial xanh, vệt sáng LED dọc, đèn trần
+.hero {
+    position: relative;
+    min-height: min(100vh, 860px);
+    display: flex;
+    align-items: center;
+    padding: 120px 0 80px;
+    background: $gradient-stage;
+    overflow: hidden;
+    text-align: center;
+
+    // Vệt sáng LED dọc
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-image: repeating-linear-gradient(
+            90deg,
+            transparent 0,
+            transparent 38px,
+            rgba($green-300, 0.08) 39px,
+            transparent 40px
+        );
+        mask-image: linear-gradient(180deg, transparent 0%, #000 30%, #000 70%, transparent 100%);
+        pointer-events: none;
+    }
+
+    // Dải sáng cong ở chân sân khấu
+    &::after {
+        content: "";
+        position: absolute;
+        left: -10%;
+        right: -10%;
+        bottom: -120px;
+        height: 260px;
+        border-top: 2px solid rgba($green-300, 0.35);
+        border-radius: 50%;
+        box-shadow: 0 -20px 60px rgba($green-400, 0.25);
+        pointer-events: none;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__logo {
+        width: 96px;
+        margin: 0 auto 24px;
+        filter: drop-shadow(0 0 16px rgba($gold-500, 0.5));
+    }
+
+    &__eyebrow {
+        display: inline-block;
+        padding: 6px 20px;
+        border-top: 1px solid $gold-500;
+        border-bottom: 1px solid $gold-500;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: $gold-300;
+    }
+
+    &__title {
+        margin-top: 24px;
+        font-family: $font-heading;
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 3.25rem;
+        font-weight: 800;
+        line-height: 1.2;
+        text-transform: uppercase;
+        background: $gradient-gold;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: drop-shadow(0 4px 12px rgba($black, 0.45));
+    }
+
+    &__desc {
+        max-width: 760px;
+        margin: 24px auto 0;
+        font-size: 1.125rem;
+        line-height: 1.7;
+        color: $color-text-muted;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-top: 40px;
+    }
+}
+
+// Đèn trần lấp lánh
+.stage-lights {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    pointer-events: none;
+
+    span {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $white;
+        box-shadow: 0 0 12px 4px rgba($white, 0.6);
+        animation: twinkle 3s ease-in-out infinite;
+
+        &:nth-child(odd) {
+            animation-delay: 1.5s;
+        }
+    }
+}
+@keyframes twinkle {
+    0%, 100% { opacity: 0.9; }
+    50% { opacity: 0.35; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .stage-lights span {
+        animation: none;
+    }
+}

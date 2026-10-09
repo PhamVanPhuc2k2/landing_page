@@ -1,0 +1,69 @@
+// =================================================================
+// Bảng màu — lấy cảm hứng từ sân khấu "Tự hào Nông dân Việt Nam":
+// nền xanh lục bảo sâu, chữ & viền vàng ánh kim, điểm nhấn đỏ cờ.
+// =================================================================
+
+// Xanh lục bảo (nền chính)
+$green-950: #021a14;
+$green-900: #04261d;
+$green-800: #06352a;
+$green-700: #0a4a39;
+$green-600: #0e624b;
+$green-500: #138060;
+$green-400: #1fa67c; // ánh sáng xanh trên LED
+$green-300: #5fd1a6;
+
+// Vàng ánh kim (tiêu đề, viền, số liệu)
+$gold-700: #8a6524;
+$gold-600: #b08433;
+$gold-500: #d4a64a;
+$gold-400: #e6c178;
+$gold-300: #f3dca0;
+$gold-100: #fbf3dc;
+
+// Đỏ cờ (điểm nhấn — dùng tiết chế)
+$red-600: #b00f26;
+$red-500: #da251d;
+
+// Trung tính
+$white: #fff;
+$black: #000;
+$cream: #f7f0dc;
+$gray-700: #3d4a45;
+$gray-500: #6b7a74;
+$gray-300: #c9d3cf;
+$gray-100: #eef3f1;
+
+// Vai trò
+$color-bg: $green-900;
+$color-bg-alt: $green-800;
+$color-surface: rgba($green-600, 0.25);
+$color-text: $cream;
+$color-text-muted: rgba($cream, 0.7);
+$color-heading: $gold-400;
+$color-primary: $gold-500;
+$color-accent: $red-500;
+$color-border: rgba($gold-500, 0.35);
+
+// Gradient
+$gradient-gold: linear-gradient(180deg, $gold-300 0%, $gold-500 45%, $gold-600 100%);
+$gradient-gold-h: linear-gradient(90deg, $gold-600 0%, $gold-300 50%, $gold-600 100%);
+$gradient-stage: radial-gradient(ellipse at 50% 0%, $green-500 0%, $green-800 45%, $green-950 100%);
+$gradient-card: linear-gradient(160deg, rgba($green-600, 0.55) 0%, rgba($green-900, 0.9) 100%);
+
+// Typography
+$font-body: "Be Vietnam Pro", "Manrope", sans-serif;
+$font-heading: "Playfair Display", "Be Vietnam Pro", serif;
+
+// Bóng & hiệu ứng
+$shadow-card: 0 10px 30px rgba($black, 0.35);
+$shadow-gold: 0 0 24px rgba($gold-500, 0.35);
+$ease: cubic-bezier(0.175, 0.885, 0.32, 1);
+
+// Breakpoints (giữ như Crystal Bay)
+$bp-2xl: 1536px;
+$bp-xl: 1280px;
+$bp-lg: 1024px;
+$bp-md: 992px;
+$bp-sm: 767px;
+$bp-xs: 400px;
