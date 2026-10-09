@@ -2,8 +2,8 @@
  * Nội dung landing page.
  * Nguồn bài viết (Báo Điện tử Dân Việt):
  *  - 2026: chuyên trang channel3095 · 2025: channel2990 · 2024: channel2891 · 2022: channel2715
- *  - 2023: chưa có chuyên trang — gồm các bài có cụm "Tự hào Nông dân Việt Nam 2023"
- *    trong tiêu đề (danh sách để tạo chủ đề 2023 trên Dân Việt).
+ *  - 2023: chưa có chuyên trang — gồm các bài có cụm "Tự hào Nông dân Việt Nam 2023" hoặc
+ *    "Nông dân (Việt Nam) xuất sắc 2023" trong tiêu đề (danh sách để tạo chủ đề 2023 trên Dân Việt).
  *
  * Mỗi sự kiện: year, label, kicker, title, date, location, cover, summary,
  *   stats [{ value, suffix, label }], link, linkLabel, articleCount,
@@ -2490,7 +2490,7 @@ window.EVENTS = [
         "label": "Hợp tác xã tiêu biểu"
       },
       {
-        "value": 7,
+        "value": 86,
         "suffix": "",
         "label": "Bài báo tư liệu"
       }
@@ -2526,8 +2526,38 @@ window.EVENTS = [
         "url": "https://danviet.vn/chuoi-chuong-trinh-tu-hao-nong-dan-viet-nam-2023-la-co-hoi-de-nong-dan-htx-tiep-can-chinh-sach-von-2023101320041759-d839606.html"
       }
     ],
-    "articleCount": 7,
+    "articleCount": 86,
     "articles": [
+      {
+        "id": "1406563",
+        "title": "Nữ nông dân trồng hoa lan đạt danh hiệu Nông dân Việt Nam xuất sắc 2023, nay ứng cử đại biểu HĐND TP.HCM",
+        "url": "https://danviet.vn/nu-nong-dan-trong-hoa-lan-dat-danh-hieu-nong-dan-viet-nam-xuat-sac-2023-nay-ung-cu-dai-bieu-hdnd-tphcm-d1406563.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/03/01/104913z7575135770191_4ea2a0419a98208cc88c1cd996293152-1047.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "01/03/2026"
+      },
+      {
+        "id": "1137567",
+        "title": "Nông dân Việt Nam xuất sắc 2023 ở Yên Bái tâm đắc bài phát biểu của Tổng Bí thư tại Đại hội VIII Hội NDVN",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2023-o-yen-bai-tam-dac-bai-phat-bieu-cua-tong-bi-thu-tai-dai-hoi-viii-hoi-ndvn-20231229172249847-d1137567.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/12/29/ng-dan-viet-nam-xuat-sac-2023-yen-bai-toi-dac-biet-xuc-dong-truoc-bai-phat-bieu-cua-tong-bi-thu-1-17038443811772113206158-387-0-1187-1280-crop-17038449530741640517174.jpg",
+        "sapo": "",
+        "category": "Diễn đàn & Chính sách",
+        "location": "",
+        "date": "30/12/2023"
+      },
+      {
+        "id": "1123584",
+        "title": "Nông dân Việt Nam xuất sắc 2023: Quyết đi 'du học' để chủ động sản xuất giống cá nước lạnh",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2023-quyet-di-du-hoc-de-chu-dong-san-xuat-giong-ca-nuoc-lanh-20231015021332886-d1123584.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/14/ca-hoi-5-1697305681135325271830-101-0-1314-1940-crop-16973106780351658732220.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "15/10/2023"
+      },
       {
         "id": "1123526",
         "title": "Tham gia chuỗi Chương trình Tự hào Nông dân Việt Nam 2023, chủ một hợp tác xã chốt được nhiều đơn hàng",
@@ -2539,12 +2569,62 @@ window.EVENTS = [
         "date": "14/10/2023"
       },
       {
+        "id": "1123426",
+        "title": "Nông dân Việt Nam xuất sắc 2023: Đọc lại bài báo viết về mình, tôi xúc động rơi nước mắt",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2023-doc-lai-bai-bao-viet-ve-minh-toi-xuc-dong-roi-nuoc-mat-20231014004535392-d1123426.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/l2-16972182750572079878325-752-0-2002-2000-crop-169721893307632180276.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "14/10/2023"
+      },
+      {
+        "id": "1123385",
+        "title": "Nông dân Việt Nam xuất sắc 2023 đến từ Bắc Ninh chế tạo nhiều loại máy phay lên luống 5 trong 1",
+        "url": "https://danviet.vn/mot-nong-dan-bac-ninh-sang-che-che-tao-thanh-cong-nhieu-loai-may-phay-len-luong-5-trong-1-20231013175146949-d1123385.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/nong-dan-viet-nam-xuat-sac-2023-phung-van-nam-bac-ninh-2-16971936546752079502623-0-68-1125-1868-crop-16971936645221586294573.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "14/10/2023"
+      },
+      {
         "id": "839606",
         "title": "Chuỗi Chương trình Tự hào Nông dân Việt Nam 2023 là cơ hội để nông dân, HTX tiếp cận chính sách, vốn...",
         "url": "https://danviet.vn/chuoi-chuong-trinh-tu-hao-nong-dan-viet-nam-2023-la-co-hoi-de-nong-dan-htx-tiep-can-chinh-sach-von-2023101320041759-d839606.html",
         "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/base64-1697116679775919124005-16972019157111738896066-83-0-1333-2000-crop-1697201994230436819900.png",
         "sapo": "",
         "category": "Diễn đàn & Chính sách",
+        "location": "",
+        "date": "13/10/2023"
+      },
+      {
+        "id": "1123381",
+        "title": "Lễ tôn vinh và trao danh hiệu cho 100 'Nông dân Việt Nam xuất sắc 2023' và biểu dương 63 HTX tiêu biểu toàn quốc",
+        "url": "https://danviet.vn/le-ton-vinh-va-trao-danh-hieu-cho-100-nong-dan-viet-nam-xuat-sac-2023-va-bieu-duong-63-htx-tieu-bieu-toan-quoc-20231013172430983-d1123381.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/anh-ket-16972066796351757485692-0-0-1250-2000-crop-16972072684591861320621.jpg",
+        "sapo": "",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
+        "date": "13/10/2023"
+      },
+      {
+        "id": "839604",
+        "title": "Danh sách trích ngang thành tích của 100 Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trich-ngang-thanh-tich-cua-100-nong-dan-viet-nam-xuat-sac-2023-2023101318063041-d839604.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/base64-16969927625712030460553-16971950858041705756035-0-0-1250-2000-crop-1697195118860271805881.png",
+        "sapo": "",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
+        "date": "13/10/2023"
+      },
+      {
+        "id": "1123193",
+        "title": "9 kỷ lục ấn tượng của 100 Nông dân Việt Nam xuất sắc 2023, có tỷ phú nuôi tôm lợi nhuận 50 tỷ/năm",
+        "url": "https://danviet.vn/9-ky-luc-an-tuong-cua-100-nong-dan-viet-nam-xuat-sac-2023-ty-phu-nuoi-tom-loi-nhuan-50-ty-nam-20231012181413062-d1123193.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/base64-16961687296712094643039-16971719508901238893002-417-281-1103-1379-crop-1697171973483374081717.png",
+        "sapo": "",
+        "category": "Sự kiện & Vinh danh",
         "location": "",
         "date": "13/10/2023"
       },
@@ -2567,6 +2647,196 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "11/10/2023"
+      },
+      {
+        "id": "1122870",
+        "title": "Vườn cam, bưởi hữu cơ đẹp như phim của Nông dân Việt Nam xuất sắc 2023 đến từ Bắc Giang",
+        "url": "https://danviet.vn/vuon-cam-buoi-huu-co-dep-nhu-phim-cua-nong-dan-viet-nam-xuat-sac-2023-den-tu-bac-giang-20231011095828483-d1122870.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/11/nong-dan-viet-nam-xuat-sac-2023-nguyen-van-huu-1-1696992247639621852017-84-0-1334-2000-crop-169699225333834102727.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "11/10/2023"
+      },
+      {
+        "id": "1122950",
+        "title": "Nông dân Việt Nam xuất sắc 2023 tranh thủ 'PR' gạo VD20, mì Chũ trong ngày về Thủ đô",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2023-tranh-thu-pr-gao-vd20-mi-chu-trong-ngay-ve-thu-do-20231011153926594-d1122950.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/11/4-16970112562931666952099-83-0-1333-2000-crop-16970112627321157050568.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "11/10/2023"
+      },
+      {
+        "id": "1122699",
+        "title": "Từng là hộ nghèo, nay Nông dân Việt Nam xuất sắc 2023 ở Tuyên Quang thu 6 tỷ/năm từ nuôi lợn, trồng bưởi",
+        "url": "https://danviet.vn/tu-ho-ngheo-nay-nong-dan-viet-nam-xuat-sac-o-tuyen-quang-thu-6-ty-nam-tu-nuoi-lon-trong-buoi-20231010113802611-d1122699.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/10/img0292-16969121491061807271222-83-0-1333-2000-crop-16969121759831815700865.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "11/10/2023"
+      },
+      {
+        "id": "1122571",
+        "title": "Nông dân Việt Nam xuất sắc 2023 đến từ Kiên Giang là một tỷ phú từng nghèo, 10 năm 'gạo chợ nước sông'",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-den-tu-kien-giang-la-mot-ty-phu-tung-co-10-nam-gao-cho-nuoc-song-20231009164144568-d1122571.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/9/nong-dan-viet-nam-xuat-sac-2023-nguyen-van-thum5-16968413660391017939333-0-0-1156-1850-crop-16968421125501261944719.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "10/10/2023"
+      },
+      {
+        "id": "1122323",
+        "title": "Một người ở Long An nuôi gà trong trại lạnh, đẻ trứng sòn sòn là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/mot-nguoi-o-long-an-nuoi-ga-trong-trai-lanh-de-trung-son-son-la-nong-dan-viet-nam-xuat-sac-20231008102203887-d1122323.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/8/1-nong-dan-viet-nam-xuat-sac-1696733940480460491336-0-0-1250-2000-crop-16967349165251288259532.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "10/10/2023"
+      },
+      {
+        "id": "1122431",
+        "title": "Người Hà Nội sáng chế máy nông nghiệp '15 trong 1' được bình chọn là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/nguoi-ha-noi-sang-che-may-nong-nghiep-15-trong-1-la-nong-dan-viet-nam-xuat-sac-20231008213153573-d1122431.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/8/img0146-16967727393511968932335-83-0-1333-2000-crop-16967727455402055897530.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/10/2023"
+      },
+      {
+        "id": "1122349",
+        "title": "Trồng nấm công nghệ cao, anh nông dân 8X ở Hưng Yên là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trong-nam-cong-nghe-cao-anh-nong-dan-8x-o-hung-yen-la-nong-dan-viet-nam-xuat-sac-2023-20231008125048729-d1122349.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/8/3-1696743484009566421050-178-0-1428-2000-crop-1696743887762897873170.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/10/2023"
+      },
+      {
+        "id": "1122007",
+        "title": "Một ông Giám đốc HTX ở Thanh Hóa được bình chọn danh hiệu Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/mot-ong-giam-doc-htx-o-thanh-hoa-duoc-binh-chon-nhan-danh-hieu-nong-dan-viet-nam-xuat-sac-20231006140447907-d1122007.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/6/452994c5fc2d2873713c-16965749842031687791614-53-0-1303-2000-crop-1696575176565542265923.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/10/2023"
+      },
+      {
+        "id": "1122337",
+        "title": "Nuôi gà lai chọi thả vườn, Nông dân Việt Nam xuất sắc 2023 đến từ Bắc Giang lãi 2,4 tỷ/năm",
+        "url": "https://danviet.vn/nuoi-ga-lai-choi-tha-vuon-nong-dan-viet-nam-xuat-sac-2023-den-tu-bac-giang-lai-24-ty-dong-nam-20231008113938138-d1122337.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/8/nong-dan-viet-nam-xuat-sac-2023-nguyen-huu-quy-yen-the-bac-giang-6-16967360993601687728070-0-107-1125-1907-crop-1696736107744406085074.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "08/10/2023"
+      },
+      {
+        "id": "1122218",
+        "title": "Nuôi ba ba, cá lóc lời 2,5 tỷ/năm; một chủ trang trại ở Tây Ninh là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/nuoi-ba-ba-ca-loc-loi-25-ty-nam-mot-chu-trang-trai-o-tay-ninh-la-nong-dan-viet-nam-xuat-sac-2023-20231007172642363-d1122218.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/7/nong-dan-viet-nam-xuat-sac-pham-van-toai-o-xa-phuoc-minh-huyen-duong-minh-chau-tinh-tay-ninh-1-16966738742941113873938-10-48-573-949-crop-1696674136804897622545.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "08/10/2023"
+      },
+      {
+        "id": "1122059",
+        "title": "Triệu Tạ Hin, một người Hà Giang, từ hai bàn tay trắng đến danh hiệu “Nông dân Việt Nam xuất sắc 2023'",
+        "url": "https://danviet.vn/trieu-ta-hin-mot-nguoi-ha-giang-giau-co-duoc-trao-tang-danh-hieu-nong-dan-viet-nam-xuat-sac-20231006172945879-d1122059.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/6/img2803-169658618096850293261-80-0-1330-2000-crop-16965870987171456087484.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "07/10/2023"
+      },
+      {
+        "id": "1121919",
+        "title": "Nông dân Việt Nam xuất sắc 2023 đến từ Bắc Ninh biến khu lò gạch cũ thành trang trại thu 30 tỷ/năm",
+        "url": "https://danviet.vn/lo-gach-bo-hoang-thanh-trang-trai-thu-hon-30-ty-nam-o-bac-ninh-la-nong-dan-viet-nam-xuat-sac-20231006031230493-d1121919.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/5/nong-dan-viet-nam-xuat-sac-nam-2023-nguyen-thi-quyen-3-16965365817331065694937-0-200-1125-2000-crop-1696536588585379454446.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "06/10/2023"
+      },
+      {
+        "id": "1121299",
+        "title": "Tỷ phú nuôi tôm công nghệ cao ở Bến Tre được bình chọn là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/ty-phu-nuoi-tom-cong-nghe-cao-o-ben-tre-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-2023-20231002192402597-d1121299.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/2/hung3-16962478041992037824765-83-0-1333-2000-crop-1696248899805320133829.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "06/10/2023"
+      },
+      {
+        "id": "1121801",
+        "title": "Trồng loại nấm có giá 50 triệu/kg, một phụ nữ Bà Rịa-Vũng Tàu là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trong-nam-nam-gi-ban-50-trieu-kg-mot-phu-nu-ba-ria-vung-tau-la-nong-dan-viet-nam-xuat-sac-20231005132456933-d1121801.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/5/img9312-1696486059512159438398-0-0-1250-2000-crop-16964867448331420137608.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "06/10/2023"
+      },
+      {
+        "id": "57866",
+        "title": "Trồng lúa giỏi, nuôi cả cá, tôm, một người ở Bà Rịa-Vũng Tàu là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trong-lua-gioi-nuoi-ca-ca-tom-mot-nguoi-o-ba-ria-vung-tau-la-nong-dan-viet-nam-xuat-sac-20231005141738716-d57866.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/5/1-16964883752652130334494-0-0-1250-2000-crop-16964896453151318315868.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "06/10/2023"
+      },
+      {
+        "id": "1121493",
+        "title": "Trưởng ấp ở TP HCM từng nghèo khó, nay trồng nấm thu 2 tỷ/năm là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/truong-ap-o-tp-hcm-trong-nam-thu-2-ty-nam-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-20231003181137524-d1121493.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/img9210-1696329719957322863785-83-0-1333-2000-crop-1696330398682812907438.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "05/10/2023"
+      },
+      {
+        "id": "839375",
+        "title": "Đi lên từ hộ nghèo, Nông dân Việt Nam xuất sắc 2023 đến từ Cao Bằng trồng cây công nghiệp, nuôi trâu bò",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2023-den-tu-cao-bang-la-nguoi-trong-cay-cong-nghiep-nuoi-trau-bo-2023100317063133-d839375.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/4/nong-van-nghiem-cao-bang-nong-dan-viet-nam-xuat-sac-2023-1696380881744642159180-0-192-1080-1920-crop-16963818747281324418408.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "05/10/2023"
+      },
+      {
+        "id": "1121412",
+        "title": "“Vua tôm thẻ' ở Bạc Liêu từ nghèo không cục đất chọi chim thành Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/vua-tom-the-o-bac-lieu-tu-ngheo-khong-cuc-dat-choi-chim-thanh-nong-dan-viet-nam-xuat-sac-20231003140916495-d1121412.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/20230930151305-16963163351381557895134-0-0-1250-2000-crop-16963166780471349855281.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "04/10/2023"
+      },
+      {
+        "id": "1120697",
+        "title": "Ươm trồng 2,1 triệu cây giống lâm nghiệp, một người Bình Định là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/uom-trong-21-trieu-cay-giong-lam-nghiep-mot-nguoi-binh-dinh-la-nong-dan-viet-nam-xuat-sac-20230929133107031-d1120697.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/29/152c255b-940a-4419-aaa6-9fc6a744d693-16959687235341151647209-250-0-1500-2000-crop-16959807287131003264018.jpeg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "04/10/2023"
       },
       {
         "id": "1121397",
@@ -2597,6 +2867,526 @@ window.EVENTS = [
         "category": "Sự kiện & Vinh danh",
         "location": "",
         "date": "03/10/2023"
+      },
+      {
+        "id": "1121334",
+        "title": "Nuôi 'chim tiền tỷ' vượt mùa đông, một giám đốc ở Thanh Hoá là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/nuoi-chim-yen-tien-ty-vuot-dong-mot-giam-doc-thanh-hoa-la-nong-dan-viet-nam-xuat-sac-2023-20231003061815607-d1121334.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/2/bbadbdc48a035e5d0712-16962879622161603701662-108-0-1358-2000-crop-16962885650121864078180.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "03/10/2023"
+      },
+      {
+        "id": "839365",
+        "title": "20 năm trồng lúa giống, từ hộ nghèo nay lãi tiền tỷ, chị nông dân Tiền Giang là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trong-lua-giong-lai-tien-ty-chi-tien-giang-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-2023-2023100310533521-d839365.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/1-nong-dan-viet-anm-xuat-sac-2023-1696303534117367323097-0-0-1250-2000-crop-16963045247341929992415.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "03/10/2023"
+      },
+      {
+        "id": "839364",
+        "title": "Danh sách 100 Nông dân Việt Nam xuất sắc năm 2023",
+        "url": "https://danviet.vn/danh-sach-100-nong-dan-viet-nam-xuat-sac-nam-2023-2023100310152873-d839364.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/base64-16956963777571791226834-1696302861970565938094-0-0-1250-2000-crop-1696302875611530794145.png",
+        "sapo": "",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
+        "date": "03/10/2023"
+      },
+      {
+        "id": "1121355",
+        "title": "Họp báo Chương trình Tự hào Nông dân Việt Nam xuất sắc 2023: Tôn vinh 100 nông dân và 63 HTX nông nghiệp tiêu biểu",
+        "url": "https://danviet.vn/hop-bao-chuong-trinh-tu-hao-nong-dan-viet-nam-xuat-sac-2023-ton-vinh-100-nong-dan-va-63-htx-nong-nghiep-tieu-bieu-20231003083540012-d1121355.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/tu-hao-2021-1696296504996929346725-0-22-1187-1921-crop-16962965088181422547529.jpeg",
+        "sapo": "",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
+        "date": "03/10/2023"
+      },
+      {
+        "id": "1121187",
+        "title": "Liều vay 5 tỷ lên vùng đất khó lập trang trại, một nông dân Nghệ An được bình chọn là Nông dân xuất sắc 2023",
+        "url": "https://danviet.vn/lieu-vay-5-ty-len-vung-dat-kho-lap-trang-trai-nuoi-lon-anh-nghe-an-la-nong-dan-viet-nam-xuat-sac-20231002114432576-d1121187.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/2/nd3-16962199208721491569853-0-0-717-1147-crop-1696221062960256004801.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "02/10/2023"
+      },
+      {
+        "id": "1120986",
+        "title": "Người làm nước mắm Phú Quốc 'quốc hồn quốc túy' ở Kiên Giang là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/nguoi-lam-nuoc-mam-phu-quoc-quoc-hon-quoc-tuy-o-kien-giang-la-nong-dan-viet-nam-xuat-sac-2023-20230930232757918-d1120986.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/30/kim-hoa-3-1696088179202603551992-34-0-1284-2000-crop-1696090116796463391399.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "01/10/2023"
+      },
+      {
+        "id": "1120465",
+        "title": "Người tiên phong đưa cơ giới hoá vào thu hoạch lúa ở Quảng Ngãi là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/mot-nguoi-quang-ngai-di-dau-trong-co-gioi-hoa-dung-may-gat-lua-la-nong-dan-viet-nam-xuat-sac-20230928122717832-d1120465.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/28/anh-q-ngai-nguoi-tien-phong-4-16958785685751788666846-0-0-399-638-crop-1695878571557781431008.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "28/09/2023"
+      },
+      {
+        "id": "1120140",
+        "title": "Người phụ nữ trở thành Nông dân Việt Nam xuất sắc 2023 nhờ 'xé rào', đem lại sức sống cho cây chè Suối Giàng",
+        "url": "https://danviet.vn/nguoi-phu-nu-tro-thanh-nong-dan-viet-nam-xuat-sac-2023-nho-dem-lai-suc-song-cho-cay-che-suoi-giang-20230926163215041-d1120140.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/26/800x500-ndvnsx-kim-thoa-1695719857740679265917.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "28/09/2023"
+      },
+      {
+        "id": "1119941",
+        "title": "Trồng cam quýt lời hơn 20 tỷ/năm, tỷ phú Bình Dương là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trong-cam-quyt-loi-hon-20-ty-nam-ty-phu-binh-duong-la-nong-dan-viet-nam-xuat-sac-2023-20230925185631607-d1119941.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/25/nong-dan-viet-nam-xuat-sac-lam-thanh-thuong-cam-buoi-hieu-liem-quyt-hong-bac-tan-uyen-2-16956423626151622655319-85-76-625-939-crop-16956426932681194291321.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "26/09/2023"
+      },
+      {
+        "id": "1119702",
+        "title": "Trồng lúa cánh đồng lớn thu 20 tỷ/năm, một giám đốc ở Tiền Giang là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trong-lua-canh-dong-lon-thu-20-ty-nam-giam-doc-o-tien-giang-la-nong-dan-viet-nam-xuat-sac-2023-20230924161021501-d1119702.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/24/1-nong-dan-viet-nam-xuat-sac-2023-1695544355105744988408-38-0-1288-2000-crop-1695546123702921432411.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "24/09/2023"
+      },
+      {
+        "id": "1118863",
+        "title": "Từ làm thuê, một người Yên Bái nay thành Nông dân Việt Nam xuất sắc 2023, thu nhập tiền tỷ/năm",
+        "url": "https://danviet.vn/tu-lam-thue-mot-nguoi-yen-bai-nay-thanh-nong-dan-viet-nam-xuat-sac-2023-thu-nhap-tien-ty-nam-20230920100154764-d1118863.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/20/tu-cong-nhan-lam-thue-tro-thanh-nong-dan-viet-nam-xuat-sac-voi-thu-nhap-hang-ty-dong-1-1695177502953795124957-0-164-576-1086-crop-16951783793701750578121.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "21/09/2023"
+      },
+      {
+        "id": "57714",
+        "title": "Nông dân Việt Nam xuất sắc 2023 đến từ Sài Thành là cô gái trồng hoa lan, tự trả lương cao từ hoa lan",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2023-den-tu-tp-hcm-la-co-gai-trong-hoa-lan-tu-tra-luong-cao-20230919174411675-d57714.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/19/img7232-1695118269703965040737-174-0-1424-2000-crop-1695119391233697113613.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "20/09/2023"
+      },
+      {
+        "id": "1118435",
+        "title": "Nông dân Việt Nam xuất sắc 2023 đến từ Khánh Hòa trồng cây gì mà thu tiền tỷ?",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2023-den-tu-khanh-hoa-trong-cay-gi-ma-thu-tien-ty-20230918101033887-d1118435.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/18/tien-cuong-5-1695006443516115249089-0-123-605-1091-crop-1695006509122349639175.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "19/09/2023"
+      },
+      {
+        "id": "1117955",
+        "title": "Trồng lúa kiểu gì mà ông nông dân Cần Thơ thu lãi 'khủng', nhận danh hiệu Nông dân Việt Nam xuất sắc 2023?",
+        "url": "https://danviet.vn/trong-lua-kieu-gi-ma-ong-nong-dan-can-tho-thu-lai-khung-la-nong-dan-viet-nam-xuat-sac-2023-20230915124557325-d1117955.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/15/nong-dan-viet-nam-xuat-sac-1694756433699833522353-0-0-1250-2000-crop-16947564418312019464272.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "18/09/2023"
+      },
+      {
+        "id": "1117824",
+        "title": "Một nông dân làm ra thứ bánh đặc sản Phú Yên lãi tiền tỷ là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/mot-nong-dan-lam-ra-thu-banh-dac-san-phu-yen-lai-tien-ty-la-nong-dan-viet-nam-xuat-sac-2023-20230914180127656-d1117824.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/14/hai-py-1-1694687172000430253098-111-0-1361-2000-crop-169468837323731678213.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "15/09/2023"
+      },
+      {
+        "id": "1117680",
+        "title": "Nông dân xuất sắc 2023 đến từ Hà Nam có lợi nhuận tốt nhờ 'nhất nghệ tinh nhất thân vinh'",
+        "url": "https://danviet.vn/nong-dan-xuat-sac-2023-den-tu-ha-nam-lai-10-ty-nam-nho-nghe-moc-nhat-nghe-tinh-nhat-than-vinh-20230913224013703-d1117680.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/13/h1-16946193681531101783632-166-0-1416-2000-crop-1694619538906919394615.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "14/09/2023"
+      },
+      {
+        "id": "1117617",
+        "title": "Tỷ phú đánh bắt loài cá ngừ đại dương ở Phú Yên là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/ty-phu-danh-bat-loai-ca-ca-ngu-dai-duong-khong-lo-o-phu-yen-la-nong-dan-viet-nam-xuat-sac-2023-20230913165411563-d1117617.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/13/khoa-py3-16945966299211130776483-0-0-1250-2000-crop-16945978032222106394371.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "14/09/2023"
+      },
+      {
+        "id": "1117600",
+        "title": "Nuôi con “siêu lợi nhuận”, một người Long An thu tiền tỷ, là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/nuoi-tom-sieu-loi-nhuan-mot-nguoi-long-an-thu-tien-ty-la-nong-dan-viet-nam-xuat-sac-2023-20230913154622527-d1117600.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/13/1-nuoi-tom-1694593013618801620905-0-160-900-1600-crop-16945941487711345035835.png",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "13/09/2023"
+      },
+      {
+        "id": "1115815",
+        "title": "Mở lò làm vôi bột thu 4 tỷ/năm, ông chủ lò vôi ở Quảng Trị là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/mo-lo-san-xuat-voi-bot-thu-4-ty-dong-nam-ong-chu-lo-voi-o-quang-tri-thanh-nong-dan-viet-nam-xuat-sac-2023-20230903175609637-d1115815.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/3/mg3568-16937372051951444323503-83-0-1333-2000-crop-1693738212283480820526.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "04/09/2023"
+      },
+      {
+        "id": "1115377",
+        "title": "Trồng 40ha cây ăn trái hữu cơ, 9X Lâm Đồng được chọn là nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/mot-nong-dan-viet-nam-xuat-sac-2023-den-tu-lam-dong-cam-chac-gia-san-tien-ty-nho-sau-rieng-20230831184659571-d1115377.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/31/emagazine-ndvnxs2023-trai9x-lamdong-cover-danviet800x500-16934800848431572638486.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "01/09/2023"
+      },
+      {
+        "id": "838597",
+        "title": "Thu tiền tỷ nhờ trồng nấm đếm không xuể, một Giám đốc ở Nam Định được bình chọn là Nông dân xuất sắc 2023",
+        "url": "https://danviet.vn/ong-nguyen-van-thanh-nong-dan-trong-nam-thu-tien-ty-o-nam-dinh-la-nong-dan-viet-nam-xuat-sac-2023082721400139-d838597.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/27/1-16931451150961947437520-0-0-1250-2000-crop-16931460941241710661995.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "28/08/2023"
+      },
+      {
+        "id": "1114181",
+        "title": "'Ông vua' của các sản phẩm OCOP ở Cà Mau là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/ba-chuong-ong-vua-cua-cac-san-pham-ocop-lam-tu-tom-va-hai-san-co-doanh-thu-cuc-khung-o-ca-mau-20230825123503859-d1114181.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/25/20230819120340-1692939872649711823442-0-0-1250-2000-crop-16929414033012026354396.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "25/08/2023"
+      },
+      {
+        "id": "1113650",
+        "title": "Làm trà sạch xuất khẩu ra nước ngoài, một giám đốc ở Thái Nguyên là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/xuat-khau-tra-dac-san-ra-nuoc-ngoai-giam-doc-o-thai-nguyen-la-nong-dan-viet-nam-xuat-sac-20230822161925036-d1113650.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/23/img2141-1692758977011635673226-65-0-1315-2000-crop-1692760357946535724397.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "24/08/2023"
+      },
+      {
+        "id": "1113788",
+        "title": "Tỷ phú nuôi tôm công nghệ cao, nuôi con vạng ở Nam Định là Nông dân xuất sắc 2023",
+        "url": "https://danviet.vn/ty-phu-nuoi-tom-cong-nghe-cao-nuoi-con-vang-o-nam-dinh-la-nong-dan-xuat-sac-2023-20230823122858948-d1113788.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/23/anh-9-16927660418501428953682-81-0-1331-2000-crop-16927670578311652902923.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "23/08/2023"
+      },
+      {
+        "id": "1113698",
+        "title": "Nữ Nông dân Việt Nam xuất sắc 2023 ở Lâm Đồng làm gì mà thu hàng chục tỷ/năm?",
+        "url": "https://danviet.vn/nu-nong-dan-viet-nam-xuat-sac-2023-o-lam-dong-lam-gi-ma-thu-hang-chuc-ty-nam-20230822214615262-d1113698.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/22/nong-dan-viet-nam-xuat-sac-6-16927149465211012957572-0-0-1247-1995-crop-16927154022861815303845.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "23/08/2023"
+      },
+      {
+        "id": "1113478",
+        "title": "Chuyện lạ Sóc Trăng, trồng chanh ngọt trông như trái xoài, chủ vườn là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/chuyen-la-soc-trang-trong-chanh-ngot-trong-nhu-trai-xoai-chu-vuon-la-nong-dan-viet-nam-xuat-sac-20230821204643584-d1113478.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/21/sau-cong-chanh-ngotjpg8-1692622337359145934399-75-0-675-960-crop-16926237208851010412662.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "22/08/2023"
+      },
+      {
+        "id": "1113360",
+        "title": "Vận động 20 tỷ xây cầu đường nông thôn, một người Đồng Tháp là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trong-lua-canh-dong-thang-canh-co-bay-tim-20-ty-lam-cau-duong-o-dong-thap-ca-lang-phuc-lan-20230821112032274-d1113360.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/21/nong-dan-xuat-sac-1692591090150194050561-205-0-1455-2000-crop-169259138552930433374.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "22/08/2023"
+      },
+      {
+        "id": "1112935",
+        "title": "Sao chè thành tỷ phú ở Lai Châu, thu 50 tỷ/năm, được bình chọn là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/sao-che-thanh-ty-phu-o-lai-chau-thu-50-ty-nam-binh-chon-la-nong-dan-viet-nam-xuat-sac-2023-20230818172856543-d1112935.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/18/che-bien-che-kho-6-2-1692353182292281829071-0-163-1126-1965-crop-1692353196052420932818.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "20/08/2023"
+      },
+      {
+        "id": "1112766",
+        "title": "'Biến' đá thành tiền tỷ, một người Ninh Bình được bình chọn là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/bien-da-thanh-tien-ty-mot-nguoi-ninh-binh-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-2023-20230817224306239-d1112766.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/17/20230803163553-16922860095521821924169-51-0-1301-2000-crop-169228701688012315163.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "19/08/2023"
+      },
+      {
+        "id": "838431",
+        "title": "Vườn mít Thái, thanh nhãn ra trái quá trời ở Đồng Tháp, ông chủ là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/vuon-mit-thai-thanh-nhan-ra-trai-qua-troi-o-dong-thap-ong-chu-la-nong-dan-viet-nam-xuat-sac-2023081811580803-d838431.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/18/nong-dan-xuat-sac-16923341687531701112987-601-0-1805-1926-crop-1692334497721676276613.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "19/08/2023"
+      },
+      {
+        "id": "1112713",
+        "title": "Bấm điện thoại nuôi cá to bự, thu 4 tỷ/năm, ông nông dân Ninh Bình là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/nuoi-ca-toan-con-to-bu-thu-4-ty-nam-ong-nong-dan-ninh-binh-la-nong-dan-viet-nam-xuat-sac-2023-20230817165309228-d1112713.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/17/20230815104207-1692265940840600267894-38-0-1288-2000-crop-1692265955770411032363.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "18/08/2023"
+      },
+      {
+        "id": "1112438",
+        "title": "Tỷ phú thanh long VietGAP ở Bình Thuận có cánh đồng thẳng cánh cò bay là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/ty-phu-trong-thanh-long-xuat-khau-o-binh-thuan-co-canh-dong-thang-canh-co-bay-dep-nhu-phim-20230816104638076-d1112438.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/16/dao-11-1692157082553412651569-38-0-709-1074-crop-1692157088813108550607.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "18/08/2023"
+      },
+      {
+        "id": "1112189",
+        "title": "Lãi tiền tỷ nhờ nuôi loại chim khổng lồ chả biết bay ở Hải Dương, bà chủ là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/lai-tien-ty-nho-nuoi-da-dieu-chim-khong-lo-o-hai-duong-ba-chu-la-nong-dan-viet-nam-xuat-sac-20230815073736527-d1112189.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/15/ba-binh-2-1692055973346159128885-0-0-1195-1912-crop-1692059091565525489137.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "16/08/2023"
+      },
+      {
+        "id": "1112026",
+        "title": "Một ông Nông dân Việt Nam xuất sắc 2023 xưa đi làm thuê, nay là ông chủ 5 tàu cá “khủng” ở Ninh Thuận",
+        "url": "https://danviet.vn/dua-5-tau-lon-di-danh-bat-ca-to-o-dai-duong-dao-lon-ngoai-bien-dong-mot-nguoi-ninh-thuan-la-ty-phu-20230814094452522-d1112026.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/14/img7213-1691978952352876600797-11-0-1261-2000-crop-16919803955091941112016.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "14/08/2023"
+      },
+      {
+        "id": "1111658",
+        "title": "Cấy lúa, làm bánh, một HTX ở Quảng Nam có doanh thu 30 tỷ/năm, ông giám đốc là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/cay-lua-lam-banh-mot-htx-o-quang-nam-thu-30-ty-nam-ong-chu-la-nong-dan-viet-nam-xuat-sac-2023-20230811213432527-d1111658.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/11/hinh-7-16917633574911413349846-81-0-1331-2000-crop-169176408936843329305.jpeg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "13/08/2023"
+      },
+      {
+        "id": "1111409",
+        "title": "Nông dân Việt Nam xuất sắc 2023 đến từ tỉnh Lạng Sơn là một người lập nghiệp với 1 sào ruộng",
+        "url": "https://danviet.vn/hai-vo-chong-tre-o-lang-son-trong-thu-cay-ra-hoa-thom-khap-lang-ban-dat-tien-do-la-hoa-gi-20230810150056735-d1111409.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/10/unnamed-16916845233032075365280-83-0-1333-2000-crop-1691684528398626484972.png",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "12/08/2023"
+      },
+      {
+        "id": "1111346",
+        "title": "Nuôi loại cá đặc sản làm món gì cũng 'bá cháy', Nông dân Việt Nam xuất sắc 2023 ở Hậu Giang là tỷ phú",
+        "url": "https://danviet.vn/nuoi-ca-that-lat-dac-san-lam-mon-gi-cung-ngon-ba-chay-mot-ong-nong-dan-hau-giang-la-ty-phu-20230810101129519-d1111346.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/10/nong-dan-xuat-ac-1691636706888696685260-111-178-1250-2000-crop-1691636724890644102765.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "10/08/2023"
+      },
+      {
+        "id": "1111217",
+        "title": "Mô hình trồng 6 ha lúa, sắm 8 máy gặt ở Trà Vinh của một Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trong-lua-kieu-gi-ma-mot-nong-dan-tra-vinh-giau-han-len-la-nong-dan-viet-nam-xuat-sac-2023-20230809152534551-d1111217.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/9/nong-dan-xuat-sac-16915786607181807888192-0-166-1125-1966-crop-1691578709650325698397.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "10/08/2023"
+      },
+      {
+        "id": "1111186",
+        "title": "Hơn 35 năm “cưỡi sóng” bạc Hoàng Sa, một ngư dân Đà Nẵng được bình chọn là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/13-tuoi-da-ra-bien-danh-bat-toan-ca-to-bu-nay-anh-ngu-dan-da-nang-la-nong-dan-viet-nam-xuat-sac-20230809121338495-d1111186.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/9/hinh-1-16915564750291669973992-81-0-1331-2000-crop-16915577869621497479966.jpeg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/08/2023"
+      },
+      {
+        "id": "1110829",
+        "title": "Khám phá vườn mít ruột đỏ trái to bự ở Vĩnh Long của Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/trong-mit-ruot-do-trai-to-bu-vo-xem-vuon-tien-ty-o-vinh-long-cua-nong-dan-viet-nam-xuat-sac-2023-20230807165104275-d1110829.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/7/mit-ruot-do-1691409289179967838981-0-27-1125-1827-crop-1691409819523664879180.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "08/08/2023"
+      },
+      {
+        "id": "1110423",
+        "title": "Một thầy giáo ở Đà Nẵng làm thứ nước chấm 'quốc hồn quốc túy' là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/lam-nuoc-mam-quoc-hon-quoc-tuy-mot-thay-giao-da-nang-la-nong-dan-viet-nam-xuat-sac-2023-20230805132114314-d1110423.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/5/hinh-1-1691215522955255289468-81-0-1331-2000-crop-16912161691791936897129.jpeg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "06/08/2023"
+      },
+      {
+        "id": "838178",
+        "title": "Một Nông dân Việt Nam xuất sắc 2023 ở Quảng Bình sắm tàu săn cá ngừ, cá nục, có chuyến thu tiền tỷ",
+        "url": "https://danviet.vn/sam-tau-san-ca-ngu-ca-nuc-mot-nong-dan-quang-binh-thu-tien-ty-ca-lang-phuc-lan-2023080516473601-d838178.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/5/z4577395603974a9128e3e403c99d74492ef81768a82e6-1691227831196667632734-175-109-651-871-crop-16912285289481949980829-5-8-476-762-crop-169122854580656887716.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "06/08/2023"
+      },
+      {
+        "id": "1110328",
+        "title": "Nông dân Việt Nam xuất sắc 2023 đến từ Sơn La là một người làm du lịch nông nghiệp, vườn đẹp như phim",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2023-den-tu-son-la-lam-du-lich-nong-nghiep-vuon-dep-nhu-phim-20230804191209338-d1110328.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/4/mot-nong-dan-lam-du-lich-nong-nghiep-o-son-la-tro-thanh-nong-dan-viet-nam-xuat-sac-2023-6-1691148841128167739007-0-36-720-1188-crop-169114886745571400263.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "05/08/2023"
+      },
+      {
+        "id": "1102472",
+        "title": "Xin tiền mua lẩu và bia, đi tìm... 'bí kíp' khởi nghiệp làm nông rồi thành luôn nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-nguyen-hong-quyet-va-niem-tran-tro-cung-nong-dan-lien-ket-lam-giau-20230626160736993-d1102472.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/1/nguyen-hong-quyet-htx-nong-nghiep-cong-nghe-cao-kim-long-xa-an-binh-huyen-phu-giao-tinh-binh-duong-giup-nong-dan-trong-dua-luoi-lam-giau-3-16908619548471370989155.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "04/08/2023"
+      },
+      {
+        "id": "1110036",
+        "title": "Một người Quảng Bình làm 13 sản phẩm OCOP từ hải sản là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/mot-ty-phu-nguoi-quang-binh-lam-13-san-pham-ocop-tu-hai-san-la-nong-dan-viet-nam-xuat-sac-2023-20230803112131246-d1110036.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/3/z3672427019625b1eed435e012760d221c195283e5df36-16910346234711510979089-146-20-1362-1965-crop-1691035614758517907846.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "04/08/2023"
+      },
+      {
+        "id": "1109989",
+        "title": "Tỷ phú nuôi lợn 5 lần 7 lượt suýt phá sản ở Hải Dương là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/ty-phu-nuoi-lon-5-lan-7-luot-suyt-pha-san-o-hai-duong-la-nong-dan-viet-nam-xuat-sac-2023-20230802234958371-d1109989.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/2/nong-dan-vn-xs-3-1690990912728346360198-0-0-997-1595-crop-1690993601944198577160.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "03/08/2023"
+      },
+      {
+        "id": "1109782",
+        "title": "Nông dân Việt Nam xuất sắc 2023 đến từ Hải Phòng trồng lúa, làm ra thứ gạo gì mà ai cũng muốn mua?",
+        "url": "https://danviet.vn/cay-lua-lam-gao-ruoi-van-nguoi-me-o-hai-phong-chi-la-nong-dan-viet-nam-xuat-sac-2023-20230802072925888-d1109782.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/1/dai-dien-cam-gao-1690932407336812324400-0-70-577-993-crop-169093242321373712594.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "03/08/2023"
+      },
+      {
+        "id": "1108800",
+        "title": "Một nông dân từng nghèo rớt ở Hà Tĩnh giờ thành Nông dân Việt Nam xuất sắc 2023 nhờ thứ gỗ gì?",
+        "url": "https://danviet.vn/lam-nha-go-mit-mot-nong-dan-ngheo-ha-tinh-gio-thanh-nong-dan-viet-nam-xuat-sac-2023-20230727175310967-d1108800.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/7/27/1-16904545782821049569839-83-0-1333-2000-crop-16904545853461992976125.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "02/08/2023"
+      },
+      {
+        "id": "1109306",
+        "title": "Nông dân Việt Nam xuất sắc 2023 đến từ Nghệ An làm trang trại VietGAP kiểu gì mà thu 25 tỷ/năm?",
+        "url": "https://danviet.vn/trang-trai-cua-nong-dan-viet-nam-xuat-sac-2023-o-nghe-an-trong-gi-nuoi-gi-ma-thu-25-ty-nam-20230730161945593-d1109306.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/7/30/chi-tien-3-16907062453021146564983-40-0-1290-2000-crop-16907073138591352603212.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "30/07/2023"
+      },
+      {
+        "id": "1104066",
+        "title": "Chính thức công bố danh sách 100 Nông dân Việt Nam xuất sắc năm 2023",
+        "url": "https://danviet.vn/cong-bo-danh-sach-100-nong-dan-viet-nam-xuat-sac-nam-2023-20230704105938897-d1104066.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/7/4/nong-dan-viet-nam-xuat-sac-16884419703582081428693-29-0-529-800-crop-1688442576768327507459.jpg",
+        "sapo": "",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
+        "date": "04/07/2023"
+      },
+      {
+        "id": "1099105",
+        "title": "Đã tìm ra 100 Nông dân Việt Nam xuất sắc năm 2023, người có doanh thu cao nhất là 140 tỷ/năm",
+        "url": "https://danviet.vn/da-tim-ra-100-nong-dan-viet-nam-xuat-sac-nam-2023-nguoi-co-doanh-thu-cao-nhat-la-140-ty-nam-20230609154812794-d1099105.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/6/9/hoi-nong-dan-1-16862996844381013216802-0-0-1250-2000-crop-16863000464511986153075.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/06/2023"
+      },
+      {
+        "id": "1099052",
+        "title": "Họp chấm chung khảo bình chọn 'Nông dân Việt Nam xuất sắc 2023'",
+        "url": "https://danviet.vn/hinh-anh-hop-cham-chung-khao-binh-chon-nong-dan-viet-nam-xuat-sac-2023-20230609113907778-d1099052.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/6/9/1-16862834890711220856187-83-0-1333-2000-crop-16862836452601477741615.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/06/2023"
       }
     ]
   },
