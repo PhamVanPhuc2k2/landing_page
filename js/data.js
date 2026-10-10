@@ -1645,8 +1645,8 @@ window.EVENTS = [
         "label": "Hợp tác xã tiêu biểu"
       },
       {
-        "value": 56,
-        "suffix": "",
+        "value": 100,
+        "suffix": "+",
         "label": "Bài báo tư liệu"
       }
     ],
@@ -2183,7 +2183,7 @@ window.EVENTS = [
       },
       {
         "value": 100,
-        "suffix": "",
+        "suffix": "+",
         "label": "Bài báo tư liệu"
       }
     ],
@@ -3115,8 +3115,8 @@ window.EVENTS = [
         "label": "Năm chương trình"
       },
       {
-        "value": 44,
-        "suffix": "",
+        "value": 100,
+        "suffix": "+",
         "label": "Bài báo tư liệu"
       }
     ],

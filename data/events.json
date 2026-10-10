@@ -93,8 +93,8 @@
           "label": "Hợp tác xã tiêu biểu"
         },
         {
-          "value": "$count",
-          "suffix": "",
+          "value": 100,
+          "suffix": "+",
           "label": "Bài báo tư liệu"
         }
       ],
@@ -126,8 +126,8 @@
           "label": "Hợp tác xã tiêu biểu"
         },
         {
-          "value": "$count",
-          "suffix": "",
+          "value": 100,
+          "suffix": "+",
           "label": "Bài báo tư liệu"
         }
       ],
@@ -170,8 +170,8 @@
           "label": "Năm chương trình"
         },
         {
-          "value": "$count",
-          "suffix": "",
+          "value": 100,
+          "suffix": "+",
           "label": "Bài báo tư liệu"
         }
       ],
