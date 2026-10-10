@@ -1,5 +1,5 @@
 (function () {
-    var PAGE_SIZE = 9;
+    var PAGE_SIZE = 6; // số bài hiện mỗi lần, đồng nhất các năm
     var site = window.SITE || {};
     var events = window.EVENTS || [];
 
@@ -34,7 +34,7 @@
         return '<a class="card article-card reveal-card" href="' + esc(a.url) + '" target="_blank" rel="noopener">' +
             '<div class="article-card__thumb">' + renderThumb(a.img) + '</div>' +
             '<div class="article-card__body">' +
-                '<div class="article-card__source"><strong>' + esc(a.category) + '</strong><span>' + meta + '</span></div>' +
+                '<div class="article-card__source"><strong>Dân Việt</strong><span>' + meta + '</span></div>' +
                 '<h4 class="article-card__title">' + esc(a.title) + '</h4>' +
                 (a.sapo ? '<p class="article-card__sapo">' + esc(a.sapo) + '</p>' : '') +
                 '<span class="article-card__link">Đọc trên Dân Việt →</span>' +
@@ -64,18 +64,6 @@
     }
 
     function renderEvent(ev) {
-        var categories = [];
-        ev.articles.forEach(function (a) {
-            if (a.category && categories.indexOf(a.category) === -1) categories.push(a.category);
-        });
-
-        var filters = categories.length > 1
-            ? '<div class="press__filter"><button class="active" data-category="">Tất cả (' + ev.articles.length + ')</button>' +
-                categories.map(function (c) {
-                    return '<button data-category="' + esc(c) + '">' + esc(c) + '</button>';
-                }).join("") + '</div>'
-            : "";
-
         var pending = ev.articles.length < ev.articleCount
             ? '<p class="press__note">Đang cập nhật — hiện có ' + ev.articles.length + '/' + ev.articleCount + ' bài viết.</p>'
             : "";
@@ -101,8 +89,7 @@
             renderFeatured(ev.featured) +
             '<div class="press">' +
                 '<div class="press__head reveal">' +
-                    '<h4 class="press__title">Bài báo tư liệu <span>(' + ev.articleCount + ' bài)</span></h4>' +
-                    filters +
+                    '<h4 class="press__title">Bài báo tư liệu</h4>' +
                 '</div>' +
                 pending +
                 '<div class="press__grid"></div>' +
@@ -165,21 +152,15 @@
         btn.classList.add("is-pressed");
     }
 
-    /* ---------------- Danh sách bài: lọc + xem thêm ---------------- */
+    /* ---------------- Danh sách bài: đúng thứ tự trong chủ đề CMS + xem thêm ---------------- */
 
     function setupPress(eventEl, ev) {
         var grid = eventEl.querySelector(".press__grid");
         var moreBtn = eventEl.querySelector(".press__more button");
-        var filterEl = eventEl.querySelector(".press__filter");
-        var category = "";
         var shown = 0;
 
-        function filtered() {
-            return category ? ev.articles.filter(function (a) { return a.category === category; }) : ev.articles;
-        }
-
         function draw(reset) {
-            var list = filtered();
+            var list = ev.articles;
             if (reset) {
                 grid.querySelectorAll(".reveal-card").forEach(function (c) { revealIO.unobserve(c); });
                 grid.innerHTML = "";
@@ -191,26 +172,7 @@
             shown += next.length;
             var remaining = list.length - shown;
             moreBtn.parentNode.style.display = remaining > 0 ? "" : "none";
-            moreBtn.textContent = "Xem thêm (" + remaining + " bài)";
-        }
-
-        if (filterEl) {
-            filterEl.addEventListener("click", function (e) {
-                var btn = e.target.closest("button");
-                if (!btn) return;
-                filterEl.querySelectorAll("button").forEach(function (b) { b.classList.remove("active"); });
-                btn.classList.add("active");
-                press(btn);
-                category = btn.getAttribute("data-category");
-                if (reduceMotion) return draw(true);
-                // Lưới mờ đi rồi các thẻ mới hiện so le
-                grid.classList.add("is-switching");
-                clearTimeout(grid._switchTimer);
-                grid._switchTimer = setTimeout(function () {
-                    draw(true);
-                    grid.classList.remove("is-switching");
-                }, 220);
-            });
+            moreBtn.textContent = "Xem thêm";
         }
 
         moreBtn.addEventListener("click", function () {
@@ -311,10 +273,7 @@
             setupPress(document.getElementById("event-" + ev.year), ev);
         });
 
-        // Số liệu tổng: theo số bài công bố của từng sự kiện
-        var totalArticles = events.reduce(function (sum, ev) { return sum + (ev.articleCount || ev.articles.length); }, 0);
-        document.querySelector('[data-total="events"]').setAttribute("data-count", events.length);
-        document.querySelector('[data-total="articles"]').setAttribute("data-count", totalArticles);
+        // Số liệu tổng ở dải stats là số cố định do biên tập cung cấp (xem index.html)
 
         observeReveal(document);
         initYearLinks();

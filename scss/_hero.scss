@@ -73,6 +73,7 @@
         font-weight: 800;
         line-height: 1.2;
         text-transform: uppercase;
+        white-space: pre-line; // tiêu đề lấy từ data có dấu xuống dòng "\n"
         background: $gradient-gold;
         -webkit-background-clip: text;
         background-clip: text;

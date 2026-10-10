@@ -4,7 +4,8 @@
 - Nội dung viết tay của từng năm (tên, mô tả, số liệu, ảnh bìa, nguồn bài) ở data/events.json.
 - Năm có `source.channel`: lấy bài đúng thứ tự trong chủ đề (= thứ tự biên tập sắp trong CMS).
 - Năm chưa có chủ đề: gom theo tag Dân Việt rồi lọc theo cụm từ trong tiêu đề, mới nhất trước.
-- Tiêu điểm = 3 bài đầu. Dòng nổi bật trên ảnh lấy từ `highlights` (viết tay), không có thì là ngày đăng.
+- Mục "Tiêu điểm sự kiện" đang tắt (FEATURED_COUNT = 0). Bật lại: tiêu điểm = N bài đầu chủ đề,
+  dòng nổi bật trên ảnh lấy từ `highlights` (viết tay), không có thì là ngày đăng.
 - An toàn: năm nào lấy được 0 bài hoặc < 50% lần trước thì giữ nguyên dữ liệu cũ của năm đó.
 
 Chỉ dùng thư viện chuẩn. Chạy: python3 scripts/update_data.py
@@ -32,7 +33,7 @@ DATA_JS = Path(os.environ.get("OUTPUT_DIR") or ROOT) / "js" / "data.js"
 
 BASE = "https://danviet.vn"
 UA = {"User-Agent": "Mozilla/5.0 (landing-page data updater)"}
-FEATURED_COUNT = 3
+FEATURED_COUNT = 0  # khách bỏ mục "Tiêu điểm sự kiện"; đặt lại 3 nếu muốn hiện lại
 DELAY = 0.3  # giây giữa các request, tránh dồn tải lên máy chủ báo
 
 
@@ -213,18 +214,6 @@ def enrich(items, cache):
         it["date"] = vn_date(c["date"])
 
 
-# ------------------------------------------------------------------ chuyên mục cho bộ lọc
-def classify(title):
-    t = title.lower()
-    if re.match(r"(video|clip|hình ảnh|ảnh|toàn cảnh|nhìn lại)", t):
-        return "Hình ảnh & Video"
-    if re.search(r"diễn đàn|đối thoại|chủ tịch|bộ trưởng|thủ tướng|chuyên gia|pgs|ts\.|vụ trưởng|phát biểu|kiến nghị|chính sách|lắng nghe|thể chế|khế ước", t):
-        return "Diễn đàn & Chính sách"
-    if re.search(r"lễ tôn vinh|họp báo|danh sách|chương trình|chuỗi|đêm tôn vinh|khai mạc|gặp mặt|tiếp kiến|trao danh hiệu|ra mắt|bằng khen|đồng hành|kỷ lục|có mặt tại hà nội|ban tổ chức|thể lệ|lời cảm ơn|số báo", t):
-        return "Sự kiện & Vinh danh"
-    return "Gương mặt điển hình"
-
-
 # ------------------------------------------------------------------ dựng dữ liệu
 def load_previous():
     if not DATA_JS.exists():
@@ -242,14 +231,14 @@ def build_event(meta, articles, highlights):
         ev["special"] = True
     ev["articles"] = [{
         "id": a["id"], "title": a["title"], "url": a["url"], "img": a["img"], "sapo": a["sapo"],
-        "category": classify(a["title"]), "location": "", "date": a["date"],
+        "location": "", "date": a["date"],
     } for a in articles]
     ev["articleCount"] = len(articles)
     ev["stats"] = [dict(s, value=len(articles)) if s["value"] == "$count" else s for s in meta["stats"]]
     ev["featured"] = []
     for a in ev["articles"][:FEATURED_COUNT]:
         h = highlights.get(a["id"], {})
-        ev["featured"].append({"tag": h.get("tag", a["category"]), "highlight": h.get("highlight", a["date"]),
+        ev["featured"].append({"tag": h.get("tag", ""), "highlight": h.get("highlight", a["date"]),
                                "title": a["title"], "sapo": a["sapo"], "img": a["img"], "url": a["url"]})
     return ev
 

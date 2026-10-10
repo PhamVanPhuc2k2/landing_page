@@ -2164,6 +2164,7 @@ a:focus {
   font-weight: 800;
   line-height: 1.2;
   text-transform: uppercase;
+  white-space: pre-line;
   background: linear-gradient(180deg, #f3dca0 0%, #d4a64a 45%, #b08433 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2629,7 +2630,7 @@ a:focus {
 
 .footer {
   position: relative;
-  padding: 60px 0 32px;
+  padding: 28px 0;
   background-color: #021a14;
   border-top: 1px solid rgba(212, 166, 74, 0.35);
   text-align: center;
@@ -2672,9 +2673,8 @@ a:focus {
   color: #f3dca0;
 }
 .footer__copy {
-  margin-top: 32px;
-  padding-top: 20px;
-  border-top: 1px solid rgba(212, 166, 74, 0.15);
+  margin-top: 0;
+  padding-top: 0;
   font-size: 0.875rem;
   color: rgba(247, 240, 220, 0.5);
 }

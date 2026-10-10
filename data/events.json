@@ -1,7 +1,7 @@
 {
   "site": {
-    "kicker": "Lưu trữ truyền thông 5 năm thường niên (2022 – 2026)",
-    "title": "Hành Trình Tôn Vinh Nông Dân & Đổi Mới Nông Nghiệp Việt Nam",
+    "kicker": "Lưu trữ truyền thông 5 năm của chương trình (2022 – 2026)",
+    "title": "Chuỗi chương trình\nTự hào Nông dân Việt Nam",
     "desc": "Tổng hợp toàn diện chuỗi sự kiện thường niên do Báo Điện tử Dân Việt tổ chức qua 5 năm. Mỗi năm gắn liền với một bước chuyển dịch lớn của nông nghiệp nông thôn Việt Nam."
   },
   "events": [
@@ -12,7 +12,7 @@
       "kicker": "Chương trình Tự hào Nông dân Việt Nam • 40 năm Đổi mới (1986 – 2026)",
       "title": "Nông Dân Việt Nam Xuất Sắc 40 Năm Đổi Mới",
       "date": "Tối 12/10/2026",
-      "location": "Truyền hình trực tiếp VTV1",
+      "location": "Truyền hình trực tiếp trên VTV",
       "cover": "https://t.ex-cdn.com/danviet.vn/800w/files/channel/2026/08/21/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-112437.webp",
       "summary": "Hồ sơ tư liệu số hóa tôn vinh 96 Nông dân Việt Nam xuất sắc nhân dấu mốc 40 năm Đổi mới đất nước. Từ bài học lịch sử \"Khoán 10\", những người nông dân chân lấm tay bùn đã vươn mình thành doanh nhân nông nghiệp, làm chủ công nghệ cao, chinh phục thị trường toàn cầu và dẫn dắt cộng đồng làm giàu bền vững.",
       "stats": [
@@ -22,8 +22,8 @@
           "label": "Gương mặt tôn vinh"
         },
         {
-          "value": "$count",
-          "suffix": "",
+          "value": 100,
+          "suffix": "+",
           "label": "Bài báo tư liệu"
         },
         {
@@ -33,7 +33,7 @@
         }
       ],
       "link": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-channel3095/",
-      "linkLabel": "Xem Channel 3095 trên Dân Việt",
+      "linkLabel": "Xem thêm trên Dân Việt",
       "source": {
         "channel": 3095
       }
@@ -47,7 +47,7 @@
       "date": "Tối 14/10/2025",
       "location": "Cung Văn hóa Hữu nghị Việt Xô, Hà Nội",
       "cover": "https://t.ex-cdn.com/danviet.vn/512w/files/content/2025/10/15/140950img_1017-1407.jpg",
-      "summary": "Chương trình gắn với kỷ niệm 95 năm Ngày thành lập Hội Nông dân Việt Nam. Lễ tôn vinh 63 Nông dân Việt Nam xuất sắc và 32 Nhà khoa học của Nhà nông diễn ra tối 14/10/2025 tại Cung Văn hóa Hữu nghị Việt Xô, truyền hình trực tiếp trên VTV1.",
+      "summary": "Chương trình gắn với kỷ niệm 95 năm Ngày thành lập Hội Nông dân Việt Nam. Lễ tôn vinh 63 Nông dân Việt Nam xuất sắc và 32 Nhà khoa học của Nhà nông diễn ra tối 14/10/2025 tại Cung Văn hóa Hữu nghị Việt Xô, truyền hình trực tiếp trên VTV.",
       "stats": [
         {
           "value": 63,
@@ -60,13 +60,13 @@
           "label": "Nhà khoa học của Nhà nông"
         },
         {
-          "value": "$count",
-          "suffix": "",
+          "value": 100,
+          "suffix": "+",
           "label": "Bài báo tư liệu"
         }
       ],
       "link": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2025-channel2990/",
-      "linkLabel": "Xem chuyên trang 2025 trên Dân Việt",
+      "linkLabel": "Xem thêm trên Dân Việt",
       "source": {
         "channel": 2990
       }
@@ -99,7 +99,7 @@
         }
       ],
       "link": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2024-channel2891/",
-      "linkLabel": "Xem chuyên trang 2024 trên Dân Việt",
+      "linkLabel": "Xem thêm trên Dân Việt",
       "source": {
         "channel": 2891
       }
@@ -113,7 +113,7 @@
       "date": "Tối 13/10/2023",
       "location": "Nhà hát Lớn Hà Nội",
       "cover": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/11/1-1697005486876107826848-312-110-1333-1744-crop-16970055654021808611157-72-0-1021-1518-crop-16970085197171332156553.jpg",
-      "summary": "Tôn vinh và trao danh hiệu cho 100 Nông dân Việt Nam xuất sắc, biểu dương 63 Hợp tác xã nông nghiệp tiêu biểu toàn quốc. Lễ tôn vinh diễn ra tối 13/10/2023 tại Nhà hát Lớn (trực tiếp VTV2); Diễn đàn Nông dân Quốc gia lần thứ VIII bàn về phát triển kinh tế tập thể trong nông nghiệp.",
+      "summary": "Tôn vinh và trao danh hiệu cho 100 Nông dân Việt Nam xuất sắc, biểu dương 63 Hợp tác xã nông nghiệp tiêu biểu toàn quốc. Lễ tôn vinh diễn ra tối 13/10/2023 tại Nhà hát Lớn (trực tiếp VTV); Diễn đàn Nông dân Quốc gia lần thứ VIII bàn về phát triển kinh tế tập thể trong nông nghiệp.",
       "stats": [
         {
           "value": 100,
@@ -132,7 +132,7 @@
         }
       ],
       "link": "https://danviet.vn/T%E1%BB%B1+h%C3%A0o+N%C3%B4ng+d%C3%A2n+Vi%E1%BB%87t+Nam+2023-tag/",
-      "linkLabel": "Xem chủ đề 2023 trên Dân Việt",
+      "linkLabel": "Xem thêm trên Dân Việt",
       "source": {
         "channel": null,
         "tags": [
@@ -157,7 +157,7 @@
       "date": "Tối 14/10/2022",
       "location": "Nhà hát Lớn Hà Nội",
       "cover": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/7/29/nong-dan-viet-nam-xuat-sac-2022-16590844317672133563244-0-0-1250-2000-crop-16590846714231743601433.jpeg",
-      "summary": "Dấu mốc 10 năm chương trình Tự hào Nông dân Việt Nam. Năm đầu tiên danh hiệu được trao cho 100 Nông dân Việt Nam xuất sắc thay vì 63 như các năm trước. Lễ tôn vinh diễn ra tối 14/10/2022 tại Nhà hát Lớn Hà Nội, truyền hình trực tiếp trên VTV1.",
+      "summary": "Dấu mốc 10 năm chương trình Tự hào Nông dân Việt Nam. Năm đầu tiên danh hiệu được trao cho 100 Nông dân Việt Nam xuất sắc thay vì 63 như các năm trước. Lễ tôn vinh diễn ra tối 14/10/2022 tại Nhà hát Lớn Hà Nội, truyền hình trực tiếp trên VTV.",
       "stats": [
         {
           "value": 100,
@@ -176,7 +176,7 @@
         }
       ],
       "link": "https://danviet.vn/100-nong-dan-viet-nam-xuat-sac-2022-channel2715/",
-      "linkLabel": "Xem chuyên trang 2022 trên Dân Việt",
+      "linkLabel": "Xem thêm trên Dân Việt",
       "source": {
         "channel": 2715
       }

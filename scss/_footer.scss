@@ -2,7 +2,7 @@
 
 .footer {
     position: relative;
-    padding: 60px 0 32px;
+    padding: 28px 0;
     background-color: $green-950;
     border-top: 1px solid $color-border;
     text-align: center;
@@ -52,9 +52,9 @@
     }
 
     &__copy {
-        margin-top: 32px;
-        padding-top: 20px;
-        border-top: 1px solid rgba($gold-500, 0.15);
+        // Footer giờ chỉ còn dòng bản quyền: không cần khoảng cách/đường kẻ phía trên
+        margin-top: 0;
+        padding-top: 0;
         font-size: 0.875rem;
         color: rgba($cream, 0.5);
     }
