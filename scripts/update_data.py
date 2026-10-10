@@ -225,8 +225,13 @@ def load_previous():
     return {e["year"]: e for e in json.loads(s[s.index(k) + len(k):].rstrip().rstrip(";"))}
 
 
+def source_key(src):
+    return f"channel:{src['channel']}" if src.get("channel") else "tags"
+
+
 def build_event(meta, articles, highlights):
     ev = {k: v for k, v in meta.items() if k not in ("source", "special")}
+    ev["sourceKey"] = source_key(meta["source"])
     if meta.get("special"):
         ev["special"] = True
     ev["articles"] = [{
@@ -260,12 +265,20 @@ def main():
 
         prev = previous.get(year)
         prev_count = len(prev["articles"]) if prev else 0
-        if not items or (prev_count and len(items) < prev_count * 0.5):
-            msg = f"{year}: lấy được {len(items)} bài (lần trước {prev_count}) -> giữ dữ liệu cũ"
+        # Vừa đổi nguồn (vd. từ gom theo tag sang chủ đề mới): số bài khác hẳn là bình thường,
+        # chỉ giữ dữ liệu cũ khi nguồn mới chưa có bài nào.
+        same_source = prev is not None and prev.get("sourceKey") == source_key(src)
+        if not items or (same_source and prev_count and len(items) < prev_count * 0.5):
+            msg = f"{year}: lấy được {len(items)} bài (lần trước {prev_count}) -> giữ bài cũ"
             print("  ! " + msg)
             problems.append(msg)
             if prev:
-                events.append(prev)
+                # Giữ danh sách bài + link của nguồn cũ; nội dung khác vẫn theo data/events.json
+                ev = build_event(meta, prev["articles"], cfg.get("highlights", {}))
+                ev["sourceKey"] = prev.get("sourceKey", "")
+                if not same_source:
+                    ev["link"] = prev.get("link", ev.get("link"))
+                events.append(ev)
             continue
 
         enrich(items, cache)

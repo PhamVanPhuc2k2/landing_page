@@ -37,6 +37,7 @@ window.EVENTS = [
     ],
     "link": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-channel3095/",
     "linkLabel": "Xem thêm trên Dân Việt",
+    "sourceKey": "channel:3095",
     "special": true,
     "articles": [
       {
@@ -980,6 +981,7 @@ window.EVENTS = [
     ],
     "link": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2025-channel2990/",
     "linkLabel": "Xem thêm trên Dân Việt",
+    "sourceKey": "channel:2990",
     "articles": [
       {
         "id": "1372457",
@@ -1652,6 +1654,7 @@ window.EVENTS = [
     ],
     "link": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2024-channel2891/",
     "linkLabel": "Xem thêm trên Dân Việt",
+    "sourceKey": "channel:2891",
     "articles": [
       {
         "id": "61672",
@@ -2189,6 +2192,7 @@ window.EVENTS = [
     ],
     "link": "https://danviet.vn/T%E1%BB%B1+h%C3%A0o+N%C3%B4ng+d%C3%A2n+Vi%E1%BB%87t+Nam+2023-tag/",
     "linkLabel": "Xem thêm trên Dân Việt",
+    "sourceKey": "",
     "articles": [
       {
         "id": "1406563",
@@ -3122,6 +3126,7 @@ window.EVENTS = [
     ],
     "link": "https://danviet.vn/100-nong-dan-viet-nam-xuat-sac-2022-channel2715/",
     "linkLabel": "Xem thêm trên Dân Việt",
+    "sourceKey": "channel:2715",
     "articles": [
       {
         "id": "830599",

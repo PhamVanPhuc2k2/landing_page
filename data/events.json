@@ -131,21 +131,10 @@
           "label": "Bài báo tư liệu"
         }
       ],
-      "link": "https://danviet.vn/T%E1%BB%B1+h%C3%A0o+N%C3%B4ng+d%C3%A2n+Vi%E1%BB%87t+Nam+2023-tag/",
+      "link": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2023-channel3099/",
       "linkLabel": "Xem thêm trên Dân Việt",
       "source": {
-        "channel": null,
-        "tags": [
-          "Tự hào Nông dân Việt Nam 2023",
-          "Nông dân Việt Nam xuất sắc 2023",
-          "nông dân xuất sắc 2023",
-          "Nông dân Việt Nam xuất sắc"
-        ],
-        "titlePatterns": [
-          "tự hào nông dân việt nam 2023",
-          "nông dân (việt nam )?xuất sắc (năm )?2023"
-        ],
-        "since": "2023-01-01"
+        "channel": 3099
       }
     },
     {
