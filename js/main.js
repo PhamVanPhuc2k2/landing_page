@@ -1,5 +1,12 @@
 (function () {
-    var PAGE_SIZE = 6; // số bài hiện mỗi lần, đồng nhất các năm
+    // Số bài hiện mỗi lần (ban đầu và mỗi lần bấm "Xem thêm"), đồng nhất các năm
+    var PAGE_SIZE = 6;
+    var PAGE_SIZE_MOBILE = 2;
+    var mobileQuery = window.matchMedia("(max-width: 767px)"); // cùng mốc $bp-sm trong SCSS
+
+    function pageSize() {
+        return mobileQuery.matches ? PAGE_SIZE_MOBILE : PAGE_SIZE;
+    }
     var site = window.SITE || {};
     var events = window.EVENTS || [];
 
@@ -30,11 +37,10 @@
     }
 
     function renderArticle(a) {
-        var meta = [a.location, a.date].filter(Boolean).map(esc).join(" · ");
         return '<a class="card article-card reveal-card" href="' + esc(a.url) + '" target="_blank" rel="noopener">' +
             '<div class="article-card__thumb">' + renderThumb(a.img) + '</div>' +
             '<div class="article-card__body">' +
-                '<div class="article-card__source"><strong>Dân Việt</strong><span>' + meta + '</span></div>' +
+                '<div class="article-card__source"><strong>Dân Việt</strong></div>' +
                 '<h4 class="article-card__title">' + esc(a.title) + '</h4>' +
                 (a.sapo ? '<p class="article-card__sapo">' + esc(a.sapo) + '</p>' : '') +
                 '<span class="article-card__link">Đọc trên Dân Việt →</span>' +
@@ -166,7 +172,7 @@
                 grid.innerHTML = "";
                 shown = 0;
             }
-            var next = list.slice(shown, shown + PAGE_SIZE);
+            var next = list.slice(shown, shown + pageSize());
             grid.insertAdjacentHTML("beforeend", next.map(renderArticle).join(""));
             observeReveal(grid);
             shown += next.length;
