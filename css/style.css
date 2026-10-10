@@ -1962,6 +1962,7 @@ a:focus {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+  padding: 0.45em 0 0.1em;
   background: linear-gradient(180deg, #f3dca0 0%, #d4a64a 45%, #b08433 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -2155,7 +2156,8 @@ a:focus {
   color: #f3dca0;
 }
 .hero__title {
-  margin-top: 24px;
+  margin-top: 0;
+  padding: 0.45em 0 0.1em;
   font-family: "Playfair Display", "Be Vietnam Pro", serif;
   max-width: 1120px;
   margin-left: auto;
@@ -2996,6 +2998,7 @@ html.intro .curtain {
   font-size: clamp(1.75rem, 4vw, 3rem);
   font-weight: 800;
   text-transform: uppercase;
+  padding: 0.45em 0 0.1em;
   background: linear-gradient(180deg, #f3dca0 0%, #d4a64a 45%, #b08433 100%);
   -webkit-background-clip: text;
   background-clip: text;

@@ -294,6 +294,7 @@ html.intro .curtain {
     font-size: clamp(1.75rem, 4vw, 3rem);
     font-weight: 800;
     text-transform: uppercase;
+    padding: 0.45em 0 0.1em; // chừa chỗ cho dấu chồng của chữ hoa tiếng Việt
     background: $gradient-gold;
     -webkit-background-clip: text;
     background-clip: text;

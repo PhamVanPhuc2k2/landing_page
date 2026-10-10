@@ -9,6 +9,9 @@
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    // Chữ hoa có 2 dấu chồng (Ỗ, Ẫ, Ể…) cao vượt khung dòng; background-clip: text chỉ tô trong khung
+    // nên phải chừa đệm phía trên, không thì dấu ngã/hỏi bị mất ("CHUỖI" thành "CHUÔI")
+    padding: 0.45em 0 0.1em;
     background: $gradient-gold;
     -webkit-background-clip: text;
     background-clip: text;
