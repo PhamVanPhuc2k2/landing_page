@@ -1,25 +1,16 @@
 /**
- * Nội dung landing page.
- * Nguồn bài viết (Báo Điện tử Dân Việt):
- *  - 2026: chuyên trang channel3095 · 2025: channel2990 · 2024: channel2891 · 2022: channel2715
- *  - 2023: chưa có chuyên trang — gồm các bài có cụm "Tự hào Nông dân Việt Nam 2023" hoặc
- *    "Nông dân (Việt Nam) xuất sắc 2023" trong tiêu đề (danh sách để tạo chủ đề 2023 trên Dân Việt).
- *
- * Mỗi sự kiện: year, label, kicker, title, date, location, cover, summary,
- *   stats [{ value, suffix, label }], link, linkLabel, articleCount,
- *   featured [{ tag, highlight, title, sapo, img, url }],
- *   articles [{ id, title, url, img, sapo, category, location, date }]
+ * TỰ ĐỘNG TẠO bởi scripts/update_data.py — không sửa tay file này.
+ * Sửa nội dung từng năm ở data/events.json; bài viết lấy từ các chủ đề trên Dân Việt.
  */
 window.SITE = {
-    kicker: "Lưu trữ truyền thông 5 năm thường niên (2022 – 2026)",
-    title: "Hành Trình Tôn Vinh Nông Dân & Đổi Mới Nông Nghiệp Việt Nam",
-    desc: "Tổng hợp toàn diện chuỗi sự kiện thường niên do Báo Điện tử Dân Việt tổ chức qua 5 năm. Mỗi năm gắn liền với một bước chuyển dịch lớn của nông nghiệp nông thôn Việt Nam."
+    "kicker": "Lưu trữ truyền thông 5 năm thường niên (2022 – 2026)",
+    "title": "Hành Trình Tôn Vinh Nông Dân & Đổi Mới Nông Nghiệp Việt Nam",
+    "desc": "Tổng hợp toàn diện chuỗi sự kiện thường niên do Báo Điện tử Dân Việt tổ chức qua 5 năm. Mỗi năm gắn liền với một bước chuyển dịch lớn của nông nghiệp nông thôn Việt Nam."
 };
 
 window.EVENTS = [
   {
     "year": 2026,
-    "special": true,
     "label": "2026",
     "kicker": "Chương trình Tự hào Nông dân Việt Nam • 40 năm Đổi mới (1986 – 2026)",
     "title": "Nông Dân Việt Nam Xuất Sắc 40 Năm Đổi Mới",
@@ -46,33 +37,7 @@ window.EVENTS = [
     ],
     "link": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-channel3095/",
     "linkLabel": "Xem Channel 3095 trên Dân Việt",
-    "featured": [
-      {
-        "tag": "Quảng Ngãi • 2 lần vinh danh",
-        "highlight": "Doanh thu 9 tỷ/năm",
-        "title": "Lần thứ 2 được vinh danh “Nông dân Việt Nam xuất sắc”, một người Quảng Ngãi vẫn “phong độ cá to, tôm nhí”",
-        "sapo": "Ông Đỗ Văn Được (sinh 1975), tỷ phú Quảng Ngãi, nông dân phường Sa Huỳnh, nuôi cá lồng bè kiêm chủ vựa kinh doanh tôm hùm nhí với lợi nhuận trên 2 tỷ đồng/năm.",
-        "img": "https://i.ex-cdn.com/danviet.vn/files/news/2026/10/08/anh-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-giu-phong-do-trong-san-xuat-nguoi-nay-o-quang-ngai-lan-thu-2-duoc-vinh-danh-5-1417.jpg",
-        "url": "https://danviet.vn/lan-thu-2-duoc-vinh-danh-nong-dan-viet-nam-xuat-sac-mot-nguoi-quang-ngai-van-phong-do-ca-to-tom-nhi-the-nay-day-d1465645.html"
-      },
-      {
-        "tag": "Sự kiện trọng thể",
-        "highlight": "Tối 12/10 • VTV",
-        "title": "Lễ Tôn vinh và trao Danh hiệu cho 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới sẽ được tổ chức tối 12/10",
-        "sapo": "Ban Tổ chức chính thức công bố chuỗi hoạt động và danh sách 96 Nông dân Việt Nam xuất sắc năm 2026, được truyền hình trực tiếp trên sóng Đài Truyền hình Việt Nam.",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/08/tu-hao-ndvn-0832.jpg",
-        "url": "https://danviet.vn/le-ton-vinh-va-trao-danh-hieu-cho-96-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-se-duoc-to-chuc-vao-toi-12-10-d1465006.html"
-      },
-      {
-        "tag": "Kỷ lục ấn tượng",
-        "highlight": "Doanh thu trăm tỷ",
-        "title": "10 kỷ lục ấn tượng của 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới",
-        "sapo": "Sự bứt phá ngoạn mục của các mô hình kinh tế nông thôn đạt doanh thu hàng trăm tỷ đồng, lợi nhuận hàng chục tỷ và giải quyết việc làm cho hàng nghìn lao động.",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/06/145459thiet-ke-chua-co-ten-1454.png",
-        "url": "https://danviet.vn/10-ky-luc-an-tuong-cua-96-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1465101.html"
-      }
-    ],
-    "articleCount": 101,
+    "special": true,
     "articles": [
       {
         "id": "1465667",
@@ -80,7 +45,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/40-nam-doi-moi-tu-san-xuat-nho-le-den-lam-kinh-te-bai-ban-nong-dan-thai-nguyen-thay-doi-ra-sao-d1465667.html",
         "img": "https://i.ex-cdn.com/danviet.vn/files/content/2026/10/08/1526061788702547334_1497953192519677363_1044509912031565828_4b9aa6cbbd846ef1655809aaf6adcf67-1525.jpg",
         "sapo": "Sau 40 năm Đổi mới, nông dân Thái Nguyên ngày càng chú trọng tính toán chi phí, chất lượng và đầu ra sản phẩm thay vì chỉ quan tâm đến sản lượng. Sự thay đổi này được thể hiện qua việc ứng dụng khoa học kỹ thuật, liên kết sản xuất, xây dựng thương hiệu và tiếp cận thị trường.",
-        "category": "Hành trình 40 năm",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "09/10/2026"
       },
@@ -90,7 +55,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/dat-nuoc-sau-40-nam-doi-moi-tu-tru-do-quoc-gia-den-xu-menh-vuon-tam-the-gioi-cua-nong-nghiep-viet-nam-d1465828.html",
         "img": "https://t.ex-cdn.com/danviet.vn/512w/files/news/2026/10/09/xuat-khau-0952.png",
         "sapo": "Sau 40 năm Đổi mới và phát triển, con đường đi của kinh tế Việt Nam không chỉ được đo bằng tốc độ tăng trưởng GDP mà bằng cả quá trình cải cách thể chế liên tục. Những thay đổi tư duy kinh tế đã giúp Việt Nam thay da đổi thịt hàng ngày và trở thành hình mẫu phát triển trong nhiều ngành, lĩnh vực, nhất là trong thay đổi giá trị và vai trò ngành nông nghiệp Việt Nam.",
-        "category": "Hành trình 40 năm",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "09/10/2026"
       },
@@ -100,7 +65,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/pho-chu-tich-hoi-nong-dan-tinh-dong-thap-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-ngay-cang-chuyen-nghiep-hon-d1465664.html",
         "img": "https://t.ex-cdn.com/danviet.vn/512w/files/content/2026/10/08/1522551767105642698_7795239697681310476_7795239697681310476_de11bcd5346dc51d2249d591d91334dd-1522.jpg",
         "sapo": "Ông Phạm Văn Toàn, Phó Chủ tịch Hội Nông dân tỉnh Đồng Tháp chia sẻ, những nông dân được vinh danh 'Nông dân Việt Nam xuất sắc 40 năm Đổi mới' không chỉ giỏi sản xuất, kinh doanh mà đang từng bước trở thành những nông dân chuyên nghiệp. Đây cũng là nền tảng để Đồng Tháp triển khai Đề án xây dựng người nông dân chuyên nghiệp giai đoạn 2026–2030.",
-        "category": "Chính sách & Chuyên gia",
+        "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "09/10/2026"
       },
@@ -110,7 +75,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/pho-chu-tich-hoi-nong-dan-son-la-ton-vinh-mot-nong-dan-xuat-sac-cung-chinh-la-lan-toa-mot-cach-lam-d1465576.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/08/38-0945.jpg",
         "sapo": "Tôn vinh một nông dân tiêu biểu cũng chính là lan tỏa một cách làm, một tinh thần và một động lực để nhiều nông dân khác cùng đổi mới', ông Bạc Cầm Khuyên, Phó Chủ tịch Hội Nông dân tỉnh Sơn La nhấn mạnh khi nói về ý nghĩa chương trình 'Tự hào Nông dân Việt Nam 40 năm Đổi mới năm 2026'.",
-        "category": "Chính sách & Chuyên gia",
+        "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "09/10/2026"
       },
@@ -120,8 +85,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/lan-thu-2-duoc-vinh-danh-nong-dan-viet-nam-xuat-sac-mot-nguoi-quang-ngai-van-phong-do-ca-to-tom-nhi-the-nay-day-d1465645.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/10/08/anh-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-giu-phong-do-trong-san-xuat-nguoi-nay-o-quang-ngai-lan-thu-2-duoc-vinh-danh-5-1417.jpg",
         "sapo": "Một tỷ phú Quảng Ngãi lần thứ 2 được vinh danh 'Nông dân Việt Nam xuất sắc vẫn phong độ cá to cá lớn thế này đây. Đó là ông Đỗ Văn Được (sinh 1975), tỷ phú Quảng Ngãi, nông dân phường Sa Huỳnh, 'ông chủ' nuôi cá lồng bè, kiêm 'chủ vựa' kinh doanh tôm hùm nhí, với tổng doanh thu 9 tỷ đồng/năm và lợi nhuận trên 2 tỷ đồng/năm. Năm 2026, ông Đỗ Văn Được lần thứ 2 được vinh danh Nông dân Việt Nam xuất sắc tại Chương trình Tự hào Nông dân Việt Nam 40 năm Đổi mới.",
-        "category": "Gương mặt Điển hình",
-        "location": "Quảng Ngãi",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "08/10/2026"
       },
       {
@@ -130,7 +95,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-ha-noi-la-mot-nu-ty-phu-trong-nam-dong-trung-ha-thao-nuoi-ga-d1465644.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/08/nong-dan-viet-nam-xuat-sac-4-1421.jpg",
         "sapo": "Một nữ tỷ phú trồng nấm gì, nuôi gà kiểu nào ở Hà Nội, cả làng phục lăn, là Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026. Trở lại thăm trang trại nuôi gà quy mô lớn của nữ tỷ phú nông nghiệp Hà Nội, là Nông dân Việt Nam xuất sắc 40 năm Đổi mới–năm 2026 Nguyễn Thị Hồng (xã Dân Hòa, TP Hà Nội) sau 5 năm kể từ ngày chị được tôn vinh Nông dân Việt Nam xuất sắc năm 2021, mới thấy sự phát triển lớn mạnh của thương hiệu nấm đông trùng hạ thảo, mà còn là một hướng đi hoàn toàn mới: mô hình nông nghiệp tuần hoàn khép kín, không rác thải.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "08/10/2026"
       },
@@ -140,7 +105,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/pgs-ts-dai-bieu-quoc-hoi-tran-hoang-ngan-bai-hoc-tu-khoan-10-va-chia-khoa-ve-the-che-de-nong-nghiep-but-pha-d1465600.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/08/202608221526322660_1787387134805_7138977550031328523_g3587189976484290001_ddc5e40582cd16154cbf2b714c38aa6b-1-1151.jpg",
         "sapo": "PGS. TS, Đại biểu Quốc hội Trần Hoàng Ngân cho rằng, bài học từ Khoán 10 trong nông nghiệp cho thấy nếu có thể chế phù hợp, lĩnh vực này có thể tạo ra bước phát triển lớn. Trong bối cảnh hiện nay, nông nghiệp cần thu hút doanh nghiệp lớn và đầu tư mạnh cho hạ tầng để hướng tới tăng trưởng hai con số.",
-        "category": "Chính sách & Chuyên gia",
+        "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "08/10/2026"
       },
@@ -150,7 +115,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/chang-duong-40-nam-doi-moi-chung-kien-su-xuat-hien-cua-nhieu-nong-dan-xuat-sac-d1465616.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/08/122815truong-tq-1226.jpg",
         "sapo": "Trước thềm Lễ tôn vinh 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới, ông Trương Thành Quang - Phó Chủ tịch Hội Nông dân TP.HCM đã chia sẻ với Báo Dân Việt về những thành tựu nổi bật của nông dân thành phố, phong trào đoàn kết giúp nhau làm giàu và những cơ hội phát triển nông nghiệp trong không gian mới sau sáp nhập.",
-        "category": "Hành trình 40 năm",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "08/10/2026"
       },
@@ -180,9 +145,19 @@ window.EVENTS = [
         "url": "https://danviet.vn/chu-tich-hoi-nong-dan-an-giang-cac-nong-dan-viet-nam-xuat-sac-la-hat-nhan-lan-toa-kinh-nghiem-lam-giau-d1465305.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/10/07/img_7360-1027.jpeg",
         "sapo": "Theo ông Nguyễn Văn Cọp, Chủ tịch Hội Nông dân tỉnh An Giang, chương trình “Tự hào Nông dân Việt Nam” qua nhiều năm đã trở thành một hoạt động có ý nghĩa, góp phần tôn vinh vai trò, vị thế của người nông dân trong thời kỳ mới.",
-        "category": "Chính sách & Chuyên gia",
+        "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "08/10/2026"
+      },
+      {
+        "id": "1465256",
+        "title": "Chủ tịch Hội Nông dân Bắc Ninh Nguyễn Hoàng Trung: 40 năm Đổi mới, nhiều nông dân đã thành “doanh nhân nông nghiệp”",
+        "url": "https://danviet.vn/chu-tich-hoi-nong-dan-bac-ninh-nguyen-hoang-trung-40-nam-doi-moi-nhieu-nong-dan-da-thanh-doanh-nhan-nong-nghiep-d1465256.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/07/122120anh-nguyen-hoang-trung-1220.png",
+        "sapo": "Theo ông Nguyễn Hoàng Trung, Chủ tịch Hội Nông dân thành phố Bắc Ninh, dấu ấn lớn của 40 năm Đổi mới không chỉ nằm ở sự phát triển của nông nghiệp, mà còn ở sự chuyển mình của chính người nông dân. Từ sản xuất dựa nhiều vào kinh nghiệm, nhiều nông dân nay đã trở thành những “doanh nhân nông nghiệp” năng động, làm chủ khoa học - công nghệ, thị trường và thương hiệu.",
+        "category": "Diễn đàn & Chính sách",
+        "location": "",
+        "date": "07/10/2026"
       },
       {
         "id": "1465101",
@@ -195,14 +170,14 @@ window.EVENTS = [
         "date": "08/10/2026"
       },
       {
-        "id": "1465256",
-        "title": "Chủ tịch Hội Nông dân Bắc Ninh Nguyễn Hoàng Trung: 40 năm Đổi mới, nhiều nông dân đã thành “doanh nhân nông nghiệp”",
-        "url": "https://danviet.vn/chu-tich-hoi-nong-dan-bac-ninh-nguyen-hoang-trung-40-nam-doi-moi-nhieu-nong-dan-da-thanh-doanh-nhan-nong-nghiep-d1465256.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/07/122120anh-nguyen-hoang-trung-1220.png",
-        "sapo": "Theo ông Nguyễn Hoàng Trung, Chủ tịch Hội Nông dân thành phố Bắc Ninh, dấu ấn lớn của 40 năm Đổi mới không chỉ nằm ở sự phát triển của nông nghiệp, mà còn ở sự chuyển mình của chính người nông dân. Từ sản xuất dựa nhiều vào kinh nghiệm, nhiều nông dân nay đã trở thành những “doanh nhân nông nghiệp” năng động, làm chủ khoa học - công nghệ, thị trường và thương hiệu.",
-        "category": "Chính sách & Chuyên gia",
+        "id": "1455907",
+        "title": "Một ông nông dân Đồng Tháp có doanh thu 35 tỷ/năm nhờ nuôi gà kiểu này đây",
+        "url": "https://danviet.vn/mot-ong-nong-dan-dong-thap-co-doanh-thu-35-ty-nam-nho-nuoi-ga-kieu-nay-day-d1455907.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/08/31/2118271788185563742_1918310664192206013_8469663182997053096_5e17f7e9b380e190379eee404f2626f6-2117.jpg",
+        "sapo": "Ông Nguyễn Đức Lữ, phường Đạo Thạnh, tỉnh Đồng Tháp (trước đây thuộc tỉnh Tiền Giang) đã gầy dựng nên một trang trại chăn nuôi gà công nghệ cao trị giá hàng chục tỷ đồng. Ông Nguyễn Đức Lữ được bình chọn là \"Nông dân Việt Nam xuất sắc 40 năm Đổi mới\"-năm 2026.",
+        "category": "Gương mặt điển hình",
         "location": "",
-        "date": "07/10/2026"
+        "date": "03/09/2026"
       },
       {
         "id": "1464997",
@@ -210,8 +185,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/chu-tich-hoi-nong-dan-tay-ninh-noi-ve-nhung-tieu-chi-moi-can-co-cua-nong-dan-viet-nam-xuat-sac-d1464997.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/06/240-nam-doi-moi-0838.jpg",
         "sapo": "Trả lời phỏng vấn báo Dân Việt, ông Nguyễn Thanh Tùng, Uỷ viên BCH Trung ương Hội Nông dân Việt Nam, Phó Chủ tịch Uỷ ban MTTQ tỉnh, Chủ tịch Hội Nông dân tỉnh Tây Ninh cho rằng, sau 40 năm Đổi mới, người nông dân không chỉ biết làm ruộng mà còn biết tính toán hiệu quả, làm chủ sản xuất, liên kết và chinh phục thị trường.",
-        "category": "Chính sách & Chuyên gia",
-        "location": "Tây Ninh",
+        "category": "Diễn đàn & Chính sách",
+        "location": "",
         "date": "07/10/2026"
       },
       {
@@ -220,8 +195,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/tu-canh-dong-den-thi-truong-hanh-trinh-doi-thay-cua-nong-dan-da-nang-sau-40-nam-doi-moi-d1465003.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/06/1-0844.jpg",
         "sapo": "Từ những thửa ruộng manh mún, sản xuất chủ yếu dựa vào kinh nghiệm, sau 40 năm Đổi mới, người nông dân Việt Nam đang chuyển mình mạnh mẽ. Tại TP.Đà Nẵng, sự thay đổi ấy càng rõ nét khi nông dân không chỉ sản xuất nông nghiệp mà từng bước trở thành chủ thể của kinh tế nông thôn, làm du lịch, phát triển OCOP, ứng dụng công nghệ, chuyển đổi số và đưa nông sản vươn ra thị trường.",
-        "category": "Gương mặt Điển hình",
-        "location": "Đà Nẵng",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "06/10/2026"
       },
       {
@@ -230,7 +205,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/chuyen-gia-nguyen-lan-hung-moi-cau-chuyen-nong-dan-viet-nam-xuat-sac-deu-la-tai-lieu-quy-de-phat-trien-nong-thon-d1464570.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/05/2007551786009179115_1785719900663690540_1785719900663690540_4600436c034fe4cc738a1ad34fc0c168-1749-2007.jpg",
         "sapo": "Được lựa chọn từ hàng trăm hồ sơ gửi về chương trình “Tự hào Nông dân Việt Nam”, 96 Nông dân Việt Nam xuất sắc năm 2026 là những gương mặt nông dân tiêu biểu, phản ánh sinh động sức bật của kinh tế nông thôn trên mọi miền Tổ quốc sau 40 năm Đổi mới. Theo chuyên gia Nguyễn Lân Hùng, hành trình làm giàu của những điển hình ấy gợi mở nhiều hướng đi để người nông dân nâng cao thu nhập.",
-        "category": "Chính sách & Chuyên gia",
+        "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "06/10/2026"
       },
@@ -240,8 +215,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-dak-lak-lien-ket-voi-3000-ho-trong-ca-phe-de-lam-ra-loai-ca-phe-nay-d1464638.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/04/img_7345-1553.jpg",
         "sapo": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ Đắk Lắk, bà Nguyễn Thị Phúc Minh đã có hơn 30 năm gắn bó với cây cà phê. Từ một cơ sở thu mua nông sản nhỏ, bà Minh từng bước xây dựng chuỗi liên kết với hơn 3.000 hộ nông dân, hướng đến trồng cà phê an toàn, cà phê sạch, truy xuất nguồn gốc và nâng cao giá trị hạt cà phê địa phương.",
-        "category": "Gương mặt Điển hình",
-        "location": "Đắk Lắk",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "06/10/2026"
       },
       {
@@ -250,8 +225,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-vinh-long-la-nguoi-trong-lua-huu-co-dat-chuan-quoc-te-d1464191.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/05/085716lua-huu-co-chuan-quoc-te-0855.jpg",
         "sapo": "Nhờ trồng lúa hữu cơ đạt chuẩn quốc tế, ông Đoàn Văn Tài ở ấp Kinh, xã Trung Ngãi, tỉnh Vĩnh Long không lo đầu ra, sản lượng gạo làm ra bao nhiêu cũng được doanh nghiệp ký hợp đồng mua hết từ đầu vụ. Ông Tài trở thành một trong 96 gương mặt nhà nông tiêu biểu được bình chọn nhận danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Vĩnh Long",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "05/10/2026"
       },
       {
@@ -260,8 +235,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-gia-lai-la-thuong-binh-nhan-huan-chuong-lao-dong-ban-nuoc-mam-rong-d1463188.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/29/img_3616-0945.jpeg",
         "sapo": "Sau chiến tranh, bà Trần Thị Như Hoa trở về với thương tật 3/4, một mình nuôi 4 con và bắt đầu mưu sinh bằng những chuyến bán nước mắm rong. Hơn 30 năm sau, từ số vốn vay 5 triệu đồng, bà gây dựng thương hiệu nước mắm truyền thống Như Hoa, được trao Huân chương Lao động hạng Ba.",
-        "category": "Gương mặt Điển hình",
-        "location": "Gia Lai",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "05/10/2026"
       },
       {
@@ -270,8 +245,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-lam-dong-trong-ca-phe-trong-tieu-kieu-gi-ma-doanh-thu-170-ty-nam-d1464426.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/03/img_7218-1520.jpg",
         "sapo": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ Lâm Đồng (địa phận huyện Đắk Song, tỉnh Đắk Nông cũ), ông Lưu Như Bính là người tiên phong thay đổi cách làm, trồng cà phê, trồng hồ tiêu từ kiểu trồng, sơ chế truyền thống sang trồng theo hướng hữu cơ, đầu tư máy móc chế biến, sơ chế, cùng hàng trăm nông dân cùng làm ăn khá giả.",
-        "category": "Gương mặt Điển hình",
-        "location": "Lâm Đồng",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "05/10/2026"
       },
       {
@@ -280,7 +255,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/pho-vu-truong-vu-doan-the-nhan-dan-96-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-la-nhung-diem-sang-dan-van-kheo-d1464587.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/04/anh-2-ba-to-nga-1048.jpg",
         "sapo": "Trao đổi với PV Báo điện tử Dân Việt, bà Nguyễn Thị Tố Nga - Phó Vụ trưởng Vụ Đoàn thể nhân dân, Đảng uỷ MTTQ, các đoàn thể Trung ương khẳng định: 96 gương mặt \"Nông dân Việt Nam xuất sắc 40 năm Đổi mới\" chính là minh chứng sống động cho thế hệ nông dân thời đại mới: Dám nghĩ, dám làm, làm chủ khoa học công nghệ và lan tỏa giá trị tích cực cho cộng đồng.",
-        "category": "Chính sách & Chuyên gia",
+        "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "05/10/2026"
       },
@@ -290,8 +265,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-lam-dong-la-chu-giong-tieu-dot-bien-tieu-tung-linh-nang-suat-cao-d1464025.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/02/img_7172-0944.jpg",
         "sapo": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ Lâm Đồng, ông Lê Tùng Linh là người phát hiện và nhân giống cây tiêu đột biến “tiêu Tùng Linh”. Giống tiêu này sinh trưởng khỏe, cho năng suất khoảng 10-20 tấn tiêu khô/1ha nếu được chăm sóc đúng quy trình.",
-        "category": "Gương mặt Điển hình",
-        "location": "Lâm Đồng",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "04/10/2026"
       },
       {
@@ -300,8 +275,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/bien-dong-trung-thanh-mat-ruong-khong-dau-chan-mot-nguoi-an-giang-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1463909.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/01/175246ong-le-thanh-long-1752.jpg",
         "sapo": "Mua 7ha đất ruộng ở vùng phèn úng, từ nhiều người bỏ hoang vì làm lúa liên tục thua lỗ, ông Lê Thanh Long ở An Giang đã kiên trì cải tạo đất, tích lũy từ từng mùa vụ để mở rộng sản xuất. Gần 30 năm sau, ông sở hữu 80ha đất trồng lúa, đưa drone, máy cày, máy gặt… vào đồng ruộng cho thu nhập tiền tỷ mỗi năm, riêng năm 2025 doanh thu đạt hơn 8,5 tỷ đồng, lợi nhuận hơn 5,1 tỷ đồng.",
-        "category": "Gương mặt Điển hình",
-        "location": "An Giang",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "04/10/2026"
       },
       {
@@ -310,8 +285,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/mot-nguoi-phu-tho-coi-con-lon-la-cuc-vang-ong-ty-phu-tung-dap-xe-ba-gac-nay-la-nong-dan-viet-nam-suat-sac-d1464037.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/02/17081930e9959a-2ff9-4e0d-8e47-b9563f018f54-1608.png",
         "sapo": "“Với tôi, con lợn là vàng! Mỗi sớm tinh mơ tôi check-in chuồng nuôi lợn xem đàn lợn ăn uống, khỏe yếu thế nào... Hạnh phúc bắt đầu từ điều giản dị vậy đấy!”, ông Nguyễn Văn Toàn, xã Hy Cương, tỉnh Phú Thọ (địa phận TP Việt Trì cũ)-Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026- cười tươi, nói dí dỏm.",
-        "category": "Gương mặt Điển hình",
-        "location": "Phú Thọ",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "03/10/2026"
       },
       {
@@ -320,18 +295,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-o-bac-ninh-dua-my-chu-thanh-nguon-thu-chinh-thu-nhap-toi-9-trieu-dong-thang-d1463667.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/10/02/my-chu-nam-the-3-2030.jpg",
         "sapo": "Từ nghề phụ lúc nông nhàn, những sợi mỳ gạo Chũ nay trở thành sinh kế của hàng nghìn người dân Thủ Dương, xã Nam Dương, Bắc Ninh. Mỗi năm làng nghề sản xuất khoảng 16.000 tấn mỳ, tạo thu nhập bình quân 8,5-9 triệu đồng/người/tháng. Đằng sau sự chuyển mình ấy có dấu ấn của ông Nguyễn Văn Nam, người được vinh danh “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”.",
-        "category": "Gương mặt Điển hình",
-        "location": "Bắc Ninh",
-        "date": "03/10/2026"
-      },
-      {
-        "id": "1463227",
-        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới ở Tây Ninh, là người 73 tuổi vẫn lái ô tô đi thăm vườn sầu riêng 50ha",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-o-tay-ninh-la-nguoi-73-tuoi-van-lai-o-to-di-tham-vuon-sau-rieng-50ha-d1463227.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/29/img_5630-1110.jpg",
-        "sapo": "Ở tuổi 73, ông Phan Văn Thà (xã Tân Biên, tỉnh Tây Ninh) được công nhận Nông dân Việt Nam xuất sắc 40 năm Đổi mới. Hằng ngày, ông Thà lái ô tô ra thăm vườn, kiểm tra từng khu sầu riêng rộng 50ha. Trước khi có cơ ngơi này, ông đã trải qua hơn 40 năm làm nông, từ trồng cây cao su, mít Thái đến sầu riêng.",
-        "category": "Gương mặt Điển hình",
-        "location": "Tây Ninh",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "03/10/2026"
       },
       {
@@ -340,8 +305,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/tu-chuong-ga-nho-den-doanh-thu-206-ty-dong-mot-nguoi-hai-phong-30-nam-nuoi-ga-nay-la-nong-dan-viet-nam-xuat-sac-d1464139.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/02/a-luong-1444.jpg",
         "sapo": "Từ một trang trại gà giống, ông Phạm Văn Lượng, Chủ tịch HĐQT - Giám đốc Công ty cổ phần Giống gia cầm Lượng Huệ (Hải Phòng), đã phát triển mô hình sản xuất theo chuỗi, cung cấp hàng triệu con gà giống mỗi năm và liên kết với nhiều hộ chăn nuôi. Sau hơn 30 năm gắn bó với nghề, ông vừa được bình chọn là “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Hải Phòng",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "02/10/2026"
       },
       {
@@ -350,8 +315,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-dong-thap-bo-tien-ty-lam-duong-xoa-cau-khi-xay-dung-nong-thon-moi-d1463115.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/01/0816071790817058125_1918310664192206013_8469663182997053096_d7995c0524612b223101bd4642fd7bbf-0814.jpg",
         "sapo": "Ông Lê Văn Hòa, nông dân giàu có ở ấp Tân Quới, xã Phong Hòa, tỉnh Đồng Tháp phất lên thành tỷ phú nông dân nhờ trồng giống nhãn đặc sản. Có điều kiện, ông đóng góp hàng tỷ đồng cùng bà con làm đường, xóa cầu khỉ, góp phần xây dựng nông thôn mới, vùng quê đáng sống. Ông Lê Văn Hòa được bình chọn là \"Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026\".",
-        "category": "Gương mặt Điển hình",
-        "location": "Đồng Tháp",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "02/10/2026"
       },
       {
@@ -360,8 +325,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-vinh-long-la-nguoi-nuoi-tom-the-cong-nghe-cao-lai-40-ty-dong-nam-d1463714.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/10/01/093616nuoi-tom-cong-nghe-cao-2-0933.jpg",
         "sapo": "Nuôi tôm thẻ công nghệ cao trên diện tích 45 ha, ông Đặng Văn Bảy (Bảy An) ở ấp Đại Thôn, xã Thạnh Phong, huyện Thạnh Phú, tỉnh Bến Tre (nay là ấp Đại Thôn, xã Thạnh Phong, tỉnh Vĩnh Long) đạt lợi nhuận khoảng 40 tỷ đồng/năm. Ông Bảy An trở thành một trong 96 gương mặt nhà nông tiêu biểu được bình chọn nhận danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Vĩnh Long",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "02/10/2026"
       },
       {
@@ -370,8 +335,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-bac-lieu-nay-la-ca-mau-ty-phu-nuoi-tom-thanh-cong-d1463500.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/30/1227511790745007012_1490451695551685427_2423669720379595582_6b1a029e5018043b67099d3921efc5ab-1224.jpg",
         "sapo": "Trở thành tỷ phú nhờ vào nghề nuôi tôm, ông Bùi Nghĩa Hiệp (Hai Hiệp) ở ấp Điền Hải, xã Long Điền, tỉnh Cà Mau (địa phận thuộc xã Điền Hải, huyện Đông Hải, tỉnh Bạc Liêu trước đây) vẫn học hỏi kinh nghiệm nuôi tôm tiên tiến trong và ngoài nước. Nuôi tôm mang lại cho ông Hiệp doanh thu lên đến hàng chục tỷ đồng/năm, được bình chọn là Nông dân Việt Nam xuất sắc 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Cà Mau",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "01/10/2026"
       },
       {
@@ -380,8 +345,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/mot-nguoi-thanh-hoa-tung-dap-xe-coc-canh-ban-rong-quoc-hon-quoc-tuy-nay-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1463562.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/30/1790757809571_1497495580962390835_3897307368532049901_28caa97368ca8ad6475b5c87b634f573-1550.jpg",
         "sapo": "Từ chiếc xe đạp cọc cạch chở từng chai nước mắm truyền thống, hũ mắm tôm (thức chấm nhiều người ví như \"quốc hồn quốc túy\" rong ruổi khắp các vùng quê Thanh Hóa, bà Lê Thị Liễu, phường Tĩnh Gia, đã từng bước gây dựng cơ sở chế biến hải sản rộng khoảng 5.000 m², với 7 sản phẩm được công nhận OCOP. Năm 2026, bà Liễu được bình chọn là “Nông dân Việt Nam xuất sắc 40 năm Đổi mới\".",
-        "category": "Gương mặt Điển hình",
-        "location": "Thanh Hóa",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "01/10/2026"
       },
       {
@@ -390,8 +355,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tinh-lam-dong-nguoi-co-co-ngoi-tram-ty-tu-nghe-trong-hoa-lan-d1463121.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/28/img_0115-2123.jpg",
         "sapo": "Ông Phan Thanh Sang được chọn là Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026. Xuất phát từ một thanh niên, nông dân trồng hoa lan hồ điệp, nay, mỗi năm công ty của ông Sang trồng khoảng 1,5 triệu chậu lan hoa lan hồ điệp làm giống và hoa lan hồ điệp thành phẩm, doanh thu khoảng gần 200 tỷ đồng.",
-        "category": "Gương mặt Điển hình",
-        "location": "Lâm Đồng",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "30/09/2026"
       },
       {
@@ -400,9 +365,29 @@ window.EVENTS = [
         "url": "https://danviet.vn/ty-phu-ca-tra-an-giang-voi-18-nam-nguoc-dong-lam-giau-khac-nguoi-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1463137.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/29/img_5982-1222.jpg",
         "sapo": "Câu chuyện của tỷ phú Trần Tấn Thành (SN 1966, trú tại ấp Mỹ Quí, xã Vĩnh Thạnh Trung, tỉnh An Giang) bền bỉ với cách làm giàu từ mô hình nuôi cá tra. Mới đây, với hành trình bền bỉ làm kinh tế và cống hiến cho cộng đồng, ông vinh dự được bình chọn là \"Nông dân Việt Nam xuất sắc 40 năm Đổi mới\"-năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "An Giang",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "30/09/2026"
+      },
+      {
+        "id": "1463227",
+        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới ở Tây Ninh, là người 73 tuổi vẫn lái ô tô đi thăm vườn sầu riêng 50ha",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-o-tay-ninh-la-nguoi-73-tuoi-van-lai-o-to-di-tham-vuon-sau-rieng-50ha-d1463227.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/29/img_5630-1110.jpg",
+        "sapo": "Ở tuổi 73, ông Phan Văn Thà (xã Tân Biên, tỉnh Tây Ninh) được công nhận Nông dân Việt Nam xuất sắc 40 năm Đổi mới. Hằng ngày, ông Thà lái ô tô ra thăm vườn, kiểm tra từng khu sầu riêng rộng 50ha. Trước khi có cơ ngơi này, ông đã trải qua hơn 40 năm làm nông, từ trồng cây cao su, mít Thái đến sầu riêng.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "03/10/2026"
+      },
+      {
+        "id": "1457484",
+        "title": "'Qua cái hạn' của hươu sao, một nông dân Hà Tĩnh nay được vinh danh 'Nông dân Việt Nam xuất sắc 40 năm Đổi mới'",
+        "url": "https://danviet.vn/qua-cai-han-cua-huou-sao-mot-nong-dan-ha-tinh-nay-duoc-vinh-danh-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1457484.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/07/1788745298223_8037550690275722271_8037550690275722271_2d37a9fde74d8127e2bab78f32601829-1500.jpg",
+        "sapo": "Từng chứng kiến giá hươu sao lao dốc từ 50-60 triệu đồng xuống chỉ còn vài trăm nghìn đồng/con, gia đình bà Chu Thị Hồng Hà ở xã Sơn Giang, tỉnh Hà Tĩnh (huyện Hương Sơn cũ) từng đối mặt khoản nợ hơn 700 triệu đồng. \"Cái hạn\" này bà Hồng đã vượt qua. Năm 2026, bà Chu Thị Hồng Hà vinh dự được bình chọn là một trong 96 gương mặt “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”-năm 2026.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "10/09/2026"
       },
       {
         "id": "1462787",
@@ -410,8 +395,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-tung-nghi-khong-the-tru-lai-nay-lam-ba-chu-28ha-o-dak-lak-d1462787.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/27/img_1665-1703.jpg",
         "sapo": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ Đắk Lắk, bà Lê Thị Yến từng có những ngày nghĩ gia đình không thể trụ lại Ea H’Leo vì những cơn sốt rét. Từ 5 sào đất ban đầu, bà kiên trì làm ăn, mở rộng sản xuất và đến nay có 25ha cao su, 3ha cà phê cùng nhà nuôi chim yến.",
-        "category": "Gương mặt Điển hình",
-        "location": "Đắk Lắk",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "28/09/2026"
       },
       {
@@ -420,7 +405,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-lai-chau-lam-che-phai-co-cai-tam-d1462784.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/27/che-ba-nu-5-1631.jpg",
         "sapo": "Qua gần hai thập kỷ kiên trì, nỗ lực, đưa cái tâm đến với từng bản, khu phố trong vùng chè nguyên liệu, bà Phạm Thị Nụ, ở tổ dân phố số 1, phường Tân Phong, tỉnh Lai Châu (trước là bản Cư Nhà La, phường Tân Phong) không chỉ tạo dựng nên một công ty chè với doanh thu gần 60 tỷ đồng/năm, mà còn biến hàng trăm héc-ta chè cằn cỗi thành \"vàng xanh\". Bà Nụ vinh dự được bình chọn là một trong 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "28/09/2026"
       },
@@ -430,8 +415,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-xuat-sac-40-nam-doi-moi-o-phu-tho-ban-linh-vuot-bao-gia-bao-dich-dung-co-nghiep-hon-110-ty-dong-d1462351.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/26/24da8b69-44af-492d-8cf4-549ef2b1d085-0854.png",
         "sapo": "Với ông Bùi Đức Luận (SN 1957, Phú Thọ) – Nông dân Việt Nam xuất sắc 40 năm đổi mới, làm nông không chỉ để mưu sinh mà còn là sự gắn bó với đất đai, cây trồng, vật nuôi. Từ tình yêu ấy, ông đã vượt qua những đợt bão giá, bão dịch, từng bước gây dựng cơ nghiệp triệu đô.",
-        "category": "Gương mặt Điển hình",
-        "location": "Phú Thọ",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "27/09/2026"
       },
       {
@@ -440,8 +425,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-an-giang-bien-5000-cong-dat-phen-thanh-canh-dong-lua-xuat-khau-d1462330.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/25/img_5936-1525.jpg",
         "sapo": "Từ vùng đất trũng phèn từng bị xem là “đất chết”, sau hơn 25 năm, ông Nguyễn Thanh Tuấn đã cùng gia đình cải tạo 5.000 công đất, tương đương 500ha, thành cánh đồng lúa quy mô lớn, có vụ đạt năng suất 10 tấn/ha.",
-        "category": "Gương mặt Điển hình",
-        "location": "An Giang",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "26/09/2026"
       },
       {
@@ -450,8 +435,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tay-ninh-trong-cay-khom-kieu-nay-ma-thu-loi-gan-4-ty-nam-d1462083.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/24/nguyen-van-sau-phuoc-chi-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tay-ninh-trong-khom-tren-dat-phen-thu-loi-gan-4-ty-moi-nam-4-1639.jpg",
         "sapo": "Từ vùng đất phèn, trũng ngập, cây lúa nhiều phen thất bát, ông Nguyễn Văn Sáu ở xã Phước Chỉ, tỉnh Tây Ninh đã mạnh dạn chuyển sang trồng khóm. Không chỉ thay đổi cây trồng, ông còn tự cải tạo đất, làm đê bao, thay đổi cách lên líp, tăng mật độ cây và từng bước hình thành vùng khóm hơn 60ha.",
-        "category": "Gương mặt Điển hình",
-        "location": "Tây Ninh",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "25/09/2026"
       },
       {
@@ -460,8 +445,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-dong-nai-nhin-thay-mo-vang-o-trai-mit-non-vut-va-vat-ngoai-vuon-d1461505.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/22/nguyen-viet-vi-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-dong-nai-nhin-thay-mo-vang-trong-trai-mit-non-bi-vut-ngoai-vuon-2-1637.jpg",
         "sapo": "Nhiều trái mít non thường bị hái bỏ để cây nuôi trái lớn. Với nhiều nhà vườn, đó là phần bỏ đi. Nhưng với ông Nguyễn Viết Vị - Giám đốc HTX TM-DV Nông nghiệp Phước Thiện ở ấp Bàu Vàng, xã Tân Quan, TP Đồng Nai (tỉnh Bình Phước trước đây), những trái mít non ấy lại trở thành nguyên liệu để chế biến thịt thực vật, làm chả lụa, chả giò, mít kho hạt điều...; mở ra 1 hướng làm giàu mới cho nông dân và HTX.",
-        "category": "Gương mặt Điển hình",
-        "location": "Bình Phước",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "24/09/2026"
       },
       {
@@ -470,8 +455,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-bac-ninh-bien-phan-lon-phan-vit-thanh-tien-thu-2-ty-dong-nam-d1461419.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/23/013846hoang-dinh-que-1-0138.png",
         "sapo": "Từ một người nông dân từng dựng lán dưới chân núi Cô Tiên, ông Hoàng Đình Quê ở phường Tân An, tỉnh Bắc Ninh đã gây dựng trang trại tuần hoàn rộng 4,5ha, trị giá khoảng 45 tỷ đồng. Đặc biệt, phân lợn, phân vịt tại trang trại không bị bỏ đi mà được xử lý để nuôi trùn quế, làm phân bón, nuôi cá..., tạo thành vòng tuần hoàn giúp ông thu khoảng 2 tỷ đồng/năm. Năm 2026, ông được tôn vinh là Nông dân Việt Nam xuất sắc 40 năm Đổi mới và Nhà Khoa học của Nhà nông.",
-        "category": "Gương mặt Điển hình",
-        "location": "Bắc Ninh",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "24/09/2026"
       },
       {
@@ -480,8 +465,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-o-ca-mau-la-vua-nuoi-con-dac-san-lai-rong-hon-5-ty-dong-nam-d1461386.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/22/1548071790057013732_1490451695551685427_2423669720379595582_4a619a80edd14722d46e6c4818b60ba7-1537.jpg",
         "sapo": "Ông Nguyễn Hữu Ánh (69 tuổi, ngụ phường Tân Thành, tỉnh Cà Mau) vừa được Trung ương Hội NDVN bình chọn trao danh hiệu \"Nông dân Việt Nam xuất sắc 40 năm Đổi mới năm 2026\". Đây là lần thứ 3, ông \"vua\" cá chình - người thu lãi ròng hơn 5 tỷ đồng mỗi năm vinh dự nhận được danh hiệu này.",
-        "category": "Gương mặt Điển hình",
-        "location": "Cà Mau",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "23/09/2026"
       },
       {
@@ -490,7 +475,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-lai-chau-thu-tien-ty-tu-nuoi-trong-loai-nam-nay-d1461317.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/21/huy-cuong-2-2202.jpg",
         "sapo": "Trải qua vô số lần thất bại, cuối cùng ông Đào Huy Cương ở tổ dân phố số 6, phường Đoàn Kết, tỉnh Lai Châu (trước thuộc tổ 5, phường Quyết Tiến, thành phố Lai Châu) cũng mỉm cười với thành công từ nghề nuôi trồng nấm đông trùng hạ thảo. Mỗi năm, ông Cương thu từ 5 – 7 tỷ đồng từ bán các sản phẩm nấm đông trùng hạ thảo ra thị trường. Ông vinh dự được bình chọn là một trong 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "23/09/2026"
       },
@@ -500,8 +485,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-phu-tho-tu-soi-mi-que-nha-den-giac-mo-the-gioi-biet-den-hung-lo-d1461383.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/22/1790054009468_1505870955534806835_7769722468477806085_375d9d7fe84a467a726b0190bb4bacb4-1217.jpg",
         "sapo": "Từ nghề làm mì truyền thống của quê hương, anh Cao Đăng Duy – Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ Phú Thọ – đã cùng HTX Mì gạo Hùng Lô đưa sản phẩm đạt OCOP 5 sao, xuất khẩu sang Nhật Bản, Đài Loan. Với anh, khát vọng lớn hơn là để mỗi gói mì đi xa đều mang theo cái tên Hùng Lô đến với người tiêu dùng trong và ngoài nước.",
-        "category": "Gương mặt Điển hình",
-        "location": "Phú Thọ",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "23/09/2026"
       },
       {
@@ -510,7 +495,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/tung-ngheo-den-noi-khong-ai-dam-cho-vay-ba-nong-dan-cao-bang-lam-gi-ma-thanh-nong-dan-vie-nam-xuat-sac-d1460584.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/18/7-2223.jpg",
         "sapo": "Từng nghèo đến mức không ai dám cho vay tiền, vợ chồng bà Trần Thị Chung, ở tổ dân phố Hoàng Tung, phường Thục Phán, tỉnh Cao Bằng, phải mượn 50kg thóc của HTX để chống đói. Từ hai bàn tay trắng, sau nhiều năm gây dựng kinh tế, gia đình bà có cơ ngơi trị giá hàng chục tỷ đồng. Năm 2026, bà Chung được vinh danh là Nông dân Việt Nam xuất sắc 40 năm Đổi mới.",
-        "category": "Hành trình 40 năm",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "22/09/2026"
       },
@@ -520,8 +505,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-gia-lai-chu-trang-trai-thu-tien-ty-tu-mo-hinh-da-cay-da-con-d1460877.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/20/img_3201-0839.jpeg",
         "sapo": "Từ trang trại heo, vịt đến vườn dâu, cà phê, chị Nguyễn Thị Thùy Trang (46 tuổi, xã Mang Yang, tỉnh Gia Lai) xây dựng mô hình sản xuất tổng hợp, cho lợi nhuận hơn 4,4 tỷ đồng, trong năm 2025. Chị vừa được vinh danh Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Gia Lai",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "22/09/2026"
       },
       {
@@ -530,27 +515,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-nguoi-co-lao-o-tuyen-quang-ban-mat-ong-bac-ha-kieu-gi-ma-chot-don-tot-the-d1460438.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/18/1-1304.jpg",
         "sapo": "Lưu Thị Hòa bán được mật ong bạc hà cao nguyên đá Đồng Văn, tỉnh Tuyên Quang (địa phận Hà Giang cũ), chị còn xây dựng thương hiệu, chế biến sâu, kể câu chuyện hấp dẫn về loại mật này. Nữ nông dân người Cờ Lao đã trở thành một trong 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026.",
-        "category": "Hành trình 40 năm",
-        "location": "Tuyên Quang",
-        "date": "21/09/2026"
-      },
-      {
-        "id": "1460880",
-        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ TP.HCM: Từ 5 con bò sữa thành chủ cơ sở làm sữa chua nổi tiếng",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tphcm-tu-5-con-bo-sua-thanh-chu-co-so-lam-sua-chua-noi-tieng-d1460880.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/20/093412img_5605-0858.jpg",
-        "sapo": "Từ chăn nuôi bò sữa, nông dân Nguyễn Văn Nhiệm (ấp Tân Lễ A, xã Châu Pha, TP.HCM) phát triển thành cơ sở sản xuất sữa chua với hệ thống nhà xưởng rộng khoảng 600m², trang bị nhiều máy móc. Năm nay ông Nhiệm được bình chọn Nông dân Việt Nam xuất sắc 40 năm Đổi mới.",
-        "category": "Gương mặt Điển hình",
-        "location": "TP.HCM",
-        "date": "21/09/2026"
-      },
-      {
-        "id": "1460656",
-        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ TPHCM (địa phận Bình Dương cũ) nuôi đàn gà 'khổng lồ' 400.000 con",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tphcm-dia-phan-binh-duong-cu-nuoi-dan-ga-khong-lo-400000-con-d1460656.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/19/img_5443-0936.jpg",
-        "sapo": "Ông Đinh Ngọc Khương đến từ xã Phú Giáo, TPHCM (địa phận huyện Phú Giáo, tỉnh Bình Dương trước đây) được công nhận Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026. Hiện ông có trang trại hơn 400.000 con gà, cùng hàng chục hecta trồng sầu riêng, cao su, mít ruột đỏ.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "21/09/2026"
       },
@@ -560,19 +525,29 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-o-lao-cai-la-nguoi-keo-116-nong-dan-vao-chuoi-trong-dau-nuoi-tam-tien-ty-d1459840.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/17/8d4cd1ae-fe63-40a0-8de0-fa13bd289d3f-1524.png",
         "sapo": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới của tỉnh Lào Cai năm nay là bà Nguyễn Thị Hồng Lê ở thôn Trúc Đình, xã Trấn Yên (địa phận tỉnh Yên Bái cũ). Bà Lê không chỉ gây dựng cơ ngơi gần 2 tỷ đồng, mà còn là Giám đốc Hợp tác xã Dâu tằm Hạnh Lê - hạt nhân kết nối hàng trăm hộ dân với doanh nghiệp, mở ra hướng đi bền vững cho kinh tế nông thôn vùng cao.",
-        "category": "Gương mặt Điển hình",
-        "location": "Lào Cai",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
         "date": "20/09/2026"
       },
       {
-        "id": "1460107",
-        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ TP.HCM: Cầm 800.000 đồng Nam tiến, nuôi gà, trồng bưởi mà thành tỷ phú",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tphcm-cam-800000-dong-nam-tien-nuoi-ga-trong-buoi-ma-thanh-ty-phu-d1460107.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/17/img_5546-0952.jpg",
-        "sapo": "Ông Tống Văn Hướng cầm 800.000 đồng dắt vợ và con nhỏ vào vùng Dầu Tiếng (tỉnh Bình Dương cũ, nay là TP.HCM) để lập nghiệp với nghề trồng cao su, bưởi, nuôi gà. 32 năm sau, ông sở hữu cơ ngơi hàng chục tỷ, là một trong 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới được công nhận năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "TP.HCM",
-        "date": "18/09/2026"
+        "id": "1460880",
+        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ TP.HCM: Từ 5 con bò sữa thành chủ cơ sở làm sữa chua nổi tiếng",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tphcm-tu-5-con-bo-sua-thanh-chu-co-so-lam-sua-chua-noi-tieng-d1460880.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/20/093412img_5605-0858.jpg",
+        "sapo": "Từ chăn nuôi bò sữa, nông dân Nguyễn Văn Nhiệm (ấp Tân Lễ A, xã Châu Pha, TP.HCM) phát triển thành cơ sở sản xuất sữa chua với hệ thống nhà xưởng rộng khoảng 600m², trang bị nhiều máy móc. Năm nay ông Nhiệm được bình chọn Nông dân Việt Nam xuất sắc 40 năm Đổi mới.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "21/09/2026"
+      },
+      {
+        "id": "1460656",
+        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ TPHCM (địa phận Bình Dương cũ) nuôi đàn gà 'khổng lồ' 400.000 con",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tphcm-dia-phan-binh-duong-cu-nuoi-dan-ga-khong-lo-400000-con-d1460656.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/19/img_5443-0936.jpg",
+        "sapo": "Ông Đinh Ngọc Khương đến từ xã Phú Giáo, TPHCM (địa phận huyện Phú Giáo, tỉnh Bình Dương trước đây) được công nhận Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026. Hiện ông có trang trại hơn 400.000 con gà, cùng hàng chục hecta trồng sầu riêng, cao su, mít ruột đỏ.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "21/09/2026"
       },
       {
         "id": "1459203",
@@ -580,8 +555,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-dong-nai-lien-ket-thanh-cong-nuoi-ga-cong-nghe-cao-phat-tai-d1459203.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/14/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-dong-nai-gom-nong-dan-thanh-bo-dua-cung-chan-nuoi-ga-cong-nghe-cao-5-0841.jpg",
         "sapo": "Từ người từng ám ảnh vì ruồi và mùi hôi trong những chuồng gà truyền thống, ông Lê Văn Quyết - Giám đốc HTX Nông nghiệp công nghệ cao Long Thành Phát ở phường Long Thành, TP Đồng Nai đã chọn con đường chăn nuôi gà công nghệ cao. Hơn 20 năm sau, ông đang vận hành một HTX có khoảng 3 triệu con gà, với 25 thành viên.",
-        "category": "Gương mặt Điển hình",
-        "location": "Đồng Nai",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "17/09/2026"
       },
       {
@@ -590,19 +565,19 @@ window.EVENTS = [
         "url": "https://danviet.vn/mot-nguoi-son-la-bo-tui-tien-ty-nho-bi-quyet-khoanh-goc-don-canh-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1459786.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/16/img_9261-0840.jpg",
         "sapo": "Từ kinh nghiệm trồng mận thực tế, ông Hàng A Sở (SN 1955, dân tộc Mông, tổ dân phố Pa Khen, phường Thảo Nguyên, tỉnh Sơn La) đúc kết bí quyết “khoanh gốc, đốn cành”, tập trung nâng chất lượng thay vì chạy theo sản lượng. Cách làm này giúp ông gây dựng 8 ha cây ăn quả, mang lại doanh thu hàng tỷ đồng sau khi trừ chi phí. Ông Sở được bình chọn là Nông dân Việt Nam xuất sắc 40 năm Đổi mới.",
-        "category": "Gương mặt Điển hình",
-        "location": "Sơn La",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "17/09/2026"
       },
       {
-        "id": "1459303",
-        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ TPHCM: Người sở hữu đội tàu đánh cá xa khơi, thu hàng chục tỷ đồng/năm",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tphcm-tu-hon-15-ty-nam-co-doi-tau-danh-ca-khoi-xa-d1459303.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/14/nong-dan-1505.png",
-        "sapo": "Ông Nguyễn Văn Nhỏ, xã Long Hải, TPHCM (địa phận huyện Long Đất, tỉnh Bà Rịa-Vũng Tàu cũ) được công nhận Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026. Ông Nhỏ sở hữu đội tàu cá 6 chiếc hành nghề lưới kéo khơi xa, mỗi năm thu về hàng chục tỷ đồng.",
-        "category": "Gương mặt Điển hình",
+        "id": "1460107",
+        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ TP.HCM: Cầm 800.000 đồng Nam tiến, nuôi gà, trồng bưởi mà thành tỷ phú",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tphcm-cam-800000-dong-nam-tien-nuoi-ga-trong-buoi-ma-thanh-ty-phu-d1460107.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/17/img_5546-0952.jpg",
+        "sapo": "Ông Tống Văn Hướng cầm 800.000 đồng dắt vợ và con nhỏ vào vùng Dầu Tiếng (tỉnh Bình Dương cũ, nay là TP.HCM) để lập nghiệp với nghề trồng cao su, bưởi, nuôi gà. 32 năm sau, ông sở hữu cơ ngơi hàng chục tỷ, là một trong 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới được công nhận năm 2026.",
+        "category": "Gương mặt điển hình",
         "location": "",
-        "date": "17/09/2026"
+        "date": "18/09/2026"
       },
       {
         "id": "1458512",
@@ -610,7 +585,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/chu-tich-tap-doan-que-lam-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-dung-co-ngoi-nghin-ty-tu-cach-lam-nay-d1458512.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/14/14-1635.jpeg",
         "sapo": "Ông Nguyễn Hồng Lam - Chủ tịch HĐQT Tập đoàn Quế Lâm, Chủ tịch Hội Nông nghiệp tuần hoàn Việt Nam miệt mài theo đuổi con đường nông nghiệp hữu cơ, tuần hoàn,phổ biến tri thức nông nghiệp bền vững cho nông dân. Ông Lam được bình chọn là một trong 96 gương mặt “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”-năm 2026.",
-        "category": "Chính sách & Chuyên gia",
+        "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "16/09/2026"
       },
@@ -620,8 +595,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/tung-di-buon-che-nay-co-doi-che-80ha-ong-nong-dan-thai-nguyen-la-nong-dan-viet-nam-xuat-sac-d1457792.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/08/1788704267409_1497953192519677363_1044509912031565828_053533c6c1c14865485802884781881c-1631.jpg",
         "sapo": "Từ những chuyến buôn chè nhỏ lẻ, ông Hoàng Văn Thanh từng bước tích lũy vốn, gây dựng thị trường rồi thành lập HTX Chè Hà Thanh. Gần 40 năm gắn bó với cây chè, ông đã xây dựng vùng liên kết khoảng 80ha, đưa 60% sản lượng lên các nền tảng trực tuyến và hướng tới xuất khẩu. Năm 2026, ông Hoàng Văn Thanh được bình chọn là 1 trong 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới.",
-        "category": "Gương mặt Điển hình",
-        "location": "Thái Nguyên",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "16/09/2026"
       },
       {
@@ -630,8 +605,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-lao-cai-gop-suc-day-chat-luong-hat-gao-dac-san-len-tam-cao-moi-d1459473.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/15/img_9236-0818.jpg",
         "sapo": "Từ tình yêu với hạt gạo quê hương, chị Phạm Thị Hảo (SN 1981), Tổ dân phố Cánh Chín, phường Lào Cai, tỉnh Lào Cai đã gây dựng hướng đi riêng từ sản xuất, chế biến, kinh doanh gạo Séng Cù Mường Vi-1 loại gạo đặc sản và gạo lứt Séng Cù Mường Vi, đưa hương thơm đặc sản vùng cao đến với người tiêu dùng.",
-        "category": "Gương mặt Điển hình",
-        "location": "Lào Cai",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "16/09/2026"
       },
       {
@@ -640,8 +615,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-vinh-long-tra-vinh-cu-dang-lam-chu-chuoi-trong-lua-150ha-d1459211.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/14/163101nong-dan-viet-nam-xuat-sac-1-1615.jpg",
         "sapo": "Anh Trầm Minh Thuần ở ấp Chợ, xã Long Hiệp, tỉnh Vĩnh Long (địa phận huyện Trà Cú, tỉnh Vĩnh Long cũ), hiện là Giám đốc Hợp tác xã Nông nghiệp Long Hiệp. Anh Thuần trở thành một trong 96 gương mặt nhà nông tiêu biểu được bình chọn nhận danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”-năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Vĩnh Long",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
         "date": "15/09/2026"
       },
       {
@@ -650,7 +625,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/so-huu-3-bang-sang-che-doc-quyen-mot-nguoi-quang-ninh-duoc-vinh-danh-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1459572.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/15/dinh-van-giang-hiep-hoa-quang-ninh-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-3-1250.jpg",
         "sapo": "Dù chưa từng qua trường lớp đào tạo kỹ thuật chính quy, nhưng ông Đinh Văn Giang (SN 1968), phường Hiệp Hòa, TP Quảng Ninh (địa phận Quảng Yên cũ) vẫn sáng chế ra loạt máy nông nghiệp, sở hữu 3 bằng sáng chế độc quyền. Với đóng góp thiết thực đó, ông Giang được vinh danh là Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm, 2026.",
-        "category": "Hành trình 40 năm",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "15/09/2026"
       },
@@ -660,8 +635,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/tu-ky-su-cong-nghe-thanh-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-tao-mien-tay-thu-nho-giua-ninh-binh-d1459279.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/14/1543401789375303213_2298660788091522360_4274995089848573069_07dee0159973a340df2687e390e0d7f8-1543.jpg",
         "sapo": "Rẽ hướng từ một kỹ sư công nghệ làm việc cho doanh nghiệp nước ngoài về quê khởi nghiệp, anh Đinh Văn Thuận (xã Hải Quang, tỉnh Ninh Bình) đã biến những bãi đất bạc màu thành mô hình kinh tế tuần hoàn, kết hợp trồng dừa, nuôi chim yến và du lịch sinh thái. Với tư duy làm nông nghiệp 4.0, anh Thuận sở hữu doanh thu lên tới 9 tỷ đồng/năm, vinh dự đón nhận Huân chương Lao động hạng Ba và được bình chọn là “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Ninh Bình",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "15/09/2026"
       },
       {
@@ -670,9 +645,19 @@ window.EVENTS = [
         "url": "https://danviet.vn/roi-buc-giang-ve-que-lam-trang-trai-30ha-o-phu-tho-ong-chu-thu-200-ty-nam-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1459014.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/13/1789285112277_1505870955534806835_7769722468477806085_ce70cae992e69cb9b7783f8a6f8106b1-1529.jpg",
         "sapo": "Từ một giảng viên rẽ ngang về quê \"làm ruộng\", anh Lê Mạnh Cường, xã Tu Vũ, tỉnh Phú Thọ (địa phận huyện Thanh Thủy cũ) đã gây dựng trang trại nông nghiệp tuần hoàn \"hoành tráng\" rộng 30ha, doanh thu 200 tỷ/năm. Năm 2026, anh tiếp tục được bình chọn là “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” – sự ghi nhận cho hành trình dám nghĩ, dám làm và không ngừng đổi mới trên vùng đất Phú Thọ.",
-        "category": "Gương mặt Điển hình",
-        "location": "Phú Thọ",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "14/09/2026"
+      },
+      {
+        "id": "1459303",
+        "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới đến từ TPHCM: Người sở hữu đội tàu đánh cá xa khơi, thu hàng chục tỷ đồng/năm",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tphcm-tu-hon-15-ty-nam-co-doi-tau-danh-ca-khoi-xa-d1459303.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/14/nong-dan-1505.png",
+        "sapo": "Ông Nguyễn Văn Nhỏ, xã Long Hải, TPHCM (địa phận huyện Long Đất, tỉnh Bà Rịa-Vũng Tàu cũ) được công nhận Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026. Ông Nhỏ sở hữu đội tàu cá 6 chiếc hành nghề lưới kéo khơi xa, mỗi năm thu về hàng chục tỷ đồng.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "17/09/2026"
       },
       {
         "id": "1458780",
@@ -680,8 +665,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-o-tuyen-quang-tu-cau-be-ngheo-mo-coi-cha-den-ong-chu-nong-nghiep-tuan-hoan-d1458780.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/12/1789119715246_4492393569891565977_4492393569891565977_eb7e442ab8ec89d5057ec035d4e4f00f-0926.jpg",
         "sapo": "Từ một mô hình chăn nuôi nhỏ lẻ, Nông dân Việt Nam xuất sắc 40 năm đổi mới ở Tuyên Quang đã từng bước xây dựng Hợp tác xã sản xuất thực phẩm an toàn Sáng Nhung (HTX Sáng Nhung) theo chuỗi khép kín \"từ trang trại đến bàn ăn\", biến chất thải chăn nuôi thành phân hữu cơ, phụ phẩm nông nghiệp thành nguyên liệu sản xuất.",
-        "category": "Gương mặt Điển hình",
-        "location": "Tuyên Quang",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "14/09/2026"
       },
       {
@@ -690,8 +675,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/ky-su-bach-khoa-ve-que-nghe-an-sang-che-may-nong-nghiep-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1458524.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/11/anh-vinh-nong-dan-18-1028.jpg",
         "sapo": "Tốt nghiệp Đại học Bách khoa Hà Nội, anh Hồ Xuân Vinh về quê ở xã Quỳnh Văn, tỉnh Nghệ An sáng chế hàng chục loại máy nông nghiệp, tiểu thủ công nghiệp, giúp bà con nông dân đỡ vất vả. Với những cống hiến của mình, chàng kỹ sư Bách khoa năm nào giờ được tôn vinh là Nông dân Việt Nam xuất sắc 40 năm Đổi mới.",
-        "category": "Hành trình 40 năm",
-        "location": "Hà Nội",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "13/09/2026"
       },
       {
@@ -700,8 +685,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/tao-viec-cho-5000-lao-dong-mot-ong-nong-dan-ninh-binh-duoc-chon-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1458372.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/10/img_7807-1846.jpg",
         "sapo": "Xuất thân từ một gia đình nông dân, thấu hiểu nỗi nhọc nhằn của những ngày tháng thiếu thốn, ông Phạm Đăng Khuyến (xã Khánh Nhạc, tỉnh Ninh Bình) đã biến những nguyên liệu bỏ ngỏ ở làng quê thành mặt hàng thủ công mỹ nghệ xuất khẩu giá trị cao. Cơ sở của ông Khuyến không chỉ mang lại doanh thu hơn trăm tỷ đồng mà còn tạo sinh kế, thu nhập ổn định cho hàng nghìn lao động địa phương.",
-        "category": "Gương mặt Điển hình",
-        "location": "Ninh Bình",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "13/09/2026"
       },
       {
@@ -710,8 +695,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-dong-nai-giup-nguoi-trong-ca-cao-doi-doi-theo-kieu-nay-d1458538.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/11/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-o-dong-nai-giup-nguoi-trong-ca-cao-doi-vai-khong-chi-biet-trong-roi-ban-1-1041.jpg",
         "sapo": "Tại xã Phú Hòa, TP Đồng Nai, ông Đặng Tường Khanh - Chủ tịch kiêm Tổng Giám đốc Công ty TNHH Ca cao Trọng Đức đang theo đuổi cách làm khác với cây ca cao. Ông không muốn nông dân chỉ trồng, thu hoạch rồi bán hạt. Qua chuỗi liên kết với doanh nghiệp, người trồng ca cao được định vị là nhà cung ứng, có vai trò cao hơn trong chuỗi giá trị từ vùng nguyên liệu đến chế biến.",
-        "category": "Gương mặt Điển hình",
-        "location": "Đồng Nai",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "12/09/2026"
       },
       {
@@ -720,7 +705,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/mot-nguoi-quang-ninh-hon-15-nam-gan-bo-voi-cay-duoc-lieu-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-nam-2026-d1458589.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/11/bup_7196-2-1642.jpg",
         "sapo": "Hơn 15 năm gắn bó với cây dược liệu, ông Phạm Việt Trung (TP Quảng Ninh) không chỉ bảo tồn nhiều loại dược liệu quý, mà còn tạo sinh kế cho người dân địa phương. Những nỗ lực ấy giúp ông được bình chọn là Nông dân Việt Nam xuất sắc 40 năm Đổi mới.",
-        "category": "Hành trình 40 năm",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "12/09/2026"
       },
@@ -730,8 +715,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-thai-nguyen-da-co-luc-ba-con-hoai-nghi-toi-muon-bo-hop-tac-xa-d1458138.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/10/11-0957.jpg",
         "sapo": "Từ bản làng nghèo khó, thiếu thốn đủ đường, người phụ nữ dân tộc Tày Ma Thị Ninh đã kiên cường vượt qua rào cản ngôn ngữ, định kiến và cái nghèo. Bằng tư duy đổi mới, chị đã biến nông sản địa phương thành sinh kế bền vững và vinh dự trở thành Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Thái Nguyên",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "11/09/2026"
       },
       {
@@ -740,19 +725,9 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-son-la-tu-hai-ban-tay-trang-den-co-nghiep-tien-ty-tren-dat-doc-d1457815.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/08/7c5a7580-1748.jpg",
         "sapo": "Hơn 30 năm trước, ông Nguyễn Văn Binh rời Hưng Yên lên Sơn La khai hoang với gần như chỉ đôi bàn tay trắng. Từ những triền đất dốc kém hiệu quả ở bản Hua Đán, xã Chiềng Hặc, ông từng bước gây dựng vùng cây ăn quả rộng 30 ha, cho lợi nhuận hàng tỷ đồng mỗi năm và tạo việc làm cho hàng chục lao động địa phương. Vừa qua, ông Binh được bình chọn là một trong 96 gương mặt “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”.",
-        "category": "Gương mặt Điển hình",
-        "location": "Sơn La",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "11/09/2026"
-      },
-      {
-        "id": "1457484",
-        "title": "'Qua cái hạn' của hươu sao, một nông dân Hà Tĩnh nay được vinh danh 'Nông dân Việt Nam xuất sắc 40 năm Đổi mới'",
-        "url": "https://danviet.vn/qua-cai-han-cua-huou-sao-mot-nong-dan-ha-tinh-nay-duoc-vinh-danh-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1457484.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/07/1788745298223_8037550690275722271_8037550690275722271_2d37a9fde74d8127e2bab78f32601829-1500.jpg",
-        "sapo": "Từng chứng kiến giá hươu sao lao dốc từ 50-60 triệu đồng xuống chỉ còn vài trăm nghìn đồng/con, gia đình bà Chu Thị Hồng Hà ở xã Sơn Giang, tỉnh Hà Tĩnh (huyện Hương Sơn cũ) từng đối mặt khoản nợ hơn 700 triệu đồng. \"Cái hạn\" này bà Hồng đã vượt qua. Năm 2026, bà Chu Thị Hồng Hà vinh dự được bình chọn là một trong 96 gương mặt “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”-năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Hà Tĩnh",
-        "date": "10/09/2026"
       },
       {
         "id": "1457596",
@@ -760,8 +735,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-an-giang-mot-nguoi-trong-lua-kieu-keo-670-ho-cung-lam-giau-d1457596.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/07/ong-nguyen-hong-phuong--htx-duong-go-lo--long-thanh--an-giang-2156.jpg",
         "sapo": "Ông Nguyễn Hồng Phương đã cùng nông dân xây dựng HTX Nông nghiệp Đường Gỗ Lộ thành một vùng sản xuất rộng hơn 1.200ha với 670 thành viên. Ông Phương “tự mình làm trước”, từ thử giống lúa Nhật, giảm chi phí, sản xuất theo hướng hữu cơ đến tìm đầu ra cho hạt gạo. Những nỗ lực ấy giúp ông Phương được Trung ương Hội Nông dân Việt Nam bình chọn là Nông dân Việt Nam xuất sắc 40 năm đổi mới.",
-        "category": "Gương mặt Điển hình",
-        "location": "An Giang",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "10/09/2026"
       },
       {
@@ -770,8 +745,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/mot-nguoi-dak-lak-nang-cao-gia-tri-hat-ca-phe-gan-40-lan-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1457800.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/08/img_1284-1656.jpg",
         "sapo": "Gần 30 năm gắn bó với cà phê chồn, ông Hoàng Mạnh Cường (Đắk Lắk) không chỉ tạo dựng mô hình nuôi chồn bán hoang dã độc đáo mà còn đưa sản phẩm cà phê chồn Kiên Cường đạt OCOP 5 sao, nâng cao giá trị hạt cà phê gấp gần 40 lần và từng bước chinh phục thị trường quốc tế. Những nỗ lực ấy giúp ông được bình chọn là một trong 96 “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”-năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Đắk Lắk",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "10/09/2026"
       },
       {
@@ -780,7 +755,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-can-tho-la-nguoi-trong-sau-rieng-thu-tien-ty-d1457711.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/08/trong-sau-rieng-1-1529.jpg",
         "sapo": "Với 3 ha sầu riêng và cách làm khác biệt, hàng năm ông Trần Văn Chiến (SN 1956, ở ấp Trường Khương A, xã Trường Long, TP Cần Thơ) thu lợi nhuận khoảng 3 tỷ đồng. Ông Chiến trở thành một trong 96 gương mặt nhà nông tiêu biểu được bình chọn nhận danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "09/09/2026"
       },
@@ -790,8 +765,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-lao-cai-bien-vuon-hoa-hong-co-thanh-diem-du-lich-hut-khach-d1457669.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/08/img_8660-1037.jpg",
         "sapo": "Anh Đỗ Phú Chính, Tổ dân phố Ô Quý Hồ 2, phường Sa Pa, tỉnh Lào Cai đã kiên trì sưu tầm, bảo tồn gần 100 giống hoa hồng cổ, trong đó có loài hoa hồng cổ Sapa, phát triển thành sản phẩm du lịch trải nghiệm và nhà hàng. Anh Chính vinh dự được chọn là một trong những Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026.",
-        "category": "Hành trình 40 năm",
-        "location": "Lào Cai",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "09/09/2026"
       },
       {
@@ -800,8 +775,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/ong-nong-dan-ha-noi-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-chi-trong-1-loai-hoa-chieu-tai-ma-doanh-thu-tien-ty-d1457382.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/07/161727img_2689-1617.png",
         "sapo": "Hơn 15 năm chỉ trồng độc loài hoa đồng tiền có ý nghĩa chiêu tài trong phong thủy, ông Bùi Văn Khá (nông dân xã Đan Phượng, TP Hà Nội) nay đã có doanh thu tiền tỷ/năm; cùng bà con, anh em trong vùng xây dựng một trong những vùng trồng hoa có quy mô lớn nhất Hà Nội, tạo việc làm cho hàng chục lao động địa phương. Ông Khá là một trong 96 gương mặt vinh dự được bình chọn là “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” - năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Hà Nội",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "08/09/2026"
       },
       {
@@ -810,8 +785,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-nghe-an-nuoi-tom-cong-nghe-cao-la-ty-phu-tung-kiem-nhieu-chuc-vu-d1457539.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/08/nong-dan-xuat-sac-2-0000.jpg",
         "sapo": "Ông Nguyễn Văn Hòa, xã Hải Châu, tỉnh Nghệ An (địa phận huyện Diễn Châu cũ) được vinh danh là Nông dân Việt Nam xuất sắc 40 năm Đổi mới. Trước khi thành tỷ phú nuôi tôm công nghệ cao, doanh thu 10 tỷ/năm, ông Hòa từng đảm nhiệm nhiều chức vụ ở xã Diễn Kim cũ.",
-        "category": "Gương mặt Điển hình",
-        "location": "Nghệ An",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "08/09/2026"
       },
       {
@@ -820,8 +795,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/mot-nu-nong-dan-thai-nguyen-thu-tien-ty-tu-cay-che-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-nam-2026-d1457523.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/07/1788704224757_1497953192519677363_1044509912031565828_2d06b7a5b6080463452ebb8b3de68fe1-1636.jpg",
         "sapo": "Bà Nguyễn Thị Hiền - Chủ tịch HĐQT, Giám đốc Công ty cổ phần Chè Hà Thái - đã bền bỉ gắn bó với cây chè, thay đổi cách làm, nâng chất lượng sản phẩm, đưa trà Thái Nguyên từng bước chinh phục nhiều thị trường khó tính. Bà Hiền trở thành một trong 96 gương mặt nhà nông tiêu biểu được bình chọn nhận danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Thái Nguyên",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "08/09/2026"
       },
       {
@@ -830,8 +805,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-40-nam-doi-moi-den-tu-ninh-binh-ha-nam-cu-dung-co-nghiep-lon-doanh-thu-5-ty-nam-d1457092.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/06/1056551788660158055_2298660788091522360_4274995089848573069_f4963850d492ecac81142fde7f7cfa27-1051.jpg",
         "sapo": "Sau ngày xuất ngũ, ông Trương Minh Ngọc, xã Nhân Hà, tỉnh Ninh Bình (địa phận huyện Lý Nhân, tỉnh Hà Nam cũ) đã gây dựng cơ sở gia công đồ gỗ mỹ nghệ, kinh doanh cây cảnh có doanh thu khoảng 5 tỷ đồng/năm. Hành trình bền bỉ vượt khó, làm giàu trên quê hương đã đưa người cựu binh này trở thành “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Ninh Bình",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "07/09/2026"
       },
       {
@@ -840,8 +815,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-ty-phu-da-nang-lam-giau-tu-dat-can-qua-ngon-ngot-chia-se-voi-cong-dong-d1457210.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/06/1-1106.png",
         "sapo": "Từ vùng đất gò đồi bạc màu, ông Phan Ngọc Anh (SN 1955), ở xã Thu Bồn, TP Đà Nẵng (địa phận tỉnh Quảng Nam cũ) đã gây dựng nên cơ nghiệp với doanh thu hàng trăm tỷ đồng/năm, tạo việc làm cho gần 300 lao động. Năm 2026, ông vinh dự được bình chọn là một trong 96 gương mặt “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”.",
-        "category": "Gương mặt Điển hình",
-        "location": "Đà Nẵng",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "07/09/2026"
       },
       {
@@ -850,18 +825,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/bam-dan-ga-gan-40-nam-nong-dan-hai-phong-gio-co-5-van-con-hai-lan-la-nong-dan-viet-nam-xuat-sac-d1456630.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/04/074546trung-ai-dien-0722.jpg",
         "sapo": "Sau 40 năm bền bỉ gây dựng, ông Đào Hữu Thuân ở thôn Cẩm Đông, xã Mao Điền, TP Hải Phòng (địa phận huyện Cẩm Giàng, tỉnh Hải Dương cũ) đã có hệ thống trang trại chăn nuôi gà quy mô lớn, ứng dụng công nghệ hiện đại. Ông vinh dự được bình chọn là “Nông dân Việt Nam xuất sắc 40 năm Đổi mới\"-năm 2026”.",
-        "category": "Gương mặt Điển hình",
-        "location": "Hải Phòng",
-        "date": "06/09/2026"
-      },
-      {
-        "id": "1456551",
-        "title": "Thầy giáo Đà Nẵng giữ nghề làm nước mắm gia truyền qua 4 đời, là 'Nông dân Việt Nam xuất sắc 40 năm Đổi mới'",
-        "url": "https://danviet.vn/thay-giao-da-nang-giu-nghe-lam-nuoc-mam-gia-truyen-qua-4-doi-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1456551.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/03/ntd_0699-1703.jpg",
-        "sapo": "Anh Bùi Thanh Phú, phường Hải Vân, TP Đà Nẵng dành nhiều tâm huyết gìn giữ, phát triển nghề làm nước mắm truyền thống của gia đình. Anh Bùi Thanh Phú vừa được Hội đồng Chung khảo Trung ương bình chọn là một trong 96 gương mặt “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Hành trình 40 năm",
-        "location": "Đà Nẵng",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "06/09/2026"
       },
       {
@@ -870,9 +835,19 @@ window.EVENTS = [
         "url": "https://danviet.vn/ty-phu-can-tho-dua-sau-rieng-ra-xuat-khau-ra-cho-quoc-te-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1456842.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/04/sau-bo-2-1950.jpg",
         "sapo": "Ông Lê Văn Sáu, thường gọi Sáu Bờ, ở ấp Tân Thành, xã Tân Bình, TP Cần Thơ (địa phận huyện Phụng Hiệp, tỉnh Hậu Giang cũ) đã gây dựng được vườn sầu riêng rộng 5,5ha, mỗi năm cho doanh thu khoảng 6-7 tỷ đồng, lợi nhuận 5-6 tỷ đồng. Ông Lê Văn Sáu là 1 trong 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Hậu Giang",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "05/09/2026"
+      },
+      {
+        "id": "1456551",
+        "title": "Thầy giáo Đà Nẵng giữ nghề làm nước mắm gia truyền qua 4 đời, là 'Nông dân Việt Nam xuất sắc 40 năm Đổi mới'",
+        "url": "https://danviet.vn/thay-giao-da-nang-giu-nghe-lam-nuoc-mam-gia-truyen-qua-4-doi-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1456551.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/03/ntd_0699-1703.jpg",
+        "sapo": "Anh Bùi Thanh Phú, phường Hải Vân, TP Đà Nẵng dành nhiều tâm huyết gìn giữ, phát triển nghề làm nước mắm truyền thống của gia đình. Anh Bùi Thanh Phú vừa được Hội đồng Chung khảo Trung ương bình chọn là một trong 96 gương mặt “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "06/09/2026"
       },
       {
         "id": "1456710",
@@ -880,7 +855,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/chinh-thuc-cong-nhan-danh-hieu-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-nam-2026-cho-96-nong-dan-d1456710.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/04/073836img_0988-0726-1139.jpg",
         "sapo": "Ngày 4/9, thay mặt Ban Thường vụ Trung ương Hội Nông dân Việt Nam, đồng chí Lương Quốc Đoàn, Ủy viên Trung ương Đảng, Chủ tịch Trung ương Hội Nông dân Việt Nam ký Quyết định về việc trao tặng danh hiệu \"Nông dân Việt Nam xuất sắc 40 năm Đổi mới\" năm 2026 và bằng khen của Ban Chấp hành Trung ương Hội Nông dân Việt Nam cho 96 nông dân thuộc 34 tỉnh, thành phố.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "04/09/2026"
       },
@@ -890,8 +865,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-ninh-binh-trong-rau-mau-cong-nghe-cao-lai-16-ty-nam-d1456538.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/03/17275420260827_094020-1719.jpg",
         "sapo": "Với 5 ha trồng dưa và rau màu theo hướng công nghệ cao, năm 2025, ông Tống Viết Vinh (phường Yên Thắng, tỉnh Ninh Bình) đạt doanh thu hơn 8 tỷ đồng, lợi nhuận 1,6 tỷ đồng. Ông Vinh là một trong những nhà nông tiêu biểu của cả nước được bình chọn danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Ninh Bình",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "04/09/2026"
       },
       {
@@ -900,19 +875,9 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-nguoi-dua-nuoc-mam-ky-ninh-len-ocop-5-sao-san-xuat-nua-trieu-lit-nam-d1455920.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/01/ocop-5-sao-5-0907.jpg",
         "sapo": "Từ nghề làm nước mắm truyền thống được cha truyền lại, bà Đặng Thị Luận (phường Hải Ninh, tỉnh Hà Tĩnh) đã kiên trì xây dựng thương hiệu nước mắm Luận Nghiệp, từng bước mở rộng thị trường và đưa sản phẩm đạt OCOP 5 sao cấp quốc gia. Năm 2026, bà được bình chọn là “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”.",
-        "category": "Hành trình 40 năm",
-        "location": "Hà Tĩnh",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "04/09/2026"
-      },
-      {
-        "id": "1455907",
-        "title": "Một ông nông dân Đồng Tháp có doanh thu 35 tỷ/năm nhờ nuôi gà kiểu này đây",
-        "url": "https://danviet.vn/mot-ong-nong-dan-dong-thap-co-doanh-thu-35-ty-nam-nho-nuoi-ga-kieu-nay-day-d1455907.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/08/31/2118271788185563742_1918310664192206013_8469663182997053096_5e17f7e9b380e190379eee404f2626f6-2117.jpg",
-        "sapo": "Ông Nguyễn Đức Lữ, phường Đạo Thạnh, tỉnh Đồng Tháp (trước đây thuộc tỉnh Tiền Giang) đã gầy dựng nên một trang trại chăn nuôi gà công nghệ cao trị giá hàng chục tỷ đồng. Ông Nguyễn Đức Lữ được bình chọn là \"Nông dân Việt Nam xuất sắc 40 năm Đổi mới\"-năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Đồng Tháp",
-        "date": "03/09/2026"
       },
       {
         "id": "1456461",
@@ -920,8 +885,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-quang-ngai-kon-tum-cu-co-mot-trang-trai-11-ha-thu-35-ty-nam-d1456461.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/09/03/anh-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-nguyen-van-thanh-chu-trang-trai-11-ha-thu-nhap-35-ty-dongnam-2-1103.jpg",
         "sapo": "Xây dựng trang trại tổng hợp với diện tích 11 ha, thu về khoảng 3,5 tỷ đồng/năm, điều đáng quý khác của “Nông dân Việt Nam xuất sắc 40 năm đổi mới” Nguyễn Văn Thành, ở xã Bờ Y, tỉnh Quảng Ngãi (địa phận huyện Bờ Y, tỉnh Kon Tum cũ) không chỉ làm giàu cho bản thân, mà còn dành một phần thành quả lao động hỗ trợ người nghèo để cùng phát triển.",
-        "category": "Hành trình 40 năm",
-        "location": "Quảng Ngãi",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "03/09/2026"
       },
       {
@@ -930,8 +895,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nu-tuong-hop-tac-xa-vuon-nha-da-lat-tai-lam-dong-la-nong-dan-viet-nam-xuat-sac-nam-2026-d1456272.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/02/145239img_0223-1447.jpg",
         "sapo": "Bà Lương Thị Yến Vân – Giám đốc Hợp tác xã Vườn Nhà Đà Lạt là một trong những Nông dân Việt Nam xuất sắc năm 2026 khi tập trung vào sản xuất nông sản sạch – độc đáo – giá trị cao .",
-        "category": "Hành trình 40 năm",
-        "location": "Lâm Đồng",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "03/09/2026"
       },
       {
@@ -940,8 +905,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-tinh-quang-ngai-dia-phan-kon-tum-cu-la-mot-ty-phu-sau-rieng-d1455784.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/08/31/anh-hanh-trinh-tro-thanh-ong-chu-vuon-vang-xanh-cua-1-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-o-xa-vung-bien-quang-ngai-1-1051.jpg",
         "sapo": "Mạnh dạn trồng sầu riêng, ông Bùi Đức Quỳnh, thôn Đăk Tang, xã vùng biên giới Rờ Kơi, tỉnh Quảng Ngãi (địa phận tỉnh Kon Tum cũ) hiện đang sở hữu khoảng 15 ha đất đã \"trồng cây tỷ đô-sẩu riêng), thu lợi nhuận nhiều tỷ đồng/năm. Ông Quỳnh là 1 trong số tấm gương nhà nông tiêu biểu của cả nước được bình chọn “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Quảng Ngãi",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "02/09/2026"
       },
       {
@@ -950,8 +915,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/bo-nghe-lai-xe-tai-ve-trong-hoa-cay-canh-mot-nong-dan-o-da-nang-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-d1456077.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/09/01/1788240381980_606334327487706615_606334327487706615_9b7b81dabea2b5e163817122aaa60ed5-1545.jpg",
         "sapo": "Từng làm nhiều nghề để mưu sinh, trong đó có nghề lái xe tải, ông Lê Văn Khoa (SN 1970), ở phường Hòa Cường, TP Đà Nẵng đã quyết định rẽ hướng, gắn bó với nghề trồng và kinh doanh cây cảnh. Gần 20 năm miệt mài với nghề, ông gây dựng vườn cây rộng 6.000m², trị giá hơn 7 tỷ đồng, tạo việc làm thường xuyên cho 30 lao động. Năm 2026, ông vinh dự được Hội đồng Chung khảo Trung ương bình chọn là một trong 96 gương mặt “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”.",
-        "category": "Gương mặt Điển hình",
-        "location": "Đà Nẵng",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "02/09/2026"
       },
       {
@@ -960,8 +925,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/ty-phu-tre-khanh-hoa-trong-nam-hien-dai-hut-khach-tham-quan-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1454353.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/08/25/ngoc-nam-suoi-hiep-4-1540.jpg",
         "sapo": "Hơn 10 năm khởi nghiệp, nghiên cứu và trực tiếp sản xuất nông nghiệp, anh Nguyễn Hữu Ngọc (SN 1993, phường Nha Trang, Khánh Hòa) đã xây dựng thành công mô hình trồng nấm kết hợp tham quan du lịch. Nhờ những thành tích nổi bật trong sản xuất kinh doanh, anh Ngọc đã được Trung ương Hội NDVN bình chọn là “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Khánh Hòa",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "31/08/2026"
       },
       {
@@ -970,7 +935,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/nu-truong-thon-3-trong-1-va-hanh-trinh-cham-tay-toi-danh-hieu-nong-dan-viet-nam-xuat-sac-2026-d1455699.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/08/30/2141271-2140.jpg",
         "sapo": "Từ mô hình kinh tế tổng hợp cho thu nhập gần 1 tỷ đồng/năm đến những khoản vay không lãi giúp nhiều hộ dân có thêm vốn làm ăn, chị Đàm Thị Hoài, Trưởng thôn Phai Làng, xã Tân Đoàn, tỉnh Lạng Sơn đang trở thành điểm tựa đáng tin cậy của bà con vùng cao trên hành trình thoát nghèo, vươn lên làm giàu.",
-        "category": "Hành trình 40 năm",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "31/08/2026"
       },
@@ -980,7 +945,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/nha-khoa-hoc-cua-nha-nong-o-quang-tri-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1455222.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/08/28/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-2026-o-quang-tri-5-1600.jpg",
         "sapo": "Được vinh danh “Nhà khoa học của nhà nông” năm 2025 nhờ sáng kiến biến phế phụ phẩm thành thức ăn chăn nuôi, anh Nguyễn Đăng Vương - Giám đốc HTX Nông nghiệp sạch Tây Sơn (Quảng Trị) tiếp tục được bình chọn là Nông dân Việt Nam xuất sắc 40 năm Đổi mới năm 2026.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "30/08/2026"
       },
@@ -990,7 +955,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-quang-tri-ung-dung-cong-nghe-san-xuat-thuy-hai-san-duoc-binh-chon-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1454837.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/08/27/nong-dan-xs2-1127.jpg",
         "sapo": "Từ một giáo viên mầm non bén duyên với nghề chế biến hải sản, bà Nguyễn Thị Đoàn ở xã Ninh Châu, tỉnh Quảng Trị (thuộc địa phận xã Hải Ninh, huyện Quảng Ninh, tỉnh Quảng Bình cũ) đã mạnh dạn đầu tư máy móc, công nghệ hiện đại, xây dựng chuỗi liên kết sản xuất, tiêu thụ thủy hải sản. Mô hình giúp hợp tác xã đạt doanh thu gần 20 tỷ đồng/năm, tạo việc làm cho nhiều lao động địa phương. Năm 2026, bà được bình chọn danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "28/08/2026"
       },
@@ -1000,7 +965,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/ty-phu-trong-nam-huu-co-o-quang-binh-nay-la-quang-tri-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1454616.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/08/26/ndvnxs2-1619.jpg",
         "sapo": "Bà Ngô Thị Kim Liên ở thôn Sơn Lý, xã Đông Trạch, tỉnh Quảng Trị (địa phận thuộc xã Sơn Lộc, huyện Bố Trạch, tỉnh Quảng Bình cũ) đã xây dựng HTX sản xuất và kinh doanh nông nghiệp Tuấn Linh thành mô hình trồng nấm hữu cơ quy mô lớn. Bà còn liên kết với hơn 500 hộ dân, tạo nghề nghiệp, thu nhập cho hàng trăm lao động. Bà được bình chọn nhận danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "27/08/2026"
       },
@@ -1010,7 +975,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-den-tu-can-tho-lam-giau-tu-ca-that-lat-ban-ca-sang-cho-my-cho-han-quoc-d1453708.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/08/24/nguyen-kim-thuy-giam-doc-htx-ky-nhu--nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-7-1806.jpg",
         "sapo": "Bà Nguyễn Kim Thùy, Giám đốc HTX Kỳ Như, TP Cần Thơ đã kiên trì chế biến con cá thát lát quê nhà thành các sản phẩm có thương hiệu trên thị trường. Bà Thùy có 11 sản phẩm OCOP chế biến từ cá thát lát, trong đó có 10 sản phẩm đạt 4 sao, 1 sản phẩm đạt 5 sao, có mặt tại khoảng 20 tỉnh, thành phố, xuất khẩu sang các thị trường khó tính như Hàn Quốc, Mỹ.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "25/08/2026"
       },
@@ -1020,7 +985,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/quanh-nam-trong-rung-giau-tu-rung-mot-nguoi-hue-duoc-vinh-danh-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1453125.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/08/21/0836211787236605103_709020819188526130_g795249860739133933_373332ff214c59b87782e2fd326d9adb-0826.jpg",
         "sapo": "Gần 40 năm gắn bó với nghề trồng rừng keo, ông Đỗ Viết Tuyến ở TP Huế đã biến đất cằn thành những cánh rừng cho thu nhập hàng trăm triệu đồng mỗi năm, đưa ông đến với danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "25/08/2026"
       },
@@ -1030,8 +995,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/ty-phu-trong-sau-rieng-kinh-doanh-vat-tu-nong-nghiep-o-khanh-hoa-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1454015.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/08/24/vinh-dong-khanh-son-1-1453.jpg",
         "sapo": "Ông Vũ Văn Vịnh, thôn Tha Mang, xã Đông Khánh Sơn, tỉnh Khánh Hòa (địa phận huyện Khánh Sơn cũ) đã vươn lên làm giàu từ cây đặc sản sầu riêng. Ông Vịnh còn chia sẻ kinh nghiệm trồng sầu riêng cho bà con nông dân. Ông được bình chọn nhận danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Khánh Hòa",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "24/08/2026"
       },
       {
@@ -1040,8 +1005,8 @@ window.EVENTS = [
         "url": "https://danviet.vn/ty-phu-khanh-hoa-trong-da-cay-nuoi-da-con-ket-hop-lam-du-lich-la-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1453135.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/08/21/thanh-san-viet-8-0831.jpg",
         "sapo": "Từ vùng đất sỏi đá nghèo kiệt, anh Nguyễn Minh Thành, thôn Suối Sâu, xã Nam Ninh Hòa, tỉnh Khánh Hòa (địa phận huyện Ninh Hòa cũ) đã biến thành vùng đất trù phú với nhiều cây trồng mới, vật nuôi mới lạ, kết hợp làm du lịch, mang lại giá trị kinh tế cao. Anh Thành được bình chọn nhận danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới” năm 2026.",
-        "category": "Gương mặt Điển hình",
-        "location": "Khánh Hòa",
+        "category": "Gương mặt điển hình",
+        "location": "",
         "date": "21/08/2026"
       },
       {
@@ -1050,7 +1015,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/trinh-quoc-hoi-viec-tach-du-an-dien-hat-nhan-ninh-thuan-thanh-3-du-an-khac-nhau-d1453226.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/08/21/125229202608211108407937_1787285328454_2669430916532772711_g7574298250520479089_2c49a33a346effea58431a59f940a753-1248.jpg",
         "sapo": "Sáng 21/8, tại Quốc hội, thừa uỷ quyền của Thủ tướng, Bộ trưởng Bộ Tài chính đã có Tờ trình về dự thảo Nghị quyết của Quốc hội về việc tách dự án điện hạt nhân Ninh Thuận thành các dự án độc lập.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "21/08/2026"
       },
@@ -1060,19 +1025,9 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-doi-moi-tu-20-con-tho-new-zealand-den-co-ngoi-tien-ty-cua-mot-nguoi-lang-son-d1453039.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/08/20/1787136154959_8437526564803242467_8437526564803242467_7e30a33a576908224888aba9fa031cd8-1748.jpg",
         "sapo": "Anh Nguyễn Ngọc Thạch, dân tộc Tày ở xã Nhân Lý, tỉnh Lạng Sơn là có tên trong danh sách 96 Nông dân Việt Nam xuất sắc 40 năm đổi mới do Hội đồng chung khảo bình chọn. Anh Thạch đã xây dựng thành công mô hình nuôi thỏ New Zealand quy mô lớn, mang lại thu nhập hàng trăm triệu đồng mỗi năm.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "21/08/2026"
-      },
-      {
-        "id": "1449411",
-        "title": "Đã bình chọn được 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới– năm 2026",
-        "url": "https://danviet.vn/da-binh-chon-duoc-96-nong-dan-viet-nam-xuat-sac-40-nam-doi-moinam-2026-d1449411.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/08/06/1786009179573_1785719900663690540_1785719900663690540_7028d21599627f95d6f96e92fb4ceb5d-1734.jpg",
-        "sapo": "Chiều ngày 6/8, tại thủ đô Hà Nội, Hội đồng bình chọn chung khảo đã họp chấm chung khảo Bình chọn Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026. Đồng chí Bùi Thị Thơm, Phó Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam, Chủ tịch Hội đồng Bình chọn chung khảo danh hiệu Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026 chủ trì buổi họp.",
-        "category": "Chính sách & Chuyên gia",
-        "location": "Hà Nội",
-        "date": "06/08/2026"
       },
       {
         "id": "1420857",
@@ -1080,17 +1035,57 @@ window.EVENTS = [
         "url": "https://danviet.vn/chinh-thuc-khoi-dong-de-cu-binh-chon-danh-hieu-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1420857.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/04/23/nong-dan-xuat-sac-0651.jpg",
         "sapo": "Ban Chấp hành Trung ương Hội Nông dân Việt Nam vừa chính thức ban hành Công văn số 2275-CV/HNDTW gửi Hội Nông dân các tỉnh, thành phố về việc thực hiện đề cử bình chọn danh hiệu “Nông dân Việt Nam xuất sắc 40 năm Đổi mới”. Đây là hoạt động trọng tâm nằm trong khuôn khổ Chương trình “Tự hào Nông dân Việt Nam 40 năm Đổi mới” theo Kế hoạch số 292-KH/HNDTW ngày 27/3/2026 của Ban Thường vụ Trung ương Hội.",
-        "category": "Gương mặt Điển hình",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "23/04/2026"
+      },
+      {
+        "id": "1449411",
+        "title": "Đã bình chọn được 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới– năm 2026",
+        "url": "https://danviet.vn/da-binh-chon-duoc-96-nong-dan-viet-nam-xuat-sac-40-nam-doi-moinam-2026-d1449411.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2026/08/06/1786009179573_1785719900663690540_1785719900663690540_7028d21599627f95d6f96e92fb4ceb5d-1734.jpg",
+        "sapo": "Chiều ngày 6/8, tại thủ đô Hà Nội, Hội đồng bình chọn chung khảo đã họp chấm chung khảo Bình chọn Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026. Đồng chí Bùi Thị Thơm, Phó Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam, Chủ tịch Hội đồng Bình chọn chung khảo danh hiệu Nông dân Việt Nam xuất sắc 40 năm Đổi mới-năm 2026 chủ trì buổi họp.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "06/08/2026"
+      }
+    ],
+    "articleCount": 101,
+    "featured": [
+      {
+        "tag": "Gương mặt điển hình",
+        "highlight": "09/10/2026",
+        "title": "40 năm Đổi mới: Từ sản xuất nhỏ lẻ đến làm kinh tế bài bản, nông dân Thái Nguyên thay đổi ra sao?",
+        "sapo": "Sau 40 năm Đổi mới, nông dân Thái Nguyên ngày càng chú trọng tính toán chi phí, chất lượng và đầu ra sản phẩm thay vì chỉ quan tâm đến sản lượng. Sự thay đổi này được thể hiện qua việc ứng dụng khoa học kỹ thuật, liên kết sản xuất, xây dựng thương hiệu và tiếp cận thị trường.",
+        "img": "https://i.ex-cdn.com/danviet.vn/files/content/2026/10/08/1526061788702547334_1497953192519677363_1044509912031565828_4b9aa6cbbd846ef1655809aaf6adcf67-1525.jpg",
+        "url": "https://danviet.vn/40-nam-doi-moi-tu-san-xuat-nho-le-den-lam-kinh-te-bai-ban-nong-dan-thai-nguyen-thay-doi-ra-sao-d1465667.html"
+      },
+      {
+        "tag": "Gương mặt điển hình",
+        "highlight": "09/10/2026",
+        "title": "Đất nước sau 40 năm Đổi mới: Từ 'trụ đỡ' quốc gia, đến sứ mệnh vươn tầm thế giới của nông nghiệp Việt Nam",
+        "sapo": "Sau 40 năm Đổi mới và phát triển, con đường đi của kinh tế Việt Nam không chỉ được đo bằng tốc độ tăng trưởng GDP mà bằng cả quá trình cải cách thể chế liên tục. Những thay đổi tư duy kinh tế đã giúp Việt Nam thay da đổi thịt hàng ngày và trở thành hình mẫu phát triển trong nhiều ngành, lĩnh vực, nhất là trong thay đổi giá trị và vai trò ngành nông nghiệp Việt Nam.",
+        "img": "https://t.ex-cdn.com/danviet.vn/512w/files/news/2026/10/09/xuat-khau-0952.png",
+        "url": "https://danviet.vn/dat-nuoc-sau-40-nam-doi-moi-tu-tru-do-quoc-gia-den-xu-menh-vuon-tam-the-gioi-cua-nong-nghiep-viet-nam-d1465828.html"
+      },
+      {
+        "tag": "Diễn đàn & Chính sách",
+        "highlight": "09/10/2026",
+        "title": "Phó Chủ tịch Hội Nông dân tỉnh Đồng Tháp: Nông dân Việt Nam xuất sắc 40 năm Đổi mới ngày càng chuyên nghiệp hơn",
+        "sapo": "Ông Phạm Văn Toàn, Phó Chủ tịch Hội Nông dân tỉnh Đồng Tháp chia sẻ, những nông dân được vinh danh 'Nông dân Việt Nam xuất sắc 40 năm Đổi mới' không chỉ giỏi sản xuất, kinh doanh mà đang từng bước trở thành những nông dân chuyên nghiệp. Đây cũng là nền tảng để Đồng Tháp triển khai Đề án xây dựng người nông dân chuyên nghiệp giai đoạn 2026–2030.",
+        "img": "https://t.ex-cdn.com/danviet.vn/512w/files/content/2026/10/08/1522551767105642698_7795239697681310476_7795239697681310476_de11bcd5346dc51d2249d591d91334dd-1522.jpg",
+        "url": "https://danviet.vn/pho-chu-tich-hoi-nong-dan-tinh-dong-thap-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-ngay-cang-chuyen-nghiep-hon-d1465664.html"
       }
     ]
   },
   {
+    "year": 2025,
+    "label": "2025",
     "kicker": "Chương trình Tự hào Nông dân Việt Nam • Năm thứ 13",
     "title": "Tự hào Nông dân Việt Nam 2025",
     "date": "Tối 14/10/2025",
     "location": "Cung Văn hóa Hữu nghị Việt Xô, Hà Nội",
+    "cover": "https://t.ex-cdn.com/danviet.vn/512w/files/content/2025/10/15/140950img_1017-1407.jpg",
     "summary": "Chương trình gắn với kỷ niệm 95 năm Ngày thành lập Hội Nông dân Việt Nam. Lễ tôn vinh 63 Nông dân Việt Nam xuất sắc và 32 Nhà khoa học của Nhà nông diễn ra tối 14/10/2025 tại Cung Văn hóa Hữu nghị Việt Xô, truyền hình trực tiếp trên VTV1.",
     "stats": [
       {
@@ -1111,47 +1106,7 @@ window.EVENTS = [
     ],
     "link": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2025-channel2990/",
     "linkLabel": "Xem chuyên trang 2025 trên Dân Việt",
-    "year": 2025,
-    "label": "2025",
-    "cover": "https://t.ex-cdn.com/danviet.vn/512w/files/content/2025/10/15/140950img_1017-1407.jpg",
-    "featured": [
-      {
-        "tag": "Gương mặt điển hình",
-        "highlight": "23/10/2025",
-        "title": "Ông Nông dân Việt Nam xuất sắc đến từ tỉnh Quảng Ngãi trồng cây gì, nuôi con gì mà tính sơ sơ đã lãi 2,6 tỷ/năm?",
-        "sapo": "Từ chăn nuôi, trồng rừng, trồng cây ăn trái, tổng thu mỗi năm của gia đình ông Nguyễn Nhẫn, thôn Kim Thành Thượng, xã Phước Giang, tỉnh Quảng Ngãi lên tới hơn 4,5 tỷ đồng, sau khi trừ chi phí, lãi ròng gần 2,6 tỷ đồng (chưa kể tới nguồn thu từ kinh doanh, phân phối nông sản)…Ông Nguyễn Nhẫn là Nông dân Việt Nam xuất sắc 2025.",
-        "img": "https://i.ex-cdn.com/danviet.vn/files/content/2025/10/22/ty-phu-quang-ngai-trong-rung-nuoi-ca-trong-cay-an-trai-doanh-thu-hon-4-ty-moi-nam-1946.jpg",
-        "url": "https://danviet.vn/ong-nong-dan-viet-nam-xuat-sac-den-tu-tinh-quang-ngai-trong-cay-gi-nuoi-con-gi-ma-tinh-so-so-da-lai-26-ty-nam-d1372457.html"
-      },
-      {
-        "tag": "Gương mặt điển hình",
-        "highlight": "15/10/2025",
-        "title": "Tự hào Nông dân Việt Nam 2025: Hành trình của trí tuệ, khát vọng vươn mình của người nông dân",
-        "sapo": "Chuỗi chương trình 'Tự hào Nông dân Việt Nam 2025 nhân kỷ niệm 95 năm Ngày thành lập Hội Nông dân Việt Nam (14/10/1930 – 14/10/2025) đã khép lại bằng những dấu ấn đậm nét, những sự kiện quan trọng và ý nghĩa trong ngày 14/10.",
-        "img": "https://t.ex-cdn.com/danviet.vn/512w/files/news/2025/10/15/080426to-lam-1-1916-1632.jpg",
-        "url": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2025-hanh-trinh-cua-tri-tue-khat-vong-vuon-minh-cua-nguoi-nong-dan-d1370632.html"
-      },
-      {
-        "tag": "Sự kiện & Vinh danh",
-        "highlight": "15/10/2025",
-        "title": "Tự hào Nông dân Việt Nam 2025: Đêm tôn vinh trọn vẹn xúc cảm và tri ân những người làm nên mùa vàng",
-        "sapo": "Trong ánh sáng của Lễ tôn vinh và trao danh hiệu 63 Nông dân Việt Nam xuất sắc, 32 Nhà khoa học của nhà nông năm 2025 thuộc Chương trình Tự hào Nông dân Việt Nam, những câu chuyện về hành trình đam mê làm nông nghiệp, kiên trì, bền bỉ gắn bó với người nông dân của các nhà khoa học không chỉ thắp lên niềm tự hào mà còn truyền lửa cho thế hệ tương lai. Chương trình do Trung ương Hội NDVN chủ trì; giao Báo Nông thôn Ngày nay/điện tử Dân Việt phối hợp với Công ty CP Phân bón Bình Điền tổ chức, thực",
-        "img": "https://t.ex-cdn.com/danviet.vn/512w/files/content/2025/10/15/140950img_1017-1407.jpg",
-        "url": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2025-dem-ton-vinh-tron-ven-xuc-cam-va-tri-an-nhung-nguoi-lam-nen-mua-vang-d1370546.html"
-      }
-    ],
-    "articleCount": 71,
     "articles": [
-      {
-        "id": "1368595",
-        "title": "Sáng chế máy cấy lúa cả làng phục lăn, một người Hưng Yên được bình chọn Nông dân Việt Nam xuất sắc",
-        "url": "https://danviet.vn/sang-che-may-cay-lua-ca-lang-phuc-lan-mot-nguoi-hung-yen-duoc-binh-chon-nong-dan-viet-nam-xuat-sac-d1368595.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/10/08/thay-gia-dinh-cay-lua-qua-kho-bac-nong-dan-o-hung-yen-ngay-dem-che-tao-ra-may-cay-doc-nhat-vo-nhi-0100.jpg",
-        "sapo": "Ông dân Trần Đại Nghĩa, xã Đồng Châu, tỉnh Hưng Yên (trước sáp nhập, hợp nhất thuộc huyện Tiền Hải, Thái Bình) đã mày mò nghiên cứu, sáng chế máy cấy \"độc nhất vô nhị\" khiến cả làng phục lăn. Ông Trần Đại Nghĩa được bình chọn là 1 trong 63 Nông dân Việt Nam xuất sắc 2025.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "19/12/2025"
-      },
       {
         "id": "1372457",
         "title": "Ông Nông dân Việt Nam xuất sắc đến từ tỉnh Quảng Ngãi trồng cây gì, nuôi con gì mà tính sơ sơ đã lãi 2,6 tỷ/năm?",
@@ -1238,7 +1193,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/95-nam-mot-thien-su-vang-dau-an-giai-cap-nong-dan-viet-nam-trong-dong-chay-lich-su-dan-toc-d1370466.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2025/10/15/van-nghe-1-1919-0908.jpg",
         "sapo": "Trong không gian nghệ thuật đậm chất sử thi, “95 năm – Một thiên sử vàng” là một bản hùng ca tái hiện hành trình 95 năm đồng hành của Hội Nông dân Việt Nam cùng dân tộc và đất nước – từ khởi nguyên của “Đất và Nước”, qua “Lửa thử vàng” của chiến tranh, đến “Khúc tráng ca lao động” trong thời đại đổi mới và hội nhập.",
-        "category": "Hình ảnh & Video",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "15/10/2025"
       },
@@ -1313,16 +1268,6 @@ window.EVENTS = [
         "date": "13/10/2025"
       },
       {
-        "id": "1368841",
-        "title": "Một người làm nông nghiệp 'tay ngang' ở Quảng Ninh, sao lại có tham vọng mang “vàng” trên vách núi ra 'chợ toàn cầu'?",
-        "url": "https://danviet.vn/mot-nguoi-lam-nong-nghiep-tay-ngang-o-quang-ninh-sao-lai-co-tham-vong-mang-vang-tren-vach-nui-ra-cho-toan-cau-d1368841.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/10/08/tra-hoa-vang-quy-hoa-va-hanh-trinh-vuon-tam-ocop-5-sao-1901.jpg",
-        "sapo": "Ông Lê Mạnh Quy, một người Quảng Ninh làm nông nghiệp \"tay ngang\" thành công với mô hình trồng cây trà hoa vàng-một loại cây dược liệu quý vùng Đông Bắc. Sản phẩm trà hoa vàng của ông Quy đã đạt 5 sao OCOP 5 quốc gia. Ông Lê Mạnh Quy, đại gia, tỷ phú Quảng Ninh được bình chọn là 1 trong 63 Nông dân Việt Nam xuất sắc 2025.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "09/10/2025"
-      },
-      {
         "id": "1368620",
         "title": "Biến vùng trũng thành cánh đồng cơ giới hóa 'không dấu chân', một người Tây Ninh là Nông dân Việt Nam xuất sắc",
         "url": "https://danviet.vn/bien-vung-trung-thanh-canh-dong-co-gioi-hoa-khong-dau-chan-mot-nguoi-tay-ninh-la-nong-dan-viet-nam-xuat-sac-d1368620.html",
@@ -1333,14 +1278,24 @@ window.EVENTS = [
         "date": "08/10/2025"
       },
       {
-        "id": "1368483",
-        "title": "Các hoạt động kỷ niệm 95 năm thành lập Hội NDVN và Chương trình Tự hào Nông dân Việt Nam năm 2025",
-        "url": "https://danviet.vn/cac-hoat-dong-ky-niem-95-nam-thanh-lap-hoi-ndvn-va-chuong-trinh-tu-hao-nong-dan-viet-nam-nam-2025-d1368483.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2025/10/07/hoi-nong-dan-nong-dan-xuat-sac-1521.jpg",
-        "sapo": "Hôm nay 8/10, Trung ương Hội Nông dân Việt Nam công bố các hoạt động Kỷ niệm 95 năm thành lập Hội Nông dân Việt Nam (14/10/1930 – 14/10/2025) và chuỗi các hoạt động của Chương trình Tự hào Nông dân Việt Nam 2025, trong đó có việc công bố 95 nông dân Việt Nam xuất sắc, nhà khoa học của nhà nông.",
-        "category": "Sự kiện & Vinh danh",
+        "id": "1368595",
+        "title": "Sáng chế máy cấy lúa cả làng phục lăn, một người Hưng Yên được bình chọn Nông dân Việt Nam xuất sắc",
+        "url": "https://danviet.vn/sang-che-may-cay-lua-ca-lang-phuc-lan-mot-nguoi-hung-yen-duoc-binh-chon-nong-dan-viet-nam-xuat-sac-d1368595.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/10/08/thay-gia-dinh-cay-lua-qua-kho-bac-nong-dan-o-hung-yen-ngay-dem-che-tao-ra-may-cay-doc-nhat-vo-nhi-0100.jpg",
+        "sapo": "Ông dân Trần Đại Nghĩa, xã Đồng Châu, tỉnh Hưng Yên (trước sáp nhập, hợp nhất thuộc huyện Tiền Hải, Thái Bình) đã mày mò nghiên cứu, sáng chế máy cấy \"độc nhất vô nhị\" khiến cả làng phục lăn. Ông Trần Đại Nghĩa được bình chọn là 1 trong 63 Nông dân Việt Nam xuất sắc 2025.",
+        "category": "Gương mặt điển hình",
         "location": "",
-        "date": "08/10/2025"
+        "date": "19/12/2025"
+      },
+      {
+        "id": "1368841",
+        "title": "Một người làm nông nghiệp 'tay ngang' ở Quảng Ninh, sao lại có tham vọng mang “vàng” trên vách núi ra 'chợ toàn cầu'?",
+        "url": "https://danviet.vn/mot-nguoi-lam-nong-nghiep-tay-ngang-o-quang-ninh-sao-lai-co-tham-vong-mang-vang-tren-vach-nui-ra-cho-toan-cau-d1368841.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/10/08/tra-hoa-vang-quy-hoa-va-hanh-trinh-vuon-tam-ocop-5-sao-1901.jpg",
+        "sapo": "Ông Lê Mạnh Quy, một người Quảng Ninh làm nông nghiệp \"tay ngang\" thành công với mô hình trồng cây trà hoa vàng-một loại cây dược liệu quý vùng Đông Bắc. Sản phẩm trà hoa vàng của ông Quy đã đạt 5 sao OCOP 5 quốc gia. Ông Lê Mạnh Quy, đại gia, tỷ phú Quảng Ninh được bình chọn là 1 trong 63 Nông dân Việt Nam xuất sắc 2025.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/10/2025"
       },
       {
         "id": "1368476",
@@ -1353,6 +1308,16 @@ window.EVENTS = [
         "date": "07/10/2025"
       },
       {
+        "id": "1368483",
+        "title": "Các hoạt động kỷ niệm 95 năm thành lập Hội NDVN và Chương trình Tự hào Nông dân Việt Nam năm 2025",
+        "url": "https://danviet.vn/cac-hoat-dong-ky-niem-95-nam-thanh-lap-hoi-ndvn-va-chuong-trinh-tu-hao-nong-dan-viet-nam-nam-2025-d1368483.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2025/10/07/hoi-nong-dan-nong-dan-xuat-sac-1521.jpg",
+        "sapo": "Hôm nay 8/10, Trung ương Hội Nông dân Việt Nam công bố các hoạt động Kỷ niệm 95 năm thành lập Hội Nông dân Việt Nam (14/10/1930 – 14/10/2025) và chuỗi các hoạt động của Chương trình Tự hào Nông dân Việt Nam 2025, trong đó có việc công bố 95 nông dân Việt Nam xuất sắc, nhà khoa học của nhà nông.",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
+        "date": "08/10/2025"
+      },
+      {
         "id": "1368305",
         "title": "Ông tỷ phú nuôi lợn, chế biến gỗ rừng trồng ở Lào Cai được bình chọn là Nông dân Việt Nam xuất sắc 2025",
         "url": "https://danviet.vn/ong-ty-phu-nuoi-lon-che-bien-go-rung-trong-o-lao-cai-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-2025-d1368305.html",
@@ -1361,6 +1326,26 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "07/10/2025"
+      },
+      {
+        "id": "1362819",
+        "title": "Máy phun thuốc của Nông dân Việt Nam suất sắc 2025 ở Đồng Nai phun cao tới 35m, một giờ bao trọn 3-4ha",
+        "url": "https://danviet.vn/may-phun-thuoc-cua-nha-khoa-hoc-cua-nha-nong-2025-o-dong-nai-phun-cao-toi-35m-mot-gio-bao-tron-3-4ha-d1362819.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/09/15/nha-khoa-hoc-cua-nha-nong-nguyen-van-linh-o-binh-phuoc-dong-nai-hanh-trinh-giu-lua-dam-me-sang-che-tu-noi-vat-va-tren-dong-1-0920.jpg",
+        "sapo": "Anh Nguyễn Văn Lĩnh sinh ra và lớn lên trong một gia đình thuần nông ở vùng đất đỏ Bình Phước cũ, nay là phường Bình Phước, tỉnh Đồng Nai. Anh đã vinh dự được công nhận là Nông dân Việt Nam xuất sắc năm 2025.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "15/09/2025"
+      },
+      {
+        "id": "1367673",
+        "title": "Chàng trai Gia Lai bỏ phố hoa lệ về quê trồng rau kiểu gì mà doanh thu 20 tỷ/năm , là 'Nông dân Việt Nam xuất sắc'?",
+        "url": "https://danviet.vn/chang-trai-gia-lai-bo-pho-hoa-le-ve-que-trong-rau-kieu-gi-ma-doanh-thu-20-ty-nam-la-nong-dan-viet-nam-xuat-sac-d1367673.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/10/04/090120d2f32a250d15fad8dd134ebca3daea22-0859.jpeg",
+        "sapo": "Tốt nghiệp đại học với chuyên ngành Quản trị kinh doanh, có công việc ổn định tại TPHCM, nhưng Nguyễn Nam Phong (34 tuổi, phường An Phú, Gia Lai) quyết định trở về quê lập nghiệp bằng nghề trồng rau sạch. Sau hơn 10 năm kiên trì, anh đã xây dựng thành công thương hiệu rau sạch “Hương Đất An Phú”, doanh thu 20 tỷ/năm và được bình chọn là “Nông dân Việt Nam xuất sắc” năm 2025.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "05/10/2025"
       },
       {
         "id": "1368018",
@@ -1373,14 +1358,14 @@ window.EVENTS = [
         "date": "06/10/2025"
       },
       {
-        "id": "1367673",
-        "title": "Chàng trai Gia Lai bỏ phố hoa lệ về quê trồng rau kiểu gì mà doanh thu 20 tỷ/năm , là 'Nông dân Việt Nam xuất sắc'?",
-        "url": "https://danviet.vn/chang-trai-gia-lai-bo-pho-hoa-le-ve-que-trong-rau-kieu-gi-ma-doanh-thu-20-ty-nam-la-nong-dan-viet-nam-xuat-sac-d1367673.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/10/04/090120d2f32a250d15fad8dd134ebca3daea22-0859.jpeg",
-        "sapo": "Tốt nghiệp đại học với chuyên ngành Quản trị kinh doanh, có công việc ổn định tại TPHCM, nhưng Nguyễn Nam Phong (34 tuổi, phường An Phú, Gia Lai) quyết định trở về quê lập nghiệp bằng nghề trồng rau sạch. Sau hơn 10 năm kiên trì, anh đã xây dựng thành công thương hiệu rau sạch “Hương Đất An Phú”, doanh thu 20 tỷ/năm và được bình chọn là “Nông dân Việt Nam xuất sắc” năm 2025.",
+        "id": "1367184",
+        "title": "Nông dân Việt Nam xuất sắc đến từ Lâm Đồng (sau sáp nhập), từ nghèo rớt mồng tơi, đến góp hơn 10 tỷ làm nông thôn mới",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-den-tu-lam-dong-sau-sap-nhap-tu-ngheo-rot-mong-toi-den-gop-hon-10-ty-lam-nong-thon-moi-d1367184.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/10/02/z7073235225189_5ba747e9ff5c1d635bc2fd5a857f3184-1429.jpg",
+        "sapo": "Ông Huỳnh Văn Tùng, nông dân tỷ phú Đắk Nông, đến từ xã Quảng Tín, tỉnh Lâm Đồng (thuộc xã Đắk Sin, huyện Đắk R’lấp, tỉnh Đắk Nông trước đây), được bình chọn là “Nông dân Việt Nam xuất sắc 2025\". Từ cảnh nghèo rớt mồng tơi, ông Tùng kiên trì gây dựng trang trại 16ha trồng cà phê, sầu riêng...đóng góp hơn 10 tỷ đồng để xây dựng hạ tầng, trường học, đường giao thông nông thôn mới.",
         "category": "Gương mặt điển hình",
         "location": "",
-        "date": "05/10/2025"
+        "date": "02/10/2025"
       },
       {
         "id": "1367376",
@@ -1401,16 +1386,6 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "04/10/2025"
-      },
-      {
-        "id": "1367184",
-        "title": "Nông dân Việt Nam xuất sắc đến từ Lâm Đồng (sau sáp nhập), từ nghèo rớt mồng tơi, đến góp hơn 10 tỷ làm nông thôn mới",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-den-tu-lam-dong-sau-sap-nhap-tu-ngheo-rot-mong-toi-den-gop-hon-10-ty-lam-nong-thon-moi-d1367184.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/10/02/z7073235225189_5ba747e9ff5c1d635bc2fd5a857f3184-1429.jpg",
-        "sapo": "Ông Huỳnh Văn Tùng, nông dân tỷ phú Đắk Nông, đến từ xã Quảng Tín, tỉnh Lâm Đồng (thuộc xã Đắk Sin, huyện Đắk R’lấp, tỉnh Đắk Nông trước đây), được bình chọn là “Nông dân Việt Nam xuất sắc 2025\". Từ cảnh nghèo rớt mồng tơi, ông Tùng kiên trì gây dựng trang trại 16ha trồng cà phê, sầu riêng...đóng góp hơn 10 tỷ đồng để xây dựng hạ tầng, trường học, đường giao thông nông thôn mới.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "02/10/2025"
       },
       {
         "id": "1365951",
@@ -1473,14 +1448,24 @@ window.EVENTS = [
         "date": "22/09/2025"
       },
       {
-        "id": "1362712",
-        "title": "Nông dân Việt Nam xuất sắc 2025 đến từ Đồng Tháp là nữ tỷ phú làm giàu với 'mô hình 3 trong 1', thu hàng chục tỷ/năm",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2025-den-tu-dong-thap-la-nu-ty-phu-lam-giau-voi-mo-hinh-3-trong-1-thu-hang-chuc-ty-nam-d1362712.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2025/09/14/gen-n-z7010568118912_c86853d3109cef13c57b844ecabc7339-1511.jpg",
-        "sapo": "Bà Phạm Ngọc Hồng Thủy, xã Vĩnh Bình, tỉnh Đồng Tháp (trước đây là thị trấn Vĩnh Bình, huyện Gò Công Tây, tỉnh Tiền Giang) thành công với mô hình kinh tế \"3 trong 1\": Sản xuất yến sào, nước uống đóng bình và du lịch sinh thái với doanh thu hàng chục tỷ đồng/năm. Bà Phạm Ngọc Hồng Thủy được bình chọn là Nông dân Việt Nam xuất sắc 2025.",
+        "id": "1363710",
+        "title": "Nông dân Việt Nam xuất sắc 2025 đến từ Cần Thơ: Nuôi ba ba, trồng sầu riêng, sạ lúa, mùa nào cũng có tiền to",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2025-den-tu-can-tho-nuoi-ba-ba-trong-sau-rieng-xa-lua-mua-nao-cung-co-tien-to-d1363710.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/09/18/163020nuoi-ba-ba-3-1624.jpg",
+        "sapo": "Ông Trần Hồng Quan, ngụ ở ấp Trường Hiệp, xã Trường Long A, huyện Châu Thành A, tỉnh Hậu Giang (trước sáp nhập) nay là ấp Trường Hiệp, xã Trường Long Tây, TP Cần Thơ trở thành Nông dân Việt Nam xuất sắc 2025 nhờ mô hình nuôi ba ba, trồng sầu riêng và sạ lúa. Theo ông Quan, mô hình này đảm bảo lúc nào cũng có nguồn thu, năm nào cũng có lợi nhuận.",
         "category": "Gương mặt điển hình",
         "location": "",
-        "date": "21/09/2025"
+        "date": "19/09/2025"
+      },
+      {
+        "id": "1363509",
+        "title": "Nông dân Việt Nam xuất sắc đến từ Ninh Bình, điển hình xây dựng nông thôn mới, là 'ông vua vôi', sống tốt đời đẹp đạo",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-den-tu-ninh-binh-dien-hinh-xay-dung-nong-thon-moi-la-ong-vua-voi-song-tot-doi-dep-dao-d1363509.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/09/17/17204420250916_110829-1720.jpg",
+        "sapo": "Được bình chọn là “Nông dân Việt Nam xuất sắc 2025”, anh Nguyễn Văn Long, thị trấn Kiện Khê (tỉnh Hà Nam trước sáp nhập), nay là phường Châu Sơn, tỉnh Ninh Bình, không chỉ gây dựng sự nghiệp thành công từ nghề sản xuất vôi (dân gọi vui là \"ông vua vôi\") mà còn là một tấm gương tiêu biểu, tích cực đóng góp xây dựng nông thôn mới, đô thị văn minh tại địa phương.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "19/09/2025"
       },
       {
         "id": "1363931",
@@ -1513,34 +1498,14 @@ window.EVENTS = [
         "date": "20/09/2025"
       },
       {
-        "id": "1363710",
-        "title": "Nông dân Việt Nam xuất sắc 2025 đến từ Cần Thơ: Nuôi ba ba, trồng sầu riêng, sạ lúa, mùa nào cũng có tiền to",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2025-den-tu-can-tho-nuoi-ba-ba-trong-sau-rieng-xa-lua-mua-nao-cung-co-tien-to-d1363710.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/09/18/163020nuoi-ba-ba-3-1624.jpg",
-        "sapo": "Ông Trần Hồng Quan, ngụ ở ấp Trường Hiệp, xã Trường Long A, huyện Châu Thành A, tỉnh Hậu Giang (trước sáp nhập) nay là ấp Trường Hiệp, xã Trường Long Tây, TP Cần Thơ trở thành Nông dân Việt Nam xuất sắc 2025 nhờ mô hình nuôi ba ba, trồng sầu riêng và sạ lúa. Theo ông Quan, mô hình này đảm bảo lúc nào cũng có nguồn thu, năm nào cũng có lợi nhuận.",
+        "id": "1362712",
+        "title": "Nông dân Việt Nam xuất sắc 2025 đến từ Đồng Tháp là nữ tỷ phú làm giàu với 'mô hình 3 trong 1', thu hàng chục tỷ/năm",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2025-den-tu-dong-thap-la-nu-ty-phu-lam-giau-voi-mo-hinh-3-trong-1-thu-hang-chuc-ty-nam-d1362712.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2025/09/14/gen-n-z7010568118912_c86853d3109cef13c57b844ecabc7339-1511.jpg",
+        "sapo": "Bà Phạm Ngọc Hồng Thủy, xã Vĩnh Bình, tỉnh Đồng Tháp (trước đây là thị trấn Vĩnh Bình, huyện Gò Công Tây, tỉnh Tiền Giang) thành công với mô hình kinh tế \"3 trong 1\": Sản xuất yến sào, nước uống đóng bình và du lịch sinh thái với doanh thu hàng chục tỷ đồng/năm. Bà Phạm Ngọc Hồng Thủy được bình chọn là Nông dân Việt Nam xuất sắc 2025.",
         "category": "Gương mặt điển hình",
         "location": "",
-        "date": "19/09/2025"
-      },
-      {
-        "id": "1363509",
-        "title": "Nông dân Việt Nam xuất sắc đến từ Ninh Bình, điển hình xây dựng nông thôn mới, là 'ông vua vôi', sống tốt đời đẹp đạo",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-den-tu-ninh-binh-dien-hinh-xay-dung-nong-thon-moi-la-ong-vua-voi-song-tot-doi-dep-dao-d1363509.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/09/17/17204420250916_110829-1720.jpg",
-        "sapo": "Được bình chọn là “Nông dân Việt Nam xuất sắc 2025”, anh Nguyễn Văn Long, thị trấn Kiện Khê (tỉnh Hà Nam trước sáp nhập), nay là phường Châu Sơn, tỉnh Ninh Bình, không chỉ gây dựng sự nghiệp thành công từ nghề sản xuất vôi (dân gọi vui là \"ông vua vôi\") mà còn là một tấm gương tiêu biểu, tích cực đóng góp xây dựng nông thôn mới, đô thị văn minh tại địa phương.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "19/09/2025"
-      },
-      {
-        "id": "1363174",
-        "title": "Nông dân Việt Namxuất sắc 2025 đến từ Vĩnh Long, cả đời nghĩ cách trồng 'cây tỷ đô' trên đất cù lao, thu 2,2 tỷ/năm",
-        "url": "https://danviet.vn/nong-dan-viet-namxuat-sac-2025-den-tu-vinh-long-ca-doi-nghi-cach-trong-cay-ty-do-tren-dat-cu-lao-thu-22-ty-nam-d1363174.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/09/16/nong-dan-xuat-sac-2025-vl-5-1534.jpg",
-        "sapo": "Từ niềm đam mê trồng sầu riêng và trải qua nhiều khó khăn trong quá trình gắn bó với loại cây tỷ đô này, anh Huỳnh Văn Hiệp (51 tuổi, ngụ ở ấp Lăng, xã Thanh Bình, tỉnh Vĩnh Long, trước đây là ấp Lăng, xã Thanh Bình, huyện Vũng Liêm, tỉnh Vĩnh Long), được bình chọn là Nông dân Việt Nam xuất sắc 2025.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "18/09/2025"
+        "date": "21/09/2025"
       },
       {
         "id": "1362724",
@@ -1551,6 +1516,16 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "17/09/2025"
+      },
+      {
+        "id": "1363174",
+        "title": "Nông dân Việt Namxuất sắc 2025 đến từ Vĩnh Long, cả đời nghĩ cách trồng 'cây tỷ đô' trên đất cù lao, thu 2,2 tỷ/năm",
+        "url": "https://danviet.vn/nong-dan-viet-namxuat-sac-2025-den-tu-vinh-long-ca-doi-nghi-cach-trong-cay-ty-do-tren-dat-cu-lao-thu-22-ty-nam-d1363174.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/09/16/nong-dan-xuat-sac-2025-vl-5-1534.jpg",
+        "sapo": "Từ niềm đam mê trồng sầu riêng và trải qua nhiều khó khăn trong quá trình gắn bó với loại cây tỷ đô này, anh Huỳnh Văn Hiệp (51 tuổi, ngụ ở ấp Lăng, xã Thanh Bình, tỉnh Vĩnh Long, trước đây là ấp Lăng, xã Thanh Bình, huyện Vũng Liêm, tỉnh Vĩnh Long), được bình chọn là Nông dân Việt Nam xuất sắc 2025.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "18/09/2025"
       },
       {
         "id": "1362983",
@@ -1601,16 +1576,6 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "16/09/2025"
-      },
-      {
-        "id": "1362819",
-        "title": "Máy phun thuốc của Nông dân Việt Nam suất sắc 2025 ở Đồng Nai phun cao tới 35m, một giờ bao trọn 3-4ha",
-        "url": "https://danviet.vn/may-phun-thuoc-cua-nha-khoa-hoc-cua-nha-nong-2025-o-dong-nai-phun-cao-toi-35m-mot-gio-bao-tron-3-4ha-d1362819.html",
-        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2025/09/15/nha-khoa-hoc-cua-nha-nong-nguyen-van-linh-o-binh-phuoc-dong-nai-hanh-trinh-giu-lua-dam-me-sang-che-tu-noi-vat-va-tren-dong-1-0920.jpg",
-        "sapo": "Anh Nguyễn Văn Lĩnh sinh ra và lớn lên trong một gia đình thuần nông ở vùng đất đỏ Bình Phước cũ, nay là phường Bình Phước, tỉnh Đồng Nai. Anh đã vinh dự được công nhận là Nông dân Việt Nam xuất sắc năm 2025.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "15/09/2025"
       },
       {
         "id": "1362276",
@@ -1838,7 +1803,7 @@ window.EVENTS = [
         "url": "https://danviet.vn/hop-hoi-dong-binh-chon-cang-thang-chon-95-guong-mat-xuat-sac-d1355695.html",
         "img": "https://t.ex-cdn.com/danviet.vn/768w/files/news/2025/08/15/img_0447-1617.jpg",
         "sapo": "Trong nhiều giờ làm việc khẩn trương, Hội đồng bình chọn đã thảo luận sôi nổi, cân nhắc kỹ lưỡng từng ứng viên để lựa chọn ra 95 gương mặt tiêu biểu toàn quốc. Đây là những đại diện xuất sắc nhất của phong trào thi đua trong lĩnh vực nông nghiệp, nông dân, nông thôn, góp phần lan tỏa những giá trị, thành tựu và tinh thần cống hiến trong dịp kỷ niệm 95 năm thành lập Hội Nông dân Việt Nam.",
-        "category": "Hình ảnh & Video",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "15/08/2025"
       },
@@ -1852,13 +1817,43 @@ window.EVENTS = [
         "location": "",
         "date": "15/08/2025"
       }
+    ],
+    "articleCount": 71,
+    "featured": [
+      {
+        "tag": "Gương mặt điển hình",
+        "highlight": "23/10/2025",
+        "title": "Ông Nông dân Việt Nam xuất sắc đến từ tỉnh Quảng Ngãi trồng cây gì, nuôi con gì mà tính sơ sơ đã lãi 2,6 tỷ/năm?",
+        "sapo": "Từ chăn nuôi, trồng rừng, trồng cây ăn trái, tổng thu mỗi năm của gia đình ông Nguyễn Nhẫn, thôn Kim Thành Thượng, xã Phước Giang, tỉnh Quảng Ngãi lên tới hơn 4,5 tỷ đồng, sau khi trừ chi phí, lãi ròng gần 2,6 tỷ đồng (chưa kể tới nguồn thu từ kinh doanh, phân phối nông sản)…Ông Nguyễn Nhẫn là Nông dân Việt Nam xuất sắc 2025.",
+        "img": "https://i.ex-cdn.com/danviet.vn/files/content/2025/10/22/ty-phu-quang-ngai-trong-rung-nuoi-ca-trong-cay-an-trai-doanh-thu-hon-4-ty-moi-nam-1946.jpg",
+        "url": "https://danviet.vn/ong-nong-dan-viet-nam-xuat-sac-den-tu-tinh-quang-ngai-trong-cay-gi-nuoi-con-gi-ma-tinh-so-so-da-lai-26-ty-nam-d1372457.html"
+      },
+      {
+        "tag": "Gương mặt điển hình",
+        "highlight": "15/10/2025",
+        "title": "Tự hào Nông dân Việt Nam 2025: Hành trình của trí tuệ, khát vọng vươn mình của người nông dân",
+        "sapo": "Chuỗi chương trình 'Tự hào Nông dân Việt Nam 2025 nhân kỷ niệm 95 năm Ngày thành lập Hội Nông dân Việt Nam (14/10/1930 – 14/10/2025) đã khép lại bằng những dấu ấn đậm nét, những sự kiện quan trọng và ý nghĩa trong ngày 14/10.",
+        "img": "https://t.ex-cdn.com/danviet.vn/512w/files/news/2025/10/15/080426to-lam-1-1916-1632.jpg",
+        "url": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2025-hanh-trinh-cua-tri-tue-khat-vong-vuon-minh-cua-nguoi-nong-dan-d1370632.html"
+      },
+      {
+        "tag": "Sự kiện & Vinh danh",
+        "highlight": "15/10/2025",
+        "title": "Tự hào Nông dân Việt Nam 2025: Đêm tôn vinh trọn vẹn xúc cảm và tri ân những người làm nên mùa vàng",
+        "sapo": "Trong ánh sáng của Lễ tôn vinh và trao danh hiệu 63 Nông dân Việt Nam xuất sắc, 32 Nhà khoa học của nhà nông năm 2025 thuộc Chương trình Tự hào Nông dân Việt Nam, những câu chuyện về hành trình đam mê làm nông nghiệp, kiên trì, bền bỉ gắn bó với người nông dân của các nhà khoa học không chỉ thắp lên niềm tự hào mà còn truyền lửa cho thế hệ tương lai. Chương trình do Trung ương Hội NDVN chủ trì; giao Báo Nông thôn Ngày nay/điện tử Dân Việt phối hợp với Công ty CP Phân bón Bình Điền tổ chức, thực",
+        "img": "https://t.ex-cdn.com/danviet.vn/512w/files/content/2025/10/15/140950img_1017-1407.jpg",
+        "url": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2025-dem-ton-vinh-tron-ven-xuc-cam-va-tri-an-nhung-nguoi-lam-nen-mua-vang-d1370546.html"
+      }
     ]
   },
   {
+    "year": 2024,
+    "label": "2024",
     "kicker": "Chương trình Tự hào Nông dân Việt Nam • Năm thứ 12",
     "title": "Tự hào Nông dân Việt Nam 2024",
     "date": "Tối 14/10/2024",
     "location": "Nhà hát Lớn Hà Nội",
+    "cover": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/img1854-172891471676922313902-37-142-730-1251-crop-17289147300902000701580.jpeg",
     "summary": "Lễ tôn vinh và trao danh hiệu cho 126 Nông dân Việt Nam xuất sắc và Hợp tác xã tiêu biểu (63 nông dân, 63 HTX) diễn ra tối 14/10/2024 tại Nhà hát Lớn Hà Nội, cùng Diễn đàn Nông dân Quốc gia với chủ đề “Lắng nghe nông dân nói”.",
     "stats": [
       {
@@ -1879,37 +1874,57 @@ window.EVENTS = [
     ],
     "link": "https://danviet.vn/tu-hao-nong-dan-viet-nam-2024-channel2891/",
     "linkLabel": "Xem chuyên trang 2024 trên Dân Việt",
-    "year": 2024,
-    "label": "2024",
-    "cover": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/img1854-172891471676922313902-37-142-730-1251-crop-17289147300902000701580.jpeg",
-    "featured": [
-      {
-        "tag": "Diễn đàn & Chính sách",
-        "highlight": "14/10/2024",
-        "title": "Bộ trưởng Lê Minh Hoan: Nông dân cứ thoải mái nhắn tin cho tôi và Chủ tịch Lương Quốc Đoàn",
-        "sapo": "Chủ trì, điều hành Diễn đàn Nông dân Quốc gia lần thứ IX, trước khi trả lời các câu hỏi của đại biểu, Bộ trưởng Bộ Nông nghiệp và PTNT Lê Minh Hoan nhắn nhủ: Bà con cứ thoải mái nhắn tin cho tôi cũng như đồng chí Chủ tịch Hội Nông dân VN Lương Quốc Đoàn.",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/dien-dan-17288714087481573431842-0-0-1600-2560-crop-17288714154351347804802.jpg",
-        "url": "https://danviet.vn/bo-truong-le-minh-hoan-nong-dan-cu-thoai-mai-nhan-tin-cho-toi-va-chu-tich-luong-quoc-doan-20241014092531707-d61672.html"
-      },
-      {
-        "tag": "Hình ảnh & Video",
-        "highlight": "14/10/2024",
-        "title": "Video: Chủ tịch Hội NDVN Lương Quốc Đoàn phát biểu khai mạc Lễ Tôn vinh Nông dân xuất sắc và HTX tiêu biểu 2024",
-        "sapo": "Đồng chí Lương Quốc Đoàn - Ủy viên Ban Chấp hành Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam phát biểu khai mạc Lễ Tôn vinh, trao danh hiệu Nông dân Việt Nam xuất sắc và biểu dương 63 Hợp tác xã tiêu biểu toàn quốc năm 2024 tối 14/10.",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/img1854-172891471676922313902-37-142-730-1251-crop-17289147300902000701580.jpeg",
-        "url": "https://danviet.vn/video-chu-tich-hoi-ndvn-luong-quoc-doan-phat-bieu-khai-mac-le-ton-vinh-nong-dan-xuat-sac-va-htx-tieu-bieu-2024-2024101420542722-d846157.html"
-      },
-      {
-        "tag": "Diễn đàn & Chính sách",
-        "highlight": "14/10/2024",
-        "title": "Chủ tịch Hội NDVN Lương Quốc Đoàn: Lắng nghe tâm tư, khát vọng, tôn vinh NDVN xuất sắc, HTX tiêu biểu toàn quốc năm 2024",
-        "sapo": "Nhân dịp Diễn đàn Nông dân Quốc gia lần thứ IX; Lễ tôn vinh và trao Danh hiệu Nông dân Việt Nam xuất sắc, HTX tiêu biểu toàn quốc năm 2024, đồng chí Lương Quốc Đoàn - Uỷ viên Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Trung ương Hội NDVN đã dành cho Dân Việt buổi phỏng vấn quan trọng.",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/13/800x500-ong-doan-1728813037682908110119.jpg",
-        "url": "https://danviet.vn/chu-tich-hoi-ndvn-luong-quoc-doan-lang-nghe-tam-tu-khat-vong-ton-vinh-ndvn-xuat-sac-htx-tieu-bieu-toan-quoc-nam-2024-20241013100033141-d1189318.html"
-      }
-    ],
-    "articleCount": 56,
     "articles": [
+      {
+        "id": "61672",
+        "title": "Bộ trưởng Lê Minh Hoan: Nông dân cứ thoải mái nhắn tin cho tôi và Chủ tịch Lương Quốc Đoàn",
+        "url": "https://danviet.vn/bo-truong-le-minh-hoan-nong-dan-cu-thoai-mai-nhan-tin-cho-toi-va-chu-tich-luong-quoc-doan-20241014092531707-d61672.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/dien-dan-17288714087481573431842-0-0-1600-2560-crop-17288714154351347804802.jpg",
+        "sapo": "Chủ trì, điều hành Diễn đàn Nông dân Quốc gia lần thứ IX, trước khi trả lời các câu hỏi của đại biểu, Bộ trưởng Bộ Nông nghiệp và PTNT Lê Minh Hoan nhắn nhủ: Bà con cứ thoải mái nhắn tin cho tôi cũng như đồng chí Chủ tịch Hội Nông dân VN Lương Quốc Đoàn.",
+        "category": "Diễn đàn & Chính sách",
+        "location": "",
+        "date": "14/10/2024"
+      },
+      {
+        "id": "846157",
+        "title": "Video: Chủ tịch Hội NDVN Lương Quốc Đoàn phát biểu khai mạc Lễ Tôn vinh Nông dân xuất sắc và HTX tiêu biểu 2024",
+        "url": "https://danviet.vn/video-chu-tich-hoi-ndvn-luong-quoc-doan-phat-bieu-khai-mac-le-ton-vinh-nong-dan-xuat-sac-va-htx-tieu-bieu-2024-2024101420542722-d846157.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/img1854-172891471676922313902-37-142-730-1251-crop-17289147300902000701580.jpeg",
+        "sapo": "Đồng chí Lương Quốc Đoàn - Ủy viên Ban Chấp hành Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam phát biểu khai mạc Lễ Tôn vinh, trao danh hiệu Nông dân Việt Nam xuất sắc và biểu dương 63 Hợp tác xã tiêu biểu toàn quốc năm 2024 tối 14/10.",
+        "category": "Hình ảnh & Video",
+        "location": "",
+        "date": "14/10/2024"
+      },
+      {
+        "id": "1189318",
+        "title": "Chủ tịch Hội NDVN Lương Quốc Đoàn: Lắng nghe tâm tư, khát vọng, tôn vinh NDVN xuất sắc, HTX tiêu biểu toàn quốc năm 2024",
+        "url": "https://danviet.vn/chu-tich-hoi-ndvn-luong-quoc-doan-lang-nghe-tam-tu-khat-vong-ton-vinh-ndvn-xuat-sac-htx-tieu-bieu-toan-quoc-nam-2024-20241013100033141-d1189318.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/13/800x500-ong-doan-1728813037682908110119.jpg",
+        "sapo": "Nhân dịp Diễn đàn Nông dân Quốc gia lần thứ IX; Lễ tôn vinh và trao Danh hiệu Nông dân Việt Nam xuất sắc, HTX tiêu biểu toàn quốc năm 2024, đồng chí Lương Quốc Đoàn - Uỷ viên Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Trung ương Hội NDVN đã dành cho Dân Việt buổi phỏng vấn quan trọng.",
+        "category": "Diễn đàn & Chính sách",
+        "location": "",
+        "date": "14/10/2024"
+      },
+      {
+        "id": "1189246",
+        "title": "Toàn cảnh chân dung 63 nông dân Việt Nam xuất sắc: Mỗi người như một thước phim giữa đời thực",
+        "url": "https://danviet.vn/toan-canh-chan-dung-63-nong-dan-viet-nam-xuat-sac-moi-nguoi-nhu-mot-thuoc-phim-giua-doi-thuc-20241012200020307-d1189246.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/12/chan-dung-ndvnsx-17287378825451291288194-0-0-1250-2000-crop-17287378879691665210118.jpg",
+        "sapo": "Năm 2024, Lễ Tôn vinh và trao Danh hiệu cho 63 nông dân Việt Nam xuất sắc sẽ diễn ra trang trọng tại Hà Nội vào tối ngày 14/10. Mỗi con người mang trong mình một ý chí, một khát vọng, một số phận như những thước phim giữa đời thực.",
+        "category": "Hình ảnh & Video",
+        "location": "",
+        "date": "13/10/2024"
+      },
+      {
+        "id": "1188043",
+        "title": "Phó Chủ tịch Hội NDVN Đinh Khắc Đính: 63 HTX tiêu biểu toàn quốc năm 2024 có nhiều điểm nhấn nổi bật",
+        "url": "https://danviet.vn/pho-chu-tich-hoi-ndvn-dinh-khac-dinh-63-htx-tieu-bieu-toan-quoc-nam-2024-co-nhieu-diem-nhan-noi-bat-20241006095946323-d1188043.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/6/hoi-nong-dan-viet-nam-17281836628752043522138-81-88-826-1280-crop-17281840702431403610365.jpg",
+        "sapo": "Đồng chí Đinh Khắc Đính – Phó Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam, Chủ tịch Hội đồng thẩm định, xét chọn Hợp tác xã tiêu biểu toàn quốc năm 2024 khẳng định thành tích của 63 HTX tiêu biểu toàn quốc năm 2024 do Hội NDVN tuyên truyền, vận động, hướng dẫn hỗ trợ thành lập có nhiều điểm nhấn nổi bật.",
+        "category": "Diễn đàn & Chính sách",
+        "location": "",
+        "date": "06/10/2024"
+      },
       {
         "id": "1190035",
         "title": "Sau diễn đàn, nông dân mong được gặp gỡ, chia sẻ nhiều hơn với Chủ tịch Hội Nông dân Việt Nam, Bộ trưởng Bộ NNPTNT",
@@ -1961,6 +1976,16 @@ window.EVENTS = [
         "date": "15/10/2024"
       },
       {
+        "id": "1189416",
+        "title": "8 ông tỷ phú nông dân của một chi hội ở Bình Dương 'bay ra' Hà Nội cổ vũ Nông dân Việt Nam xuất sắc",
+        "url": "https://danviet.vn/8-ong-ty-phu-nong-dan-dat-binh-duong-book-ve-may-bay-ra-ha-noi-co-cu-nong-dan-viet-nam-xuat-sac-20241014001543032-d1189416.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/nong-dan-xuat-sac-1728892193565900851058-68-0-868-1280-crop-172889248194348882612.jpg",
+        "sapo": "Ông Tống Văn Hướng, Chi hội trưởng Chi hội Nông dân tỷ phú và 7 thành viên khác của Chi hội nông dân tỷ phú đã từ Bình Dương đặt vé máy bay ra Hà Nội dự chương trình Tự hào Nông dân Việt Nam, Lễ tôn vinh và trao danh hiệu Nông dân Việt Nam xuất sắc, HTX tiêu biểu 2024 tại Nhà hát lớn Hà Nội.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "14/10/2024"
+      },
+      {
         "id": "1189593",
         "title": "Những nông dân Việt Nam xuất sắc nào được nhắc tên trong bài Xẩm 'Nông dân Việt Nam'?",
         "url": "https://danviet.vn/nhung-nong-dan-viet-nam-xuat-sac-nao-duoc-nhac-ten-trong-bai-xam-nong-dan-viet-nam-20241014233905989-d1189593.html",
@@ -1989,46 +2014,6 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "15/10/2024"
-      },
-      {
-        "id": "61672",
-        "title": "Bộ trưởng Lê Minh Hoan: Nông dân cứ thoải mái nhắn tin cho tôi và Chủ tịch Lương Quốc Đoàn",
-        "url": "https://danviet.vn/bo-truong-le-minh-hoan-nong-dan-cu-thoai-mai-nhan-tin-cho-toi-va-chu-tich-luong-quoc-doan-20241014092531707-d61672.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/dien-dan-17288714087481573431842-0-0-1600-2560-crop-17288714154351347804802.jpg",
-        "sapo": "Chủ trì, điều hành Diễn đàn Nông dân Quốc gia lần thứ IX, trước khi trả lời các câu hỏi của đại biểu, Bộ trưởng Bộ Nông nghiệp và PTNT Lê Minh Hoan nhắn nhủ: Bà con cứ thoải mái nhắn tin cho tôi cũng như đồng chí Chủ tịch Hội Nông dân VN Lương Quốc Đoàn.",
-        "category": "Diễn đàn & Chính sách",
-        "location": "",
-        "date": "14/10/2024"
-      },
-      {
-        "id": "846157",
-        "title": "Video: Chủ tịch Hội NDVN Lương Quốc Đoàn phát biểu khai mạc Lễ Tôn vinh Nông dân xuất sắc và HTX tiêu biểu 2024",
-        "url": "https://danviet.vn/video-chu-tich-hoi-ndvn-luong-quoc-doan-phat-bieu-khai-mac-le-ton-vinh-nong-dan-xuat-sac-va-htx-tieu-bieu-2024-2024101420542722-d846157.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/img1854-172891471676922313902-37-142-730-1251-crop-17289147300902000701580.jpeg",
-        "sapo": "Đồng chí Lương Quốc Đoàn - Ủy viên Ban Chấp hành Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam phát biểu khai mạc Lễ Tôn vinh, trao danh hiệu Nông dân Việt Nam xuất sắc và biểu dương 63 Hợp tác xã tiêu biểu toàn quốc năm 2024 tối 14/10.",
-        "category": "Hình ảnh & Video",
-        "location": "",
-        "date": "14/10/2024"
-      },
-      {
-        "id": "1189318",
-        "title": "Chủ tịch Hội NDVN Lương Quốc Đoàn: Lắng nghe tâm tư, khát vọng, tôn vinh NDVN xuất sắc, HTX tiêu biểu toàn quốc năm 2024",
-        "url": "https://danviet.vn/chu-tich-hoi-ndvn-luong-quoc-doan-lang-nghe-tam-tu-khat-vong-ton-vinh-ndvn-xuat-sac-htx-tieu-bieu-toan-quoc-nam-2024-20241013100033141-d1189318.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/13/800x500-ong-doan-1728813037682908110119.jpg",
-        "sapo": "Nhân dịp Diễn đàn Nông dân Quốc gia lần thứ IX; Lễ tôn vinh và trao Danh hiệu Nông dân Việt Nam xuất sắc, HTX tiêu biểu toàn quốc năm 2024, đồng chí Lương Quốc Đoàn - Uỷ viên Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Trung ương Hội NDVN đã dành cho Dân Việt buổi phỏng vấn quan trọng.",
-        "category": "Diễn đàn & Chính sách",
-        "location": "",
-        "date": "14/10/2024"
-      },
-      {
-        "id": "1189416",
-        "title": "8 ông tỷ phú nông dân của một chi hội ở Bình Dương 'bay ra' Hà Nội cổ vũ Nông dân Việt Nam xuất sắc",
-        "url": "https://danviet.vn/8-ong-ty-phu-nong-dan-dat-binh-duong-book-ve-may-bay-ra-ha-noi-co-cu-nong-dan-viet-nam-xuat-sac-20241014001543032-d1189416.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/nong-dan-xuat-sac-1728892193565900851058-68-0-868-1280-crop-172889248194348882612.jpg",
-        "sapo": "Ông Tống Văn Hướng, Chi hội trưởng Chi hội Nông dân tỷ phú và 7 thành viên khác của Chi hội nông dân tỷ phú đã từ Bình Dương đặt vé máy bay ra Hà Nội dự chương trình Tự hào Nông dân Việt Nam, Lễ tôn vinh và trao danh hiệu Nông dân Việt Nam xuất sắc, HTX tiêu biểu 2024 tại Nhà hát lớn Hà Nội.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "14/10/2024"
       },
       {
         "id": "1189577",
@@ -2131,26 +2116,6 @@ window.EVENTS = [
         "date": "14/10/2024"
       },
       {
-        "id": "1189376",
-        "title": "Nông dân Việt Nam xuất sắc, HTX tiêu biểu cùng tâm huyết phát triển nông nghiệp, nông dân, nông thôn",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-htx-cung-tam-huyet-phat-trien-nong-nghiep-nong-dan-nong-thon-20241013165944839-d1189376.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/13/ong-su-1728813166349764239519-101-0-899-1276-crop-1728813178781972454681.jpg",
-        "sapo": "Bên lề cuộc gặp mặt 63 Nông dân Việt Nam xuất sắc và 63 HTX tiêu biểu năm 2024 diễn ra tại Trụ sở Cơ quan TƯ Hội NDVN (Hà Nội) hôm qua, 13/10, nhiều Nông dân Việt Nam xuất sắc, HTX tiêu biểu năm 2024 cùng chung tâm huyết nhằm phát triển kinh tế nông nghiệp, làm giàu bền vững ngay chính trên mảnh đất quê hương mình.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "14/10/2024"
-      },
-      {
-        "id": "1189246",
-        "title": "Toàn cảnh chân dung 63 nông dân Việt Nam xuất sắc: Mỗi người như một thước phim giữa đời thực",
-        "url": "https://danviet.vn/toan-canh-chan-dung-63-nong-dan-viet-nam-xuat-sac-moi-nguoi-nhu-mot-thuoc-phim-giua-doi-thuc-20241012200020307-d1189246.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/12/chan-dung-ndvnsx-17287378825451291288194-0-0-1250-2000-crop-17287378879691665210118.jpg",
-        "sapo": "Năm 2024, Lễ Tôn vinh và trao Danh hiệu cho 63 nông dân Việt Nam xuất sắc sẽ diễn ra trang trọng tại Hà Nội vào tối ngày 14/10. Mỗi con người mang trong mình một ý chí, một khát vọng, một số phận như những thước phim giữa đời thực.",
-        "category": "Hình ảnh & Video",
-        "location": "",
-        "date": "13/10/2024"
-      },
-      {
         "id": "1189401",
         "title": "Video: Hội Nông dân Việt Nam trao tặng 126 bằng khen cho Nông dân xuất sắc và HTX tiêu biểu toàn quốc 2024",
         "url": "https://danviet.vn/video-hoi-nong-dan-viet-nam-trao-tang-126-bang-khen-cho-nong-dan-xuat-sac-va-htx-tieu-bieu-toan-quoc-2024-20241013210053279-d1189401.html",
@@ -2199,6 +2164,16 @@ window.EVENTS = [
         "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "13/10/2024"
+      },
+      {
+        "id": "1189376",
+        "title": "Nông dân Việt Nam xuất sắc, HTX tiêu biểu cùng tâm huyết phát triển nông nghiệp, nông dân, nông thôn",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-htx-cung-tam-huyet-phat-trien-nong-nghiep-nong-dan-nong-thon-20241013165944839-d1189376.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/13/ong-su-1728813166349764239519-101-0-899-1276-crop-1728813178781972454681.jpg",
+        "sapo": "Bên lề cuộc gặp mặt 63 Nông dân Việt Nam xuất sắc và 63 HTX tiêu biểu năm 2024 diễn ra tại Trụ sở Cơ quan TƯ Hội NDVN (Hà Nội) hôm qua, 13/10, nhiều Nông dân Việt Nam xuất sắc, HTX tiêu biểu năm 2024 cùng chung tâm huyết nhằm phát triển kinh tế nông nghiệp, làm giàu bền vững ngay chính trên mảnh đất quê hương mình.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "14/10/2024"
       },
       {
         "id": "1189360",
@@ -2301,14 +2276,14 @@ window.EVENTS = [
         "date": "11/10/2024"
       },
       {
-        "id": "1188832",
-        "title": "Đại diện Bộ Kế hoạch và Đầu tư: 63 hợp tác xã tiêu biểu là những đầu tàu, kéo nông dân cùng làm giàu",
-        "url": "https://danviet.vn/dai-dien-bo-ke-hoach-va-dau-tu-63-hop-tac-xa-tieu-bieu-la-nhung-dau-tau-keo-nong-dan-cung-lam-giau-20241010142309678-d1188832.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/10/dang-van-thanh-1728544883625935679666-63-0-703-1024-crop-172854490160446699257.jpeg",
-        "sapo": "Là một trong những thành viên Hội đồng chung khảo bình chọn 63 hợp tác xã tiêu biểu toàn quốc do Hội Nông dân Việt Nam tư vấn, hỗ trợ, vận động, hướng dẫn thành lập, ông Đặng Văn Thanh, Phó Cục trưởng Cục Kinh tế hợp tác (Bộ Kế hoạch và Đầu tư) rất ấn tượng với mô hình, thành tích của các hợp tác xã được đề cử.",
-        "category": "Gương mặt điển hình",
+        "id": "846051",
+        "title": "Lắng nghe nông dân nói: Nhiều nông dân, hợp tác xã muốn chia sẻ chân tình với Chủ tịch Hội NDVN, Bộ trưởng NNPTNT",
+        "url": "https://danviet.vn/lang-nghe-nong-dan-noi-nhieu-nong-dan-hop-tac-xa-muon-chia-se-chan-tinh-voi-chu-tich-hoi-ndvn-bo-truong-nnptnt-2024100906443995-d846051.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/8/dien-dan-lang-nghe-nong-dan-noi-172843021438452602086-77-0-1327-2000-crop-1728430956638528410946.jpg",
+        "sapo": "Vào ngày 14/10 tới đây, tại Hà Nội, lần đầu tiên Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam Lương Quốc Đoàn và Bộ trưởng Bộ Nông nghiệp và PTNT Lê Minh Hoan và sẽ đồng chủ trì Diễn đàn \"Lắng nghe nông dân nói\" với sự tham dự của 126 nông dân Việt Nam xuất sắc, Hợp tác xã tiêu biểu cả nước.",
+        "category": "Diễn đàn & Chính sách",
         "location": "",
-        "date": "11/10/2024"
+        "date": "09/10/2024"
       },
       {
         "id": "1188625",
@@ -2319,6 +2294,16 @@ window.EVENTS = [
         "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "10/10/2024"
+      },
+      {
+        "id": "1188832",
+        "title": "Đại diện Bộ Kế hoạch và Đầu tư: 63 hợp tác xã tiêu biểu là những đầu tàu, kéo nông dân cùng làm giàu",
+        "url": "https://danviet.vn/dai-dien-bo-ke-hoach-va-dau-tu-63-hop-tac-xa-tieu-bieu-la-nhung-dau-tau-keo-nong-dan-cung-lam-giau-20241010142309678-d1188832.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/10/dang-van-thanh-1728544883625935679666-63-0-703-1024-crop-172854490160446699257.jpeg",
+        "sapo": "Là một trong những thành viên Hội đồng chung khảo bình chọn 63 hợp tác xã tiêu biểu toàn quốc do Hội Nông dân Việt Nam tư vấn, hỗ trợ, vận động, hướng dẫn thành lập, ông Đặng Văn Thanh, Phó Cục trưởng Cục Kinh tế hợp tác (Bộ Kế hoạch và Đầu tư) rất ấn tượng với mô hình, thành tích của các hợp tác xã được đề cử.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "11/10/2024"
       },
       {
         "id": "1188607",
@@ -2349,16 +2334,6 @@ window.EVENTS = [
         "category": "Sự kiện & Vinh danh",
         "location": "",
         "date": "10/10/2024"
-      },
-      {
-        "id": "846051",
-        "title": "Lắng nghe nông dân nói: Nhiều nông dân, hợp tác xã muốn chia sẻ chân tình với Chủ tịch Hội NDVN, Bộ trưởng NNPTNT",
-        "url": "https://danviet.vn/lang-nghe-nong-dan-noi-nhieu-nong-dan-hop-tac-xa-muon-chia-se-chan-tinh-voi-chu-tich-hoi-ndvn-bo-truong-nnptnt-2024100906443995-d846051.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/8/dien-dan-lang-nghe-nong-dan-noi-172843021438452602086-77-0-1327-2000-crop-1728430956638528410946.jpg",
-        "sapo": "Vào ngày 14/10 tới đây, tại Hà Nội, lần đầu tiên Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam Lương Quốc Đoàn và Bộ trưởng Bộ Nông nghiệp và PTNT Lê Minh Hoan và sẽ đồng chủ trì Diễn đàn \"Lắng nghe nông dân nói\" với sự tham dự của 126 nông dân Việt Nam xuất sắc, Hợp tác xã tiêu biểu cả nước.",
-        "category": "Diễn đàn & Chính sách",
-        "location": "",
-        "date": "09/10/2024"
       },
       {
         "id": "1188453",
@@ -2421,16 +2396,6 @@ window.EVENTS = [
         "date": "07/10/2024"
       },
       {
-        "id": "1188043",
-        "title": "Phó Chủ tịch Hội NDVN Đinh Khắc Đính: 63 HTX tiêu biểu toàn quốc năm 2024 có nhiều điểm nhấn nổi bật",
-        "url": "https://danviet.vn/pho-chu-tich-hoi-ndvn-dinh-khac-dinh-63-htx-tieu-bieu-toan-quoc-nam-2024-co-nhieu-diem-nhan-noi-bat-20241006095946323-d1188043.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/6/hoi-nong-dan-viet-nam-17281836628752043522138-81-88-826-1280-crop-17281840702431403610365.jpg",
-        "sapo": "Đồng chí Đinh Khắc Đính – Phó Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam, Chủ tịch Hội đồng thẩm định, xét chọn Hợp tác xã tiêu biểu toàn quốc năm 2024 khẳng định thành tích của 63 HTX tiêu biểu toàn quốc năm 2024 do Hội NDVN tuyên truyền, vận động, hướng dẫn hỗ trợ thành lập có nhiều điểm nhấn nổi bật.",
-        "category": "Diễn đàn & Chính sách",
-        "location": "",
-        "date": "06/10/2024"
-      },
-      {
         "id": "1187917",
         "title": "9 kỷ lục ấn tượng của 63 Nông dân Việt Nam xuất sắc năm 2024, có tỷ phú nuôi tôm lợi nhuận 25 tỷ đồng/năm",
         "url": "https://danviet.vn/9-ky-luc-an-tuong-cua-63-nong-dan-viet-nam-xuat-sac-nam-2024-co-ty-phu-nuoi-tom-loi-nhuan-25-ty-dong-nam-20241005115507171-d1187917.html",
@@ -2470,13 +2435,43 @@ window.EVENTS = [
         "location": "",
         "date": "04/10/2024"
       }
+    ],
+    "articleCount": 56,
+    "featured": [
+      {
+        "tag": "Diễn đàn & Chính sách",
+        "highlight": "14/10/2024",
+        "title": "Bộ trưởng Lê Minh Hoan: Nông dân cứ thoải mái nhắn tin cho tôi và Chủ tịch Lương Quốc Đoàn",
+        "sapo": "Chủ trì, điều hành Diễn đàn Nông dân Quốc gia lần thứ IX, trước khi trả lời các câu hỏi của đại biểu, Bộ trưởng Bộ Nông nghiệp và PTNT Lê Minh Hoan nhắn nhủ: Bà con cứ thoải mái nhắn tin cho tôi cũng như đồng chí Chủ tịch Hội Nông dân VN Lương Quốc Đoàn.",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/dien-dan-17288714087481573431842-0-0-1600-2560-crop-17288714154351347804802.jpg",
+        "url": "https://danviet.vn/bo-truong-le-minh-hoan-nong-dan-cu-thoai-mai-nhan-tin-cho-toi-va-chu-tich-luong-quoc-doan-20241014092531707-d61672.html"
+      },
+      {
+        "tag": "Hình ảnh & Video",
+        "highlight": "14/10/2024",
+        "title": "Video: Chủ tịch Hội NDVN Lương Quốc Đoàn phát biểu khai mạc Lễ Tôn vinh Nông dân xuất sắc và HTX tiêu biểu 2024",
+        "sapo": "Đồng chí Lương Quốc Đoàn - Ủy viên Ban Chấp hành Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam phát biểu khai mạc Lễ Tôn vinh, trao danh hiệu Nông dân Việt Nam xuất sắc và biểu dương 63 Hợp tác xã tiêu biểu toàn quốc năm 2024 tối 14/10.",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/14/img1854-172891471676922313902-37-142-730-1251-crop-17289147300902000701580.jpeg",
+        "url": "https://danviet.vn/video-chu-tich-hoi-ndvn-luong-quoc-doan-phat-bieu-khai-mac-le-ton-vinh-nong-dan-xuat-sac-va-htx-tieu-bieu-2024-2024101420542722-d846157.html"
+      },
+      {
+        "tag": "Diễn đàn & Chính sách",
+        "highlight": "14/10/2024",
+        "title": "Chủ tịch Hội NDVN Lương Quốc Đoàn: Lắng nghe tâm tư, khát vọng, tôn vinh NDVN xuất sắc, HTX tiêu biểu toàn quốc năm 2024",
+        "sapo": "Nhân dịp Diễn đàn Nông dân Quốc gia lần thứ IX; Lễ tôn vinh và trao Danh hiệu Nông dân Việt Nam xuất sắc, HTX tiêu biểu toàn quốc năm 2024, đồng chí Lương Quốc Đoàn - Uỷ viên Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Trung ương Hội NDVN đã dành cho Dân Việt buổi phỏng vấn quan trọng.",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/10/13/800x500-ong-doan-1728813037682908110119.jpg",
+        "url": "https://danviet.vn/chu-tich-hoi-ndvn-luong-quoc-doan-lang-nghe-tam-tu-khat-vong-ton-vinh-ndvn-xuat-sac-htx-tieu-bieu-toan-quoc-nam-2024-20241013100033141-d1189318.html"
+      }
     ]
   },
   {
+    "year": 2023,
+    "label": "2023",
     "kicker": "Chương trình Tự hào Nông dân Việt Nam • Năm thứ 11",
     "title": "Tự hào Nông dân Việt Nam 2023",
     "date": "Tối 13/10/2023",
     "location": "Nhà hát Lớn Hà Nội",
+    "cover": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/11/1-1697005486876107826848-312-110-1333-1744-crop-16970055654021808611157-72-0-1021-1518-crop-16970085197171332156553.jpg",
     "summary": "Tôn vinh và trao danh hiệu cho 100 Nông dân Việt Nam xuất sắc, biểu dương 63 Hợp tác xã nông nghiệp tiêu biểu toàn quốc. Lễ tôn vinh diễn ra tối 13/10/2023 tại Nhà hát Lớn (trực tiếp VTV2); Diễn đàn Nông dân Quốc gia lần thứ VIII bàn về phát triển kinh tế tập thể trong nông nghiệp.",
     "stats": [
       {
@@ -2490,43 +2485,13 @@ window.EVENTS = [
         "label": "Hợp tác xã tiêu biểu"
       },
       {
-        "value": 86,
+        "value": 100,
         "suffix": "",
         "label": "Bài báo tư liệu"
       }
     ],
     "link": "https://danviet.vn/T%E1%BB%B1+h%C3%A0o+N%C3%B4ng+d%C3%A2n+Vi%E1%BB%87t+Nam+2023-tag/",
     "linkLabel": "Xem chủ đề 2023 trên Dân Việt",
-    "year": 2023,
-    "label": "2023",
-    "cover": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/11/1-1697005486876107826848-312-110-1333-1744-crop-16970055654021808611157-72-0-1021-1518-crop-16970085197171332156553.jpg",
-    "featured": [
-      {
-        "tag": "Sự kiện & Vinh danh",
-        "highlight": "03/10/2023",
-        "title": "Chương trình Tự hào Nông dân Việt Nam 2023 với chuỗi các sự kiện đặc biệt 'do nông dân, vì nông dân'",
-        "sapo": "",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/2/anh-1-tr7-16962396674441720849402-0-0-563-900-crop-1696239742286496055839.png",
-        "url": "https://danviet.vn/chuong-trinh-tu-hao-nong-dan-viet-nam-2023-voi-chuoi-su-kien-dac-biet-do-nong-dan-vi-nong-dan-20231002164250744-d1121262.html"
-      },
-      {
-        "tag": "Sự kiện & Vinh danh",
-        "highlight": "11/10/2023",
-        "title": "100 nông dân Việt Nam xuất sắc đã có mặt tại Hà Nội để đón chuỗi sự kiện Tự hào nông dân Việt Nam 2023",
-        "sapo": "",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/11/1-1697005486876107826848-312-110-1333-1744-crop-16970055654021808611157-72-0-1021-1518-crop-16970085197171332156553.jpg",
-        "url": "https://danviet.vn/100-nong-dan-viet-nam-xuat-sac-da-co-mat-tai-ha-noi-20231011134928545-d1122925.html"
-      },
-      {
-        "tag": "Diễn đàn & Chính sách",
-        "highlight": "13/10/2023",
-        "title": "Chuỗi Chương trình Tự hào Nông dân Việt Nam 2023 là cơ hội để nông dân, HTX tiếp cận chính sách, vốn...",
-        "sapo": "",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/base64-1697116679775919124005-16972019157111738896066-83-0-1333-2000-crop-1697201994230436819900.png",
-        "url": "https://danviet.vn/chuoi-chuong-trinh-tu-hao-nong-dan-viet-nam-2023-la-co-hoi-de-nong-dan-htx-tiep-can-chinh-sach-von-2023101320041759-d839606.html"
-      }
-    ],
-    "articleCount": 86,
     "articles": [
       {
         "id": "1406563",
@@ -2547,6 +2512,16 @@ window.EVENTS = [
         "category": "Diễn đàn & Chính sách",
         "location": "",
         "date": "30/12/2023"
+      },
+      {
+        "id": "20231015113250539",
+        "title": "Bản tin Dân Việt Nóng 15/10: Ấn tượng chuỗi sự kiện Tự hào Nông dân Việt Nam 2023",
+        "url": "https://tv.danviet.vn/ban-tin-dan-viet-nong-15-10-an-tuong-chuoi-su-kien-tu-hao-nong-dan-viet-nam-2023-20231015113250539.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/15/ban-tin-dan-viet-nong-00-39-24-12-still185-16973443171061174034500-0-43-1080-1771-crop-16973443196521550075608.jpg",
+        "sapo": "Chương trình Tự hào Nông dân Việt Nam năm thứ 11 chính thức khép lại với một chuỗi các hoạt động trong những ngày qua đã diễn ra thành công tốt đẹp. Bản tin số đặc biệt ngày hôm nay, báo điện tử Dân Việt sẽ dành thời lượng để nhìn lại những điểm nhấn đặc biệt của chuỗi Chương trình Tự hào Nông dân Việt Nam 2023.",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
+        "date": "15/10/2023"
       },
       {
         "id": "1123584",
@@ -2599,6 +2574,26 @@ window.EVENTS = [
         "date": "13/10/2023"
       },
       {
+        "id": "20231013222608135",
+        "title": "Video: Toàn cảnh Lễ tôn vinh 100 Nông dân Việt Nam xuất sắc 2023 và biểu dương 63 HTX tiêu biểu toàn quốc",
+        "url": "https://tv.danviet.vn/toan-canh-le-ton-vinh-100-nong-dan-viet-nam-xuat-sac-2023-va-bieu-duong-63-htx-tieu-bieu-toan-quoc-20231013222608135.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/anh-ket-16972066796351757485692-1697210421704194963499-3-0-409-650-crop-16972104265481272106134.jpg",
+        "sapo": "Tối 13/10, Lễ Tôn vinh và trao Danh hiệu Nông dân Việt Nam xuất sắc, Biểu dương HTX tiêu biểu do Trung ương Hội Nông dân Việt Nam giao Báo Nông thôn Ngày nay/Điện tử Dân Việt, Công ty Cổ phần Phân bón Bình Điền, Ngân hàng Nông nghiệp và Phát triển nông thôn Việt Nam (Agribank) tổ chức đã diễn ra tại Nhà hát Lớn Hà Nội.",
+        "category": "Hình ảnh & Video",
+        "location": "",
+        "date": "13/10/2023"
+      },
+      {
+        "id": "20231013171243183",
+        "title": "Tôn vinh 100 Nông dân Việt Nam xuất sắc 2023: Trăm nghề tỏa sáng",
+        "url": "https://tv.danviet.vn/ton-vinh-100-nong-dan-viet-nam-xuat-sac-2023-tram-nghe-toa-sang-20231013171243183.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/thiet-ke-chua-co-ten-1697196544582882742189-0-140-1080-1868-crop-16971965587321681494645.jpeg",
+        "sapo": "100 Nông dân Việt Nam xuất sắc 2023 hoạt động đa dạng trên các lĩnh vực. Trải qua 2 năm dịch Covid-19, họ đều là những người có sức",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "13/10/2023"
+      },
+      {
         "id": "1123381",
         "title": "Lễ tôn vinh và trao danh hiệu cho 100 'Nông dân Việt Nam xuất sắc 2023' và biểu dương 63 HTX tiêu biểu toàn quốc",
         "url": "https://danviet.vn/le-ton-vinh-va-trao-danh-hieu-cho-100-nong-dan-viet-nam-xuat-sac-2023-va-bieu-duong-63-htx-tieu-bieu-toan-quoc-20231013172430983-d1123381.html",
@@ -2619,12 +2614,32 @@ window.EVENTS = [
         "date": "13/10/2023"
       },
       {
+        "id": "20231012211640401",
+        "title": "Nông dân Việt Nam xuất sắc 2023: Vừa vinh dự, vừa trăn trở làm thế nào để làm giàu cho quê hương",
+        "url": "https://tv.danviet.vn/nong-dan-viet-nam-xuat-sac-2023-vua-vinh-du-vua-tran-tro-lam-the-nao-de-lam-giau-cho-que-huong-20231012211640401.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/12/base64-1697116679775919124005-16971200516671926861766-14-0-1264-2000-crop-16971200860631953259541.png",
+        "sapo": "Những nông dân Việt Nam xuất sắc 2023 đã chia sẻ cảm xúc sau buổi tiếp kiến lãnh đạo T.Ư Hội Nông dân Việt Nam vào chiều ngày 12/10. Xen lẫn trong niềm vinh dự, tự hào còn là những nỗi trăn trở trước những thách thức mà người nông dân phải đối mặt trong việc phát triển sản xuất, kinh tế.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "13/10/2023"
+      },
+      {
         "id": "1123193",
         "title": "9 kỷ lục ấn tượng của 100 Nông dân Việt Nam xuất sắc 2023, có tỷ phú nuôi tôm lợi nhuận 50 tỷ/năm",
         "url": "https://danviet.vn/9-ky-luc-an-tuong-cua-100-nong-dan-viet-nam-xuat-sac-2023-ty-phu-nuoi-tom-loi-nhuan-50-ty-nam-20231012181413062-d1123193.html",
         "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/base64-16961687296712094643039-16971719508901238893002-417-281-1103-1379-crop-1697171973483374081717.png",
         "sapo": "",
         "category": "Sự kiện & Vinh danh",
+        "location": "",
+        "date": "13/10/2023"
+      },
+      {
+        "id": "20231013110400817",
+        "title": "Bản tin Dân Việt Nóng 13/10: Tôn vinh 100 Nông dân Việt Nam xuất sắc năm 2023 và 63 hợp tác xã tiêu biểu",
+        "url": "https://tv.danviet.vn/ban-tin-dan-viet-nong-13-10-ton-vinh-100-nong-dan-viet-nam-xuat-sac-nam-2023-va-63-hop-tac-xa-tieu-bieu-20231013110400817.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/13/sequence-0100085222still080-16971695388871881654376-0-0-1080-1728-crop-16971695422921361318579.jpg",
+        "sapo": "Chuyển đổi số ngân hàng, tài chính và cơ hội của nông dân; Tôn vinh 100 Nông dân Việt Nam xuất sắc năm 2023 và 63 hợp tác xã tiêu biểu; Người dân bỏ ruộng làm dịch vụ homestay trái phép, phá vỡ cảnh quan di sản Cao nguyên đá Đồng Văn;... là những tin chính trong bản tin hôm nay.",
+        "category": "Gương mặt điển hình",
         "location": "",
         "date": "13/10/2023"
       },
@@ -2645,6 +2660,16 @@ window.EVENTS = [
         "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/10/hoi-nong-dan-bac-giang-1696946520297742876503-0-0-1101-1761-crop-16969468402801307020815.jpg",
         "sapo": "",
         "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "11/10/2023"
+      },
+      {
+        "id": "20231011103000201",
+        "title": "Bản tin Dân Việt Nóng 11/10: Hàng trăm nông dân xuất sắc hội tụ về chuỗi sự kiện 'Tự hào Nông dân Việt Nam 2023'",
+        "url": "https://tv.danviet.vn/ban-tin-dan-viet-nong-11-10-hang-tram-nong-dan-xuat-sac-hoi-tu-ve-chuoi-su-kien-tu-hao-nong-dan-viet-nam-2023-20231011103000201.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/11/ban-tin-dan-viet-nong00183019still184-169699980227799364447-0-37-1080-1765-crop-16969998059341215140269.jpg",
+        "sapo": "Hàng trăm nông dân xuất sắc sẽ hội tụ về Thủ đô tham gia chuỗi sự kiện",
+        "category": "Sự kiện & Vinh danh",
         "location": "",
         "date": "11/10/2023"
       },
@@ -2684,6 +2709,16 @@ window.EVENTS = [
         "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-den-tu-kien-giang-la-mot-ty-phu-tung-co-10-nam-gao-cho-nuoc-song-20231009164144568-d1122571.html",
         "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/9/nong-dan-viet-nam-xuat-sac-2023-nguyen-van-thum5-16968413660391017939333-0-0-1156-1850-crop-16968421125501261944719.jpg",
         "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "10/10/2023"
+      },
+      {
+        "id": "20231009212720236",
+        "title": "Kỹ sư ô tô thu tiền tỷ mỗi năm nhờ nông nghiệp sạch trở thành nông dân Việt Nam xuất sắc 2023",
+        "url": "https://tv.danviet.vn/ky-su-o-to-thu-tien-ty-moi-nam-nho-nong-nghiep-sach-tro-thanh-nong-dan-viet-nam-xuat-sac-2023-20231009212720236.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/9/c0088-00-20-05-11-still002-16968613700501735719361-0-20-1080-1748-crop-16968613746161002010388.jpg",
+        "sapo": "Thu nhập tiền tỷ mỗi năm nhờ nông nghiệp sạch, anh Lâm Văn Trung (HTX Nông nghiệp Đại Lải, Thành phố Vĩnh Yên, tỉnh Vĩnh Phúc) đã vinh dự được bình chọn là 1 trong 100 nông dân tiêu biểu cả nước nhận danh hiệu “Nông dân Việt Nam xuất sắc 2023”.",
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "10/10/2023"
@@ -2734,6 +2769,16 @@ window.EVENTS = [
         "url": "https://danviet.vn/nuoi-ga-lai-choi-tha-vuon-nong-dan-viet-nam-xuat-sac-2023-den-tu-bac-giang-lai-24-ty-dong-nam-20231008113938138-d1122337.html",
         "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/8/nong-dan-viet-nam-xuat-sac-2023-nguyen-huu-quy-yen-the-bac-giang-6-16967360993601687728070-0-107-1125-1907-crop-1696736107744406085074.jpg",
         "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "08/10/2023"
+      },
+      {
+        "id": "2023100615165099",
+        "title": "Nuôi tôm trên đất phèn nước mặn, một Nông dân Việt Nam xuất sắc 2023 ở Bến Tre thu chục tỷ mỗi năm",
+        "url": "https://tv.danviet.vn/nuoi-tom-tren-dat-phen-nuoc-man-mot-nong-dan-viet-nam-xuat-sac-2023-o-ben-tre-thu-chuc-ty-moi-nam-2023100615165099.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/6/sequence-01-00-05-33-06-still162-1696579903336680060311-0-192-1080-1920-crop-16965799072671322283278.jpg",
+        "sapo": "Đi khắp nơi lập nghiệp, ông Trần Văn Hừng về quê hương ở xã Định Trung (huyện Bình Đại, tỉnh Bến Tre) nuôi tôm trên vùng đất phèn nước mặn, thu nhập hơn 10 tỷ đồng mỗi năm. Ông Trần Văn Hừng là đại diện của tỉnh Bến Tre đạt danh hiệu Nông dân Việt Nam xuất sắc 2023.",
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "08/10/2023"
@@ -2859,6 +2904,16 @@ window.EVENTS = [
         "date": "03/10/2023"
       },
       {
+        "id": "2023100306375593",
+        "title": "Video: Chương trình Tự hào Nông dân Việt Nam 2023 tôn vinh 163 nông dân xuất sắc, HTX tiêu biểu",
+        "url": "https://tv.danviet.vn/video-chuong-trinh-tu-hao-nong-dan-viet-nam-2023-ton-vinh-163-nong-dan-xuat-sac-htx-tieu-bieu-2023100306375593.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/img4093-1696301138122784479374-0-0-606-970-crop-1696301145036347351911.png",
+        "sapo": "Hoạt động trọng tâm của Chương trình Tự hào Nông dân Việt Nam 2023 chính là Lễ tôn vinh và trao danh hiệu cho 100 Nông dân Việt Nam xuất sắc năm 2023 và 63 Hợp tác xã nông nghiệp tiêu biểu toàn quốc do Hội NDVN tuyên truyền, vận động, hướng dẫn thành lập.",
+        "category": "Hình ảnh & Video",
+        "location": "",
+        "date": "03/10/2023"
+      },
+      {
         "id": "1121262",
         "title": "Chương trình Tự hào Nông dân Việt Nam 2023 với chuỗi các sự kiện đặc biệt 'do nông dân, vì nông dân'",
         "url": "https://danviet.vn/chuong-trinh-tu-hao-nong-dan-viet-nam-2023-voi-chuoi-su-kien-dac-biet-do-nong-dan-vi-nong-dan-20231002164250744-d1121262.html",
@@ -2889,20 +2944,20 @@ window.EVENTS = [
         "date": "03/10/2023"
       },
       {
-        "id": "839364",
-        "title": "Danh sách 100 Nông dân Việt Nam xuất sắc năm 2023",
-        "url": "https://danviet.vn/danh-sach-100-nong-dan-viet-nam-xuat-sac-nam-2023-2023100310152873-d839364.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/base64-16956963777571791226834-1696302861970565938094-0-0-1250-2000-crop-1696302875611530794145.png",
+        "id": "1121355",
+        "title": "Họp báo Chương trình Tự hào Nông dân Việt Nam xuất sắc 2023: Tôn vinh 100 nông dân và 63 HTX nông nghiệp tiêu biểu",
+        "url": "https://danviet.vn/hop-bao-chuong-trinh-tu-hao-nong-dan-viet-nam-xuat-sac-2023-ton-vinh-100-nong-dan-va-63-htx-nong-nghiep-tieu-bieu-20231003083540012-d1121355.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/tu-hao-2021-1696296504996929346725-0-22-1187-1921-crop-16962965088181422547529.jpeg",
         "sapo": "",
         "category": "Sự kiện & Vinh danh",
         "location": "",
         "date": "03/10/2023"
       },
       {
-        "id": "1121355",
-        "title": "Họp báo Chương trình Tự hào Nông dân Việt Nam xuất sắc 2023: Tôn vinh 100 nông dân và 63 HTX nông nghiệp tiêu biểu",
-        "url": "https://danviet.vn/hop-bao-chuong-trinh-tu-hao-nong-dan-viet-nam-xuat-sac-2023-ton-vinh-100-nong-dan-va-63-htx-nong-nghiep-tieu-bieu-20231003083540012-d1121355.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/tu-hao-2021-1696296504996929346725-0-22-1187-1921-crop-16962965088181422547529.jpeg",
+        "id": "839364",
+        "title": "Danh sách 100 Nông dân Việt Nam xuất sắc năm 2023",
+        "url": "https://danviet.vn/danh-sach-100-nong-dan-viet-nam-xuat-sac-nam-2023-2023100310152873-d839364.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/3/base64-16956963777571791226834-1696302861970565938094-0-0-1250-2000-crop-1696302875611530794145.png",
         "sapo": "",
         "category": "Sự kiện & Vinh danh",
         "location": "",
@@ -2924,6 +2979,16 @@ window.EVENTS = [
         "url": "https://danviet.vn/nguoi-lam-nuoc-mam-phu-quoc-quoc-hon-quoc-tuy-o-kien-giang-la-nong-dan-viet-nam-xuat-sac-2023-20230930232757918-d1120986.html",
         "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/30/kim-hoa-3-1696088179202603551992-34-0-1284-2000-crop-1696090116796463391399.jpg",
         "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "01/10/2023"
+      },
+      {
+        "id": "20230930104407433",
+        "title": "Tỷ phú nuôi thứ cá nước lạnh ở Lào Cai trở thành Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://tv.danviet.vn/ty-phu-nuoi-thu-ca-nuoc-lanh-o-lao-cai-tro-thanh-nong-dan-viet-nam-xuat-sac-2023-20230930104407433.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/30/img-9662-1696045100723222369234-0-0-1250-2000-crop-16960451528141016093761.jpg",
+        "sapo": "Thu nhập tiền tỷ mỗi năm từ mô hình nuôi cá nước lạnh ở Sa Pa, anh Trần Chung Hưng (Tổ dân phố số 2, phường Ô Quý Hồ, thị xã Sa Pa, tỉnh Lào Cai) đã vinh dự được bình chọn là 1 trong 100 nông dân tiêu biểu cả nước nhận danh hiệu “Nông dân Việt Nam xuất sắc 2023”.",
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "01/10/2023"
@@ -3019,20 +3084,30 @@ window.EVENTS = [
         "date": "15/09/2023"
       },
       {
-        "id": "1117680",
-        "title": "Nông dân xuất sắc 2023 đến từ Hà Nam có lợi nhuận tốt nhờ 'nhất nghệ tinh nhất thân vinh'",
-        "url": "https://danviet.vn/nong-dan-xuat-sac-2023-den-tu-ha-nam-lai-10-ty-nam-nho-nghe-moc-nhat-nghe-tinh-nhat-than-vinh-20230913224013703-d1117680.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/13/h1-16946193681531101783632-166-0-1416-2000-crop-1694619538906919394615.jpg",
+        "id": "1117617",
+        "title": "Tỷ phú đánh bắt loài cá ngừ đại dương ở Phú Yên là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://danviet.vn/ty-phu-danh-bat-loai-ca-ca-ngu-dai-duong-khong-lo-o-phu-yen-la-nong-dan-viet-nam-xuat-sac-2023-20230913165411563-d1117617.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/13/khoa-py3-16945966299211130776483-0-0-1250-2000-crop-16945978032222106394371.jpg",
         "sapo": "",
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "14/09/2023"
       },
       {
-        "id": "1117617",
-        "title": "Tỷ phú đánh bắt loài cá ngừ đại dương ở Phú Yên là Nông dân Việt Nam xuất sắc 2023",
-        "url": "https://danviet.vn/ty-phu-danh-bat-loai-ca-ca-ngu-dai-duong-khong-lo-o-phu-yen-la-nong-dan-viet-nam-xuat-sac-2023-20230913165411563-d1117617.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/13/khoa-py3-16945966299211130776483-0-0-1250-2000-crop-16945978032222106394371.jpg",
+        "id": "2023091107223934",
+        "title": "Gây dựng thương hiệu trà sạch, ông nông dân Thái Nguyên được bình chọn là Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://tv.danviet.vn/gay-dung-thuong-hieu-tra-sach-1-nong-dan-thai-nguyen-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-2023091107223934.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/11/anh-ong-nguyen-huy-son-giam-doc-cong-ty-cp-tra-viet-thai-1694391504355887978480-83-0-1333-2000-crop-16943915128561982639136.jpg",
+        "sapo": "Gây dựng thương hiệu trà sạch cho vùng chè Phổ Yên (tỉnh Thái Nguyên), anh Nguyễn Huy Sơn được Trung ương Hội Nông dân Việt Nam bình chọn là 1 trong 100 Nông dân Việt Nam xuất sắc năm 2023.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "14/09/2023"
+      },
+      {
+        "id": "1117680",
+        "title": "Nông dân xuất sắc 2023 đến từ Hà Nam có lợi nhuận tốt nhờ 'nhất nghệ tinh nhất thân vinh'",
+        "url": "https://danviet.vn/nong-dan-xuat-sac-2023-den-tu-ha-nam-lai-10-ty-nam-nho-nghe-moc-nhat-nghe-tinh-nhat-than-vinh-20230913224013703-d1117680.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/9/13/h1-16946193681531101783632-166-0-1416-2000-crop-1694619538906919394615.jpg",
         "sapo": "",
         "category": "Gương mặt điển hình",
         "location": "",
@@ -3099,20 +3174,20 @@ window.EVENTS = [
         "date": "24/08/2023"
       },
       {
-        "id": "1113788",
-        "title": "Tỷ phú nuôi tôm công nghệ cao, nuôi con vạng ở Nam Định là Nông dân xuất sắc 2023",
-        "url": "https://danviet.vn/ty-phu-nuoi-tom-cong-nghe-cao-nuoi-con-vang-o-nam-dinh-la-nong-dan-xuat-sac-2023-20230823122858948-d1113788.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/23/anh-9-16927660418501428953682-81-0-1331-2000-crop-16927670578311652902923.jpg",
+        "id": "1113698",
+        "title": "Nữ Nông dân Việt Nam xuất sắc 2023 ở Lâm Đồng làm gì mà thu hàng chục tỷ/năm?",
+        "url": "https://danviet.vn/nu-nong-dan-viet-nam-xuat-sac-2023-o-lam-dong-lam-gi-ma-thu-hang-chuc-ty-nam-20230822214615262-d1113698.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/22/nong-dan-viet-nam-xuat-sac-6-16927149465211012957572-0-0-1247-1995-crop-16927154022861815303845.jpg",
         "sapo": "",
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "23/08/2023"
       },
       {
-        "id": "1113698",
-        "title": "Nữ Nông dân Việt Nam xuất sắc 2023 ở Lâm Đồng làm gì mà thu hàng chục tỷ/năm?",
-        "url": "https://danviet.vn/nu-nong-dan-viet-nam-xuat-sac-2023-o-lam-dong-lam-gi-ma-thu-hang-chuc-ty-nam-20230822214615262-d1113698.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/22/nong-dan-viet-nam-xuat-sac-6-16927149465211012957572-0-0-1247-1995-crop-16927154022861815303845.jpg",
+        "id": "1113788",
+        "title": "Tỷ phú nuôi tôm công nghệ cao, nuôi con vạng ở Nam Định là Nông dân xuất sắc 2023",
+        "url": "https://danviet.vn/ty-phu-nuoi-tom-cong-nghe-cao-nuoi-con-vang-o-nam-dinh-la-nong-dan-xuat-sac-2023-20230823122858948-d1113788.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/23/anh-9-16927660418501428953682-81-0-1331-2000-crop-16927670578311652902923.jpg",
         "sapo": "",
         "category": "Gương mặt điển hình",
         "location": "",
@@ -3227,6 +3302,16 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "12/08/2023"
+      },
+      {
+        "id": "20230811010640002",
+        "title": "Xây nhà lầu trồng loại nấm bổ dưỡng, một nông dân Lai Châu trở thành 'Nông dân Việt Nam xuất sắc 2023'",
+        "url": "https://tv.danviet.vn/xay-nha-lau-trong-loai-nam-bo-duong-mot-nong-dan-lai-chau-tro-thanh-nong-dan-viet-nam-xuat-sac-2023-20230811010640002.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/8/10/01-16916910110521781602331-0-36-1125-1836-crop-16916910207461612487490.jpg",
+        "sapo": "Xây nhà lầu trồng nấm đông trùng hạ thảo, anh Đào Huy Cương, ở tổ 6 (phường Quyết Tiến, thành phố Lai Châu, tỉnh Lai Châu) thu hơn 10 tỷ đồng/năm. Với những thành tích của mình, anh đã được bình chọn là một trong 100 gương mặt tiêu biểu nhận danh hiệu",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "11/08/2023"
       },
       {
         "id": "1111346",
@@ -3369,12 +3454,12 @@ window.EVENTS = [
         "date": "04/07/2023"
       },
       {
-        "id": "1099105",
-        "title": "Đã tìm ra 100 Nông dân Việt Nam xuất sắc năm 2023, người có doanh thu cao nhất là 140 tỷ/năm",
-        "url": "https://danviet.vn/da-tim-ra-100-nong-dan-viet-nam-xuat-sac-nam-2023-nguoi-co-doanh-thu-cao-nhat-la-140-ty-nam-20230609154812794-d1099105.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/6/9/hoi-nong-dan-1-16862996844381013216802-0-0-1250-2000-crop-16863000464511986153075.jpg",
-        "sapo": "",
-        "category": "Gương mặt điển hình",
+        "id": "20230609163937586",
+        "title": "Video: Ấn tượng về 100 Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://tv.danviet.vn/video-an-tuong-ve-100-nong-dan-viet-nam-xuat-sac-2023-20230609163937586.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/6/9/sequence-06-00-05-41-12-still001-1686303513782136812302-0-91-1080-1819-crop-1686303517635180641009.jpg",
+        "sapo": "100 Nông dân Việt Nam xuất sắc 2023 vừa được bình chọn có thành tích nổi bật hơn các năm trước và đã để lại nhiều ấn tượng đậm nét cho các thành viên hội đồng bình chọn.",
+        "category": "Hình ảnh & Video",
         "location": "",
         "date": "09/06/2023"
       },
@@ -3387,14 +3472,64 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "09/06/2023"
+      },
+      {
+        "id": "20230609112353153",
+        "title": "Bản tin Dân Việt Nóng 9/6: Tìm ra 100 chủ nhân danh hiệu Nông dân Việt Nam xuất sắc 2023",
+        "url": "https://tv.danviet.vn/ban-tin-dan-viet-nong-9-6-tim-ra-100-chu-nhan-danh-hieu-nong-dan-viet-nam-xuat-sac-2023-20230609112353153.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/6/9/sequence-01-00-11-07-09-still080-16862853877301939082823-0-85-1055-1773-crop-16862854952951880554303.jpg",
+        "sapo": "Tìm ra 100 chủ nhân danh hiệu Nông dân Việt Nam xuất sắc 2023; Các trận mưa lớn liệu có",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/06/2023"
+      },
+      {
+        "id": "1099105",
+        "title": "Đã tìm ra 100 Nông dân Việt Nam xuất sắc năm 2023, người có doanh thu cao nhất là 140 tỷ/năm",
+        "url": "https://danviet.vn/da-tim-ra-100-nong-dan-viet-nam-xuat-sac-nam-2023-nguoi-co-doanh-thu-cao-nhat-la-140-ty-nam-20230609154812794-d1099105.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/6/9/hoi-nong-dan-1-16862996844381013216802-0-0-1250-2000-crop-16863000464511986153075.jpg",
+        "sapo": "",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/06/2023"
+      }
+    ],
+    "articleCount": 100,
+    "featured": [
+      {
+        "tag": "Gương mặt điển hình",
+        "highlight": "01/03/2026",
+        "title": "Nữ nông dân trồng hoa lan đạt danh hiệu Nông dân Việt Nam xuất sắc 2023, nay ứng cử đại biểu HĐND TP.HCM",
+        "sapo": "",
+        "img": "https://t.ex-cdn.com/danviet.vn/768w/files/content/2026/03/01/104913z7575135770191_4ea2a0419a98208cc88c1cd996293152-1047.jpg",
+        "url": "https://danviet.vn/nu-nong-dan-trong-hoa-lan-dat-danh-hieu-nong-dan-viet-nam-xuat-sac-2023-nay-ung-cu-dai-bieu-hdnd-tphcm-d1406563.html"
+      },
+      {
+        "tag": "Diễn đàn & Chính sách",
+        "highlight": "30/12/2023",
+        "title": "Nông dân Việt Nam xuất sắc 2023 ở Yên Bái tâm đắc bài phát biểu của Tổng Bí thư tại Đại hội VIII Hội NDVN",
+        "sapo": "",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/12/29/ng-dan-viet-nam-xuat-sac-2023-yen-bai-toi-dac-biet-xuc-dong-truoc-bai-phat-bieu-cua-tong-bi-thu-1-17038443811772113206158-387-0-1187-1280-crop-17038449530741640517174.jpg",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2023-o-yen-bai-tam-dac-bai-phat-bieu-cua-tong-bi-thu-tai-dai-hoi-viii-hoi-ndvn-20231229172249847-d1137567.html"
+      },
+      {
+        "tag": "Sự kiện & Vinh danh",
+        "highlight": "15/10/2023",
+        "title": "Bản tin Dân Việt Nóng 15/10: Ấn tượng chuỗi sự kiện Tự hào Nông dân Việt Nam 2023",
+        "sapo": "Chương trình Tự hào Nông dân Việt Nam năm thứ 11 chính thức khép lại với một chuỗi các hoạt động trong những ngày qua đã diễn ra thành công tốt đẹp. Bản tin số đặc biệt ngày hôm nay, báo điện tử Dân Việt sẽ dành thời lượng để nhìn lại những điểm nhấn đặc biệt của chuỗi Chương trình Tự hào Nông dân Việt Nam 2023.",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2023/10/15/ban-tin-dan-viet-nong-00-39-24-12-still185-16973443171061174034500-0-43-1080-1771-crop-16973443196521550075608.jpg",
+        "url": "https://tv.danviet.vn/ban-tin-dan-viet-nong-15-10-an-tuong-chuoi-su-kien-tu-hao-nong-dan-viet-nam-2023-20231015113250539.htm"
       }
     ]
   },
   {
+    "year": 2022,
+    "label": "2022",
     "kicker": "Chương trình Tự hào Nông dân Việt Nam • Năm thứ 10 (2012 – 2022)",
     "title": "100 Nông dân Việt Nam xuất sắc 2022",
     "date": "Tối 14/10/2022",
     "location": "Nhà hát Lớn Hà Nội",
+    "cover": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/7/29/nong-dan-viet-nam-xuat-sac-2022-16590844317672133563244-0-0-1250-2000-crop-16590846714231743601433.jpeg",
     "summary": "Dấu mốc 10 năm chương trình Tự hào Nông dân Việt Nam. Năm đầu tiên danh hiệu được trao cho 100 Nông dân Việt Nam xuất sắc thay vì 63 như các năm trước. Lễ tôn vinh diễn ra tối 14/10/2022 tại Nhà hát Lớn Hà Nội, truyền hình trực tiếp trên VTV1.",
     "stats": [
       {
@@ -3415,37 +3550,47 @@ window.EVENTS = [
     ],
     "link": "https://danviet.vn/100-nong-dan-viet-nam-xuat-sac-2022-channel2715/",
     "linkLabel": "Xem chuyên trang 2022 trên Dân Việt",
-    "year": 2022,
-    "label": "2022",
-    "cover": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/7/29/nong-dan-viet-nam-xuat-sac-2022-16590844317672133563244-0-0-1250-2000-crop-16590846714231743601433.jpeg",
-    "featured": [
-      {
-        "tag": "Sự kiện & Vinh danh",
-        "highlight": "29/07/2022",
-        "title": "Chính thức công bố danh sách 100 'Nông dân Việt Nam xuất sắc' năm 2022",
-        "sapo": "Ngày 29/7 đồng chí Lương Quốc Đoàn, Ủy viên Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam, Trưởng ban Chỉ đạo Chương trình Tự hào Nông dân Việt Nam đã ký Quyết định số 5732-QĐ/HNDTW quyết định công bố danh sách 100 Nông dân Việt Nam xuất sắc năm 2022.",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/7/29/nong-dan-viet-nam-xuat-sac-2022-16590844317672133563244-0-0-1250-2000-crop-16590846714231743601433.jpeg",
-        "url": "https://danviet.vn/cong-bo-danh-sach-100-nong-dan-viet-nam-xuat-sac-nam-2022-2022072914373731-d830599.html"
-      },
-      {
-        "tag": "Gương mặt điển hình",
-        "highlight": "08/08/2022",
-        "title": "Nông dân xuất sắc 2022 đến từ Hà Giang là người làm du lịch giỏi, giúp bản Lô Lô Chải ngày càng trù phú",
-        "sapo": "Buổi sáng ở miền biên viễn cực Bắc của Tổ quốc, vợ chồng Sình Dỉ Gai ngồi trước hiên nhà trình tường cổ kính, họ pha sẵn ấm trà, gọt những trái lê chờ đón chúng tôi. Sau cái bắt tay ấm tình, anh say sưa tâm sự về bản thân mình và sự đổi thay của bản Lô Lô Chải đẹp như mơ.",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/220220503081835-16598852255461237661747-59-0-1184-1800-crop-16598852370621098942665.jpg",
-        "url": "https://danviet.vn/nong-dan-xuat-sac-2022-den-tu-ha-giang-la-nguoi-lam-du-lich-gioi-o-ban-lo-lo-chai-20220808004131447-d1035921.html"
-      },
-      {
-        "tag": "Gương mặt điển hình",
-        "highlight": "05/08/2022",
-        "title": "Nông dân Việt Nam xuất sắc 2022 tỉnh Thanh Hóa là người làm đổi thay các làng quê trồng lúa xứ Thanh",
-        "sapo": "Sau khi trở về từ quân ngũ, ông Nguyễn Hữu Lựu bắt tay vào làm kinh tế và thành lập doanh nghiệp chế biến nông sản, tạo ra chuỗi liên kết khép kín được chính quyền địa phương và người dân ủng hộ rất cao. Năm 2022, ông là 1 trong 100 nông dân điển hình cả nước được bình chọn nhận danh hiệu Nông dân Việt Nam xuất sắc.",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/4/z36168241996445eef677204e5a48d633f9d4d6a651d67-1659574633310577327483-170-0-1420-2000-crop-16595754563331933407933.jpg",
-        "url": "https://danviet.vn/ty-phu-nong-dan-trong-lua-che-bien-kinh-doanh-gao-thanh-hoa-la-nong-dan-viet-nam-xuat-sac-2022-20220804081446518-d1035163.html"
-      }
-    ],
-    "articleCount": 44,
     "articles": [
+      {
+        "id": "830599",
+        "title": "Chính thức công bố danh sách 100 'Nông dân Việt Nam xuất sắc' năm 2022",
+        "url": "https://danviet.vn/cong-bo-danh-sach-100-nong-dan-viet-nam-xuat-sac-nam-2022-2022072914373731-d830599.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/7/29/nong-dan-viet-nam-xuat-sac-2022-16590844317672133563244-0-0-1250-2000-crop-16590846714231743601433.jpeg",
+        "sapo": "Ngày 29/7 đồng chí Lương Quốc Đoàn, Ủy viên Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam, Trưởng ban Chỉ đạo Chương trình Tự hào Nông dân Việt Nam đã ký Quyết định số 5732-QĐ/HNDTW quyết định công bố danh sách 100 Nông dân Việt Nam xuất sắc năm 2022.",
+        "category": "Sự kiện & Vinh danh",
+        "location": "",
+        "date": "29/07/2022"
+      },
+      {
+        "id": "1035921",
+        "title": "Nông dân xuất sắc 2022 đến từ Hà Giang là người làm du lịch giỏi, giúp bản Lô Lô Chải ngày càng trù phú",
+        "url": "https://danviet.vn/nong-dan-xuat-sac-2022-den-tu-ha-giang-la-nguoi-lam-du-lich-gioi-o-ban-lo-lo-chai-20220808004131447-d1035921.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/220220503081835-16598852255461237661747-59-0-1184-1800-crop-16598852370621098942665.jpg",
+        "sapo": "Buổi sáng ở miền biên viễn cực Bắc của Tổ quốc, vợ chồng Sình Dỉ Gai ngồi trước hiên nhà trình tường cổ kính, họ pha sẵn ấm trà, gọt những trái lê chờ đón chúng tôi. Sau cái bắt tay ấm tình, anh say sưa tâm sự về bản thân mình và sự đổi thay của bản Lô Lô Chải đẹp như mơ.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "08/08/2022"
+      },
+      {
+        "id": "1035163",
+        "title": "Nông dân Việt Nam xuất sắc 2022 tỉnh Thanh Hóa là người làm đổi thay các làng quê trồng lúa xứ Thanh",
+        "url": "https://danviet.vn/ty-phu-nong-dan-trong-lua-che-bien-kinh-doanh-gao-thanh-hoa-la-nong-dan-viet-nam-xuat-sac-2022-20220804081446518-d1035163.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/4/z36168241996445eef677204e5a48d633f9d4d6a651d67-1659574633310577327483-170-0-1420-2000-crop-16595754563331933407933.jpg",
+        "sapo": "Sau khi trở về từ quân ngũ, ông Nguyễn Hữu Lựu bắt tay vào làm kinh tế và thành lập doanh nghiệp chế biến nông sản, tạo ra chuỗi liên kết khép kín được chính quyền địa phương và người dân ủng hộ rất cao. Năm 2022, ông là 1 trong 100 nông dân điển hình cả nước được bình chọn nhận danh hiệu Nông dân Việt Nam xuất sắc.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "05/08/2022"
+      },
+      {
+        "id": "830603",
+        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ tỉnh Đồng Tháp đưa trái xoài xuất ngoại, giúp nông dân giảm nghèo làm giàu",
+        "url": "https://danviet.vn/nong-dan-viet-nam-suat-sac-2022-den-tu-tinh-dong-thap-la-nguoi-dua-trai-xoai-xuat-ngoai-2022072916023205-d830603.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/7/29/nen-165908720151677024325-0-0-798-1276-crop-1659087207855697477100.jpg",
+        "sapo": "Từ người chỉ biết làm vườn, chị Đinh Kim Nhung (SN 1971) ở ấp Tân Dân, xã Tân Thuận Tây, TP Cao Lãnh, tỉnh Đồng Tháp đã hình thành nhiều điểm thu mua trái xoài, rồi thành lập công ty, xây dựng nhà máy chế biến đưa xoài Cát Chu, xoài tượng da xanh xuất khẩu sang nhiều nước trên thế giới.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "30/07/2022"
+      },
       {
         "id": "1047585",
         "title": "Bỏ việc về nuôi gà, chăn lợn thu tiền tỷ, một y tá người Vĩnh Phúc là Nông dân Việt Nam xuất sắc 2022",
@@ -3497,34 +3642,14 @@ window.EVENTS = [
         "date": "08/09/2022"
       },
       {
-        "id": "1041791",
-        "title": "Video: Nông dân Hải Dương ngâm rượu từ nấm đông trùng và tỏi thu lãi hàng tỷ đồng mỗi năm",
-        "url": "https://tv.danviet.vn/nong-dan-hai-duong-ngam-ruou-tu-nam-dong-trung-va-toi-thu-lai-hang-ty-dong-moi-nam-20220906152845839.htm",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/9/6/ndxs-hai-duong-1661762742671544829651-16617630517631333818016-1662452736757531562391-39-0-1083-1670-crop-1662452748647114055494.jpeg",
-        "sapo": "Anh Trần Đình Khiêm (SN 1972, ở khu dân cư Hiệp Thượng, phường Hiệp Sơn, TX Kinh Môn, tỉnh Hải Dương) đã thành công trong việc nuôi nấm đông trùng để ngâm rượu. Ngoài ra anh còn ngâm rượu từ nhiều loại nông sản đặc sản địa phương như tỏi đen, nếp cái… thu về lợi nhuận hàng tỷ đồng mỗi năm.",
-        "category": "Hình ảnh & Video",
-        "location": "",
-        "date": "06/09/2022"
-      },
-      {
-        "id": "1040287",
-        "title": "Phú Thọ là tỉnh duy nhất cả nước có 3 Nông dân Việt Nam xuất sắc năm 2022",
-        "url": "https://danviet.vn/tinh-duy-nhat-ca-nuoc-co-3-nong-dan-dat-danh-hieu-nong-dan-viet-nam-xuat-sac-nam-2022-20220829163155627-d1040287.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/29/a4-1661764558718980950977-0-19-382-630-crop-1661764568280260542412.jpg",
-        "sapo": "3 nông dân tỉnh Phú Thọ đạt danh hiệu “Nông dân Việt Nam xuất sắc 2022” là những nhân tố tích cực đi đầu trong đổi mới mô hình phát triển nông nghiệp, xây dựng nông thôn mới của tỉnh Phú Thọ nói riêng và cả nước nói chung.",
+        "id": "1036117",
+        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Quảng Ninh là một người trồng, chế biến dược liệu, doanh thu tiền tỷ",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-quang-ninh-la-nguoi-trong-che-bien-duoc-lieu-thu-tien-ty-20220809001715595-d1036117.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/10/trong-duoc-lieu-1-1660111518382998707654-0-0-1250-2000-crop-16601115246331609457882.jpg",
+        "sapo": "Nhiều lần thất bại, thậm chí thua lỗ, nhưng ông Phạm Việt Trung vẫn kiên trì theo đuổi việc trồng, chế biến dược liệu. Doanh nghiệp do ông Trung làm giám đốc thu lãi hàng tỷ đồng mỗi năm và ông được bình chọn danh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
         "category": "Gương mặt điển hình",
         "location": "",
-        "date": "29/08/2022"
-      },
-      {
-        "id": "1038873",
-        "title": "Ông chủ 9X có nhà máy chế biến lúa gạo hoành tráng ở Thanh Hóa là 'Nông dân Việt Nam xuất sắc 2022'",
-        "url": "https://danviet.vn/ong-chu-9x-co-nha-may-che-bien-lua-gao-hoanh-trang-o-thanh-hoa-la-nong-dan-viet-nam-xuat-sac-2022-20220822152059961-d1038873.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/22/z3661978496683df477932d16a32716fc4ccde718410dc-16611546816172083836818-166-0-1416-2000-crop-16611562292701606266502.jpg",
-        "sapo": "Nhận thấy những tiềm năng, lợi thế phát triển các sản phẩm lúa gạo tại địa phương, anh Đỗ Thế Anh bắt tay vào xây dựng nhà máy chế biến lúa gạo, xây dựng thành công chuỗi lúa gạo liên kết cùng người nông dân làm giàu. Anh Đỗ Thế Anh đã được bình chọn nhận danh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "26/08/2022"
+        "date": "10/08/2022"
       },
       {
         "id": "1039044",
@@ -3537,6 +3662,16 @@ window.EVENTS = [
         "date": "25/08/2022"
       },
       {
+        "id": "1041791",
+        "title": "Video: Nông dân Hải Dương ngâm rượu từ nấm đông trùng và tỏi thu lãi hàng tỷ đồng mỗi năm",
+        "url": "https://tv.danviet.vn/nong-dan-hai-duong-ngam-ruou-tu-nam-dong-trung-va-toi-thu-lai-hang-ty-dong-moi-nam-20220906152845839.htm",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/9/6/ndxs-hai-duong-1661762742671544829651-16617630517631333818016-1662452736757531562391-39-0-1083-1670-crop-1662452748647114055494.jpeg",
+        "sapo": "Anh Trần Đình Khiêm (SN 1972, ở khu dân cư Hiệp Thượng, phường Hiệp Sơn, TX Kinh Môn, tỉnh Hải Dương) đã thành công trong việc nuôi nấm đông trùng để ngâm rượu. Ngoài ra anh còn ngâm rượu từ nhiều loại nông sản đặc sản địa phương như tỏi đen, nếp cái… thu về lợi nhuận hàng tỷ đồng mỗi năm.",
+        "category": "Hình ảnh & Video",
+        "location": "",
+        "date": "06/09/2022"
+      },
+      {
         "id": "1039547",
         "title": "Một tỷ phú nuôi gà đẻ ở Hải Dương được bình chọn là 'Nông dân Việt Nam xuất sắc 2022'",
         "url": "https://danviet.vn/nong-dan-ty-phu-nuoi-ga-de-o-hai-duong-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-2022-20220825164915106-d1039547.html",
@@ -3545,6 +3680,26 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "25/08/2022"
+      },
+      {
+        "id": "1038873",
+        "title": "Ông chủ 9X có nhà máy chế biến lúa gạo hoành tráng ở Thanh Hóa là 'Nông dân Việt Nam xuất sắc 2022'",
+        "url": "https://danviet.vn/ong-chu-9x-co-nha-may-che-bien-lua-gao-hoanh-trang-o-thanh-hoa-la-nong-dan-viet-nam-xuat-sac-2022-20220822152059961-d1038873.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/22/z3661978496683df477932d16a32716fc4ccde718410dc-16611546816172083836818-166-0-1416-2000-crop-16611562292701606266502.jpg",
+        "sapo": "Nhận thấy những tiềm năng, lợi thế phát triển các sản phẩm lúa gạo tại địa phương, anh Đỗ Thế Anh bắt tay vào xây dựng nhà máy chế biến lúa gạo, xây dựng thành công chuỗi lúa gạo liên kết cùng người nông dân làm giàu. Anh Đỗ Thế Anh đã được bình chọn nhận danh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "26/08/2022"
+      },
+      {
+        "id": "1040287",
+        "title": "Phú Thọ là tỉnh duy nhất cả nước có 3 Nông dân Việt Nam xuất sắc năm 2022",
+        "url": "https://danviet.vn/tinh-duy-nhat-ca-nuoc-co-3-nong-dan-dat-danh-hieu-nong-dan-viet-nam-xuat-sac-nam-2022-20220829163155627-d1040287.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/29/a4-1661764558718980950977-0-19-382-630-crop-1661764568280260542412.jpg",
+        "sapo": "3 nông dân tỉnh Phú Thọ đạt danh hiệu “Nông dân Việt Nam xuất sắc 2022” là những nhân tố tích cực đi đầu trong đổi mới mô hình phát triển nông nghiệp, xây dựng nông thôn mới của tỉnh Phú Thọ nói riêng và cả nước nói chung.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "29/08/2022"
       },
       {
         "id": "1037667",
@@ -3567,6 +3722,16 @@ window.EVENTS = [
         "date": "24/08/2022"
       },
       {
+        "id": "1038812",
+        "title": "Vườn bưởi đặc sản của ông nông dân Hòa Bình, người được bình chọn là Nông dân Việt Nam xuất sắc 2022",
+        "url": "https://danviet.vn/vuon-buoi-dac-cua-ong-nong-dan-hoa-binh-nguoi-duoc-binh-chon-nong-dan-viet-nam-xuat-sac-2022-20220822102820797-d1038812.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/22/20220817-171009-1661137186890581799724-0-280-901-1722-crop-1661137202465473462457.jpg",
+        "sapo": "Cây bưởi nào trong vườn của ông Vũ Văn Thái, thôn Đại Đồng, xã Ngọc Lương, huyện Yên Thủy, tỉnh Hòa Bình cũng sai trĩu quả và cho chất lượng ổn định. Ông Thái là một trong 100 nhà nông tiêu biểu của cả nước được Hội đồng Chung khảo bình chọn nhận dạnh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "23/08/2022"
+      },
+      {
         "id": "1039059",
         "title": "Nông dân sáng chế máy nông nghiệp là người Tiền Giang được bình chọn danh hiệu Nông dân Việt Nam xuất sắc 2022",
         "url": "https://danviet.vn/nong-dan-sang-che-may-nguoi-tien-giang-duoc-binh-chon-danh-hieu-nong-dan-viet-nam-xuat-sac-2022-20220823132616631-d1039059.html",
@@ -3577,14 +3742,14 @@ window.EVENTS = [
         "date": "24/08/2022"
       },
       {
-        "id": "1038812",
-        "title": "Vườn bưởi đặc sản của ông nông dân Hòa Bình, người được bình chọn là Nông dân Việt Nam xuất sắc 2022",
-        "url": "https://danviet.vn/vuon-buoi-dac-cua-ong-nong-dan-hoa-binh-nguoi-duoc-binh-chon-nong-dan-viet-nam-xuat-sac-2022-20220822102820797-d1038812.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/22/20220817-171009-1661137186890581799724-0-280-901-1722-crop-1661137202465473462457.jpg",
-        "sapo": "Cây bưởi nào trong vườn của ông Vũ Văn Thái, thôn Đại Đồng, xã Ngọc Lương, huyện Yên Thủy, tỉnh Hòa Bình cũng sai trĩu quả và cho chất lượng ổn định. Ông Thái là một trong 100 nhà nông tiêu biểu của cả nước được Hội đồng Chung khảo bình chọn nhận dạnh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
+        "id": "1038673",
+        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Bắc Ninh lập HTX trồng rau an toàn, nhiều hộ thành viên xây nhà tiền tỷ",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-bac-ninh-lap-htx-trong-rau-an-toan-nhieu-ho-xay-nha-tien-ty-20220821141947454-d1038673.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/21/nong-dan-viet-nam-xuat-sac-2022-1-16610967236931303716462-83-0-1333-2000-crop-1661096745534949776973.jpg",
+        "sapo": "Là Giám đốc HTX sản xuất rau củ quả nông sản an toàn Liên Ấp, ông Nguyễn Văn Hiệp ở xã Việt Đoàn, huyện Tiên Du, tỉnh Bắc Ninh đã tạo ra mô hình HTX kiểu mới hoạt động có hiệu quả cao. Ông Nguyễn Văn Hiệp vừa được Hội đồng Chung khảo Trung ương bình chọn nhận danh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
         "category": "Gương mặt điển hình",
         "location": "",
-        "date": "23/08/2022"
+        "date": "22/08/2022"
       },
       {
         "id": "1037616",
@@ -3607,16 +3772,6 @@ window.EVENTS = [
         "date": "23/08/2022"
       },
       {
-        "id": "1038673",
-        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Bắc Ninh lập HTX trồng rau an toàn, nhiều hộ thành viên xây nhà tiền tỷ",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-bac-ninh-lap-htx-trong-rau-an-toan-nhieu-ho-xay-nha-tien-ty-20220821141947454-d1038673.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/21/nong-dan-viet-nam-xuat-sac-2022-1-16610967236931303716462-83-0-1333-2000-crop-1661096745534949776973.jpg",
-        "sapo": "Là Giám đốc HTX sản xuất rau củ quả nông sản an toàn Liên Ấp, ông Nguyễn Văn Hiệp ở xã Việt Đoàn, huyện Tiên Du, tỉnh Bắc Ninh đã tạo ra mô hình HTX kiểu mới hoạt động có hiệu quả cao. Ông Nguyễn Văn Hiệp vừa được Hội đồng Chung khảo Trung ương bình chọn nhận danh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "22/08/2022"
-      },
-      {
         "id": "1038880",
         "title": "Người biến rác thành phân hữu cơ, tái chế nhựa ở Tuyên Quang là Nông dân Việt Nam xuất sắc 2022",
         "url": "https://danviet.vn/nguoi-bien-rac-thanh-phan-huu-co-tai-che-nhua-o-tuyen-quang-la-nong-dan-viet-nam-xuat-sac-2022-20220822154251451-d1038880.html",
@@ -3635,6 +3790,86 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "18/08/2022"
+      },
+      {
+        "id": "1035668",
+        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Ninh Bình là một người giỏi chăn nuôi, chưa hề thất bại khi nuôi lợn",
+        "url": "https://danviet.vn/mot-nguoi-gioi-chan-nuoi-o-ninh-binh-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-2022-20220806130903335-d1035668.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/6/20220726100950-16597630392031168743092-238-0-1488-2000-crop-1659766172530982883830.jpg",
+        "sapo": "Bà Trần Thị Thục (sinh năm 1984, xóm 7, xã Như Hòa, huyện Kim Sơn, tỉnh Ninh Bình) là nông dân Việt Nam xuất sắc 2022. Bà Thục được biết đến với mô hình phát triển kinh tế tổng hợp: chăn nuôi gia súc, gia cầm, nuôi trồng thủy sản và trồng trọt…nhiều năm liền thành công, đem lại thu nhập cho gia đình hơn 2 tỉ đồng/năm.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "06/08/2022"
+      },
+      {
+        "id": "795378",
+        "title": "Nông dân xuất sắc 2022 Nguyễn Văn Hùng và lương duyên tiền tỷ với tảo xoắn, thành 'vua' tảo miền Trung",
+        "url": "https://danviet.vn/nong-dan-xuat-sac-2022-nguyen-van-hung-o-nghe-an-co-moi-luong-duyen-tien-ty-voi-tao-xoan-20220806160239-d795378.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/6/anh-13-16597760119701348532657-0-0-1200-1920-crop-16597760191241835615045.jpg",
+        "sapo": "Sau 1 biến cố về sức khỏe, ông Nguyễn Văn Hùng (Nghệ An) \"bén duyên\" với tảo xoắn, từ giám đốc công ty bất động sản, khai thác khoáng sản có tiếng \"bổng\" trở thành \"Nông dân xuất sắc 2022\" khi nuôi trồng được giống tảo kỳ diệu này trên quê hương xã Quỳnh Dị, Thị xã Hoàng Mai, tỉnh Nghệ An.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "07/08/2022"
+      },
+      {
+        "id": "1035764",
+        "title": "Nuôi tôm công nghệ cao thu tiền tỷ, nông dân Bạc Liêu được bình chọn danh hiệu 'Nông dân Việt Nam xuất sắc 2022'",
+        "url": "https://danviet.vn/nuoi-tom-cong-nghe-cao-thu-tien-ty-nong-dan-bac-lieu-la-nong-dan-viet-nam-xuat-sac-2022-20220806235354864-d1035764.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/6/1-16598032416061660959353-105-0-1355-2000-crop-1659803483031711717407.jpg",
+        "sapo": "Dù trải qua nhiều thất bại, ông Nguyễn Văn Hoạt (SN 1963, ngụ xã Hiệp Thành, TP Bạc Liêu, tỉnh Bạc Liêu) vẫn kiên trì theo đuổi nghề nuôi tôm. Chính nhờ sự kiên trì, tinh thần ham học hỏi, ông Hoạt thu lãi mỗi năm hàng tỷ đồng nhờ nuôi tôm công nghệ cao và được bình chọn nhận danh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "07/08/2022"
+      },
+      {
+        "id": "830796",
+        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ An Giang là Chủ tịch HĐQT HTX trồng lúa dùng máy bay không người lái",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-an-giang-la-chu-tich-hdqt-htx-dung-may-bay-khong-nguoi-lai-2022080718252662-d830796.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/z36255243570098b8648435083b53d3d012fce655e4536-1659870231810620331803-47-0-1297-2000-crop-1659870921079227689363.jpg",
+        "sapo": "Cùng 49 nông dân thành viên liên kết sản xuất lúa theo những mô hình tiên tiến nhất, sử dụng máy bay không người lái, đảm bảo lợi nhuận cho xã viên mỗi năm trên 30%, anh Nguyễn Thành Giang - Chủ tịch HĐQT HTX nông nghiệp Bình Thành (xã Bình Thành, huyện Thoại Sơn, tỉnh An Giang) được bình chọn là Nông dân Việt Nam xuất sắc năm 2022.",
+        "category": "Diễn đàn & Chính sách",
+        "location": "",
+        "date": "08/08/2022"
+      },
+      {
+        "id": "1035884",
+        "title": "Ông chủ trại gà to nhất nhì tỉnh Thái Bình là nông dân Việt Nam xuất sắc năm 2022",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-nam-2022-cua-thai-binh-la-ong-chu-trai-ga-to-nhat-huyen-20220807180528236-d1035884.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/nong-dan-viet-nam-xuat-sac-2022-6-16598701810991746919054-79-0-1287-1933-crop-1659870200595447874676.jpg",
+        "sapo": "Gần chục năm gắn bó với nghề chăn nuôi, đến nay, anh Phạm Xuân Thủy ở xóm 2, xã Vũ Đoài, huyện Vũ Thư, tỉnh Thái Bình đã trở thành tỷ phú với cơ ngơi 13 trại nuôi lợn, gà khép kín. Anh cũng được bình chọn là 1 trong 100 nông dân Việt Nam xuất sắc năm 2022.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "08/08/2022"
+      },
+      {
+        "id": "1035857",
+        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Quảng Bình là người có biệt danh 'Sói biển' săn cá Biển Đông",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-quang-binh-la-nguoi-co-biet-danh-soi-bien-sat-ca-bien-dong-20220807135817812-d1035857.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/z36239109892933e35cfa9e4649acd595d9aad9bd9c9a0-16598544277911577367052-20-0-1270-2000-crop-165985535050737275922.jpg",
+        "sapo": "Ngư dân Phạm Tuyển (SN 1982, ở xã Bảo Ninh, TP. Đồng Hới, tỉnh Quảng Bình) là Nông dân Việt Nam xuất sắc 2022. Với việc áp dụng khoa học kĩ thuật vào đánh bắt hải sản, ngư dân Phạm Tuyển thường xuyên thắng đậm những chuyến vươn khơi. Tàu của ông vừa trúng đậm luồng cá nục 250 tấn, thu về 2,4 tỷ đồng.",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "09/08/2022"
+      },
+      {
+        "id": "1036498",
+        "title": "Nữ tỷ phú làm chả cá ở Khánh Hòa được bình chọn danh hiệu 'Nông dân Việt Nam xuất sắc 2022'",
+        "url": "https://danviet.vn/nu-ty-phu-lam-cha-ca-o-khanh-hoa-duoc-binh-chon-danh-hieu-nong-dan-viet-nam-xuat-sac-2022-20220810152710465-d1036498.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/10/chon-cha-ca-2-1660119302038261345036-53-0-1303-2000-crop-16601193709621898364443.jpg",
+        "sapo": "Trong suốt hơn 3 tiếng đồng hồ trò chuyện, nữ tỷ phú Phạm Thị Thuận nói vô cùng say mê với nghề làm chả cá. Vừa qua, Hội đồng Bình chọn chung khảo Trung ương Chương trình Tự hào Nông dân Việt Nam bình chọn chị Thuận là 100 nông dân cả nước nhận danh hiệu \"Nông dân Việt Nam xuất sắc 2022\"",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "11/08/2022"
+      },
+      {
+        "id": "1036808",
+        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Thái Nguyên là Giám đốc HTX làm nên một thứ quà tặng Hội nghị APEC",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-thai-nguyen-la-giam-doc-htx-lam-mot-thu-qua-tang-afec-20220811225059882-d1036808.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/11/img0635-16602328633411713045246-83-0-1333-2000-crop-1660232894654177323437.jpg",
+        "sapo": "Chị Trần Thị Tuyết - Giám đốc HTX Tuyết Hương là người góp công lớn trong việc nâng cao giá trị sản phẩm chè ở vùng Đồng Hỷ, tỉnh Thái Nguyên. Với việc xây dựng thương hiệu chè Tuyết Hương, chị Tuyết được bình chọn là \"Nông dân Việt Nam xuất sắc 2022\".",
+        "category": "Gương mặt điển hình",
+        "location": "",
+        "date": "13/08/2022"
       },
       {
         "id": "1035268",
@@ -3667,26 +3902,6 @@ window.EVENTS = [
         "date": "14/08/2022"
       },
       {
-        "id": "1036808",
-        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Thái Nguyên là Giám đốc HTX làm nên một thứ quà tặng Hội nghị APEC",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-thai-nguyen-la-giam-doc-htx-lam-mot-thu-qua-tang-afec-20220811225059882-d1036808.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/11/img0635-16602328633411713045246-83-0-1333-2000-crop-1660232894654177323437.jpg",
-        "sapo": "Chị Trần Thị Tuyết - Giám đốc HTX Tuyết Hương là người góp công lớn trong việc nâng cao giá trị sản phẩm chè ở vùng Đồng Hỷ, tỉnh Thái Nguyên. Với việc xây dựng thương hiệu chè Tuyết Hương, chị Tuyết được bình chọn là \"Nông dân Việt Nam xuất sắc 2022\".",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "13/08/2022"
-      },
-      {
-        "id": "1036498",
-        "title": "Nữ tỷ phú làm chả cá ở Khánh Hòa được bình chọn danh hiệu 'Nông dân Việt Nam xuất sắc 2022'",
-        "url": "https://danviet.vn/nu-ty-phu-lam-cha-ca-o-khanh-hoa-duoc-binh-chon-danh-hieu-nong-dan-viet-nam-xuat-sac-2022-20220810152710465-d1036498.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/10/chon-cha-ca-2-1660119302038261345036-53-0-1303-2000-crop-16601193709621898364443.jpg",
-        "sapo": "Trong suốt hơn 3 tiếng đồng hồ trò chuyện, nữ tỷ phú Phạm Thị Thuận nói vô cùng say mê với nghề làm chả cá. Vừa qua, Hội đồng Bình chọn chung khảo Trung ương Chương trình Tự hào Nông dân Việt Nam bình chọn chị Thuận là 100 nông dân cả nước nhận danh hiệu \"Nông dân Việt Nam xuất sắc 2022\"",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "11/08/2022"
-      },
-      {
         "id": "1036495",
         "title": "Trồng cây cảnh, trồng hoa như 'vườn thượng uyển', một tỷ phú Hà Giang là 'Nông dân Việt Nam xuất sắc 2022'",
         "url": "https://danviet.vn/ty-phu-trong-cay-canh-trong-hoa-dep-nhu-phim-o-ha-giang-la-nong-dan-viet-nam-xuat-sac-2022-20220810152216595-d1036495.html",
@@ -3695,56 +3910,6 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "11/08/2022"
-      },
-      {
-        "id": "1036117",
-        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Quảng Ninh là một người trồng, chế biến dược liệu, doanh thu tiền tỷ",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-quang-ninh-la-nguoi-trong-che-bien-duoc-lieu-thu-tien-ty-20220809001715595-d1036117.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/10/trong-duoc-lieu-1-1660111518382998707654-0-0-1250-2000-crop-16601115246331609457882.jpg",
-        "sapo": "Nhiều lần thất bại, thậm chí thua lỗ, nhưng ông Phạm Việt Trung vẫn kiên trì theo đuổi việc trồng, chế biến dược liệu. Doanh nghiệp do ông Trung làm giám đốc thu lãi hàng tỷ đồng mỗi năm và ông được bình chọn danh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "10/08/2022"
-      },
-      {
-        "id": "1035857",
-        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Quảng Bình là người có biệt danh 'Sói biển' săn cá Biển Đông",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-quang-binh-la-nguoi-co-biet-danh-soi-bien-sat-ca-bien-dong-20220807135817812-d1035857.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/z36239109892933e35cfa9e4649acd595d9aad9bd9c9a0-16598544277911577367052-20-0-1270-2000-crop-165985535050737275922.jpg",
-        "sapo": "Ngư dân Phạm Tuyển (SN 1982, ở xã Bảo Ninh, TP. Đồng Hới, tỉnh Quảng Bình) là Nông dân Việt Nam xuất sắc 2022. Với việc áp dụng khoa học kĩ thuật vào đánh bắt hải sản, ngư dân Phạm Tuyển thường xuyên thắng đậm những chuyến vươn khơi. Tàu của ông vừa trúng đậm luồng cá nục 250 tấn, thu về 2,4 tỷ đồng.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "09/08/2022"
-      },
-      {
-        "id": "1035921",
-        "title": "Nông dân xuất sắc 2022 đến từ Hà Giang là người làm du lịch giỏi, giúp bản Lô Lô Chải ngày càng trù phú",
-        "url": "https://danviet.vn/nong-dan-xuat-sac-2022-den-tu-ha-giang-la-nguoi-lam-du-lich-gioi-o-ban-lo-lo-chai-20220808004131447-d1035921.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/220220503081835-16598852255461237661747-59-0-1184-1800-crop-16598852370621098942665.jpg",
-        "sapo": "Buổi sáng ở miền biên viễn cực Bắc của Tổ quốc, vợ chồng Sình Dỉ Gai ngồi trước hiên nhà trình tường cổ kính, họ pha sẵn ấm trà, gọt những trái lê chờ đón chúng tôi. Sau cái bắt tay ấm tình, anh say sưa tâm sự về bản thân mình và sự đổi thay của bản Lô Lô Chải đẹp như mơ.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "08/08/2022"
-      },
-      {
-        "id": "830796",
-        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ An Giang là Chủ tịch HĐQT HTX trồng lúa dùng máy bay không người lái",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-an-giang-la-chu-tich-hdqt-htx-dung-may-bay-khong-nguoi-lai-2022080718252662-d830796.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/z36255243570098b8648435083b53d3d012fce655e4536-1659870231810620331803-47-0-1297-2000-crop-1659870921079227689363.jpg",
-        "sapo": "Cùng 49 nông dân thành viên liên kết sản xuất lúa theo những mô hình tiên tiến nhất, sử dụng máy bay không người lái, đảm bảo lợi nhuận cho xã viên mỗi năm trên 30%, anh Nguyễn Thành Giang - Chủ tịch HĐQT HTX nông nghiệp Bình Thành (xã Bình Thành, huyện Thoại Sơn, tỉnh An Giang) được bình chọn là Nông dân Việt Nam xuất sắc năm 2022.",
-        "category": "Diễn đàn & Chính sách",
-        "location": "",
-        "date": "08/08/2022"
-      },
-      {
-        "id": "1035884",
-        "title": "Ông chủ trại gà to nhất nhì tỉnh Thái Bình là nông dân Việt Nam xuất sắc năm 2022",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-nam-2022-cua-thai-binh-la-ong-chu-trai-ga-to-nhat-huyen-20220807180528236-d1035884.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/nong-dan-viet-nam-xuat-sac-2022-6-16598701810991746919054-79-0-1287-1933-crop-1659870200595447874676.jpg",
-        "sapo": "Gần chục năm gắn bó với nghề chăn nuôi, đến nay, anh Phạm Xuân Thủy ở xóm 2, xã Vũ Đoài, huyện Vũ Thư, tỉnh Thái Bình đã trở thành tỷ phú với cơ ngơi 13 trại nuôi lợn, gà khép kín. Anh cũng được bình chọn là 1 trong 100 nông dân Việt Nam xuất sắc năm 2022.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "08/08/2022"
       },
       {
         "id": "1035922",
@@ -3757,36 +3922,6 @@ window.EVENTS = [
         "date": "08/08/2022"
       },
       {
-        "id": "795378",
-        "title": "Nông dân xuất sắc 2022 Nguyễn Văn Hùng và lương duyên tiền tỷ với tảo xoắn, thành 'vua' tảo miền Trung",
-        "url": "https://danviet.vn/nong-dan-xuat-sac-2022-nguyen-van-hung-o-nghe-an-co-moi-luong-duyen-tien-ty-voi-tao-xoan-20220806160239-d795378.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/6/anh-13-16597760119701348532657-0-0-1200-1920-crop-16597760191241835615045.jpg",
-        "sapo": "Sau 1 biến cố về sức khỏe, ông Nguyễn Văn Hùng (Nghệ An) \"bén duyên\" với tảo xoắn, từ giám đốc công ty bất động sản, khai thác khoáng sản có tiếng \"bổng\" trở thành \"Nông dân xuất sắc 2022\" khi nuôi trồng được giống tảo kỳ diệu này trên quê hương xã Quỳnh Dị, Thị xã Hoàng Mai, tỉnh Nghệ An.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "07/08/2022"
-      },
-      {
-        "id": "1035764",
-        "title": "Nuôi tôm công nghệ cao thu tiền tỷ, nông dân Bạc Liêu được bình chọn danh hiệu 'Nông dân Việt Nam xuất sắc 2022'",
-        "url": "https://danviet.vn/nuoi-tom-cong-nghe-cao-thu-tien-ty-nong-dan-bac-lieu-la-nong-dan-viet-nam-xuat-sac-2022-20220806235354864-d1035764.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/6/1-16598032416061660959353-105-0-1355-2000-crop-1659803483031711717407.jpg",
-        "sapo": "Dù trải qua nhiều thất bại, ông Nguyễn Văn Hoạt (SN 1963, ngụ xã Hiệp Thành, TP Bạc Liêu, tỉnh Bạc Liêu) vẫn kiên trì theo đuổi nghề nuôi tôm. Chính nhờ sự kiên trì, tinh thần ham học hỏi, ông Hoạt thu lãi mỗi năm hàng tỷ đồng nhờ nuôi tôm công nghệ cao và được bình chọn nhận danh hiệu \"Nông dân Việt Nam xuất sắc 2022\".",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "07/08/2022"
-      },
-      {
-        "id": "1035668",
-        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Ninh Bình là một người giỏi chăn nuôi, chưa hề thất bại khi nuôi lợn",
-        "url": "https://danviet.vn/mot-nguoi-gioi-chan-nuoi-o-ninh-binh-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-2022-20220806130903335-d1035668.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/6/20220726100950-16597630392031168743092-238-0-1488-2000-crop-1659766172530982883830.jpg",
-        "sapo": "Bà Trần Thị Thục (sinh năm 1984, xóm 7, xã Như Hòa, huyện Kim Sơn, tỉnh Ninh Bình) là nông dân Việt Nam xuất sắc 2022. Bà Thục được biết đến với mô hình phát triển kinh tế tổng hợp: chăn nuôi gia súc, gia cầm, nuôi trồng thủy sản và trồng trọt…nhiều năm liền thành công, đem lại thu nhập cho gia đình hơn 2 tỉ đồng/năm.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "06/08/2022"
-      },
-      {
         "id": "1035679",
         "title": "Chủ tịch Trung ương Hội Nông dân Việt Nam: Nông dân Việt Nam xuất sắc là thành tố quan trọng thúc đẩy liên kết",
         "url": "https://danviet.vn/chu-tich-trung-uong-hoi-nong-dan-viet-nam-an-tuong-voi-mo-hinh-cua-nong-dan-xuat-sac-2022-20220806143447472-d1035679.html",
@@ -3797,14 +3932,14 @@ window.EVENTS = [
         "date": "06/08/2022"
       },
       {
-        "id": "1035163",
-        "title": "Nông dân Việt Nam xuất sắc 2022 tỉnh Thanh Hóa là người làm đổi thay các làng quê trồng lúa xứ Thanh",
-        "url": "https://danviet.vn/ty-phu-nong-dan-trong-lua-che-bien-kinh-doanh-gao-thanh-hoa-la-nong-dan-viet-nam-xuat-sac-2022-20220804081446518-d1035163.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/4/z36168241996445eef677204e5a48d633f9d4d6a651d67-1659574633310577327483-170-0-1420-2000-crop-16595754563331933407933.jpg",
-        "sapo": "Sau khi trở về từ quân ngũ, ông Nguyễn Hữu Lựu bắt tay vào làm kinh tế và thành lập doanh nghiệp chế biến nông sản, tạo ra chuỗi liên kết khép kín được chính quyền địa phương và người dân ủng hộ rất cao. Năm 2022, ông là 1 trong 100 nông dân điển hình cả nước được bình chọn nhận danh hiệu Nông dân Việt Nam xuất sắc.",
+        "id": "1034989",
+        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Hà Tĩnh là một hội viên tỷ phú nuôi hươu sao thu gần 30 tỷ/năm",
+        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-ha-tinh-la-mot-hoi-vien-ty-phu-nuoi-huou-sao-thu-30-ty-nam-20220803124528308-d1034989.html",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/3/z3599926093904-3fa5127c8a467c25e306f52e0b38070f-1659504672509402423180-83-0-1333-2000-crop-165950469388023222146.jpg",
+        "sapo": "Bà Chu Thị Hồng Hà, SN 1973, Nông dân Việt Nam xuất sắc 2022 là hội viên Hội Nông dân xã Sơn Giang, huyện Hương Sơn (tỉnh Hà Tĩnh) nỗ lực vươn lên trở thành doanh nghiệp tư nhân nhung hươu Thuận Hà hàng đầu cả nước về cung cấp các sản phẩm từ hươu sao, doanh thu mỗi năm đạt gần 30 tỷ đồng.",
         "category": "Gương mặt điển hình",
         "location": "",
-        "date": "05/08/2022"
+        "date": "03/08/2022"
       },
       {
         "id": "1034826",
@@ -3815,16 +3950,6 @@ window.EVENTS = [
         "category": "Gương mặt điển hình",
         "location": "",
         "date": "04/08/2022"
-      },
-      {
-        "id": "1034989",
-        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ Hà Tĩnh là một hội viên tỷ phú nuôi hươu sao thu gần 30 tỷ/năm",
-        "url": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-2022-den-tu-ha-tinh-la-mot-hoi-vien-ty-phu-nuoi-huou-sao-thu-30-ty-nam-20220803124528308-d1034989.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/3/z3599926093904-3fa5127c8a467c25e306f52e0b38070f-1659504672509402423180-83-0-1333-2000-crop-165950469388023222146.jpg",
-        "sapo": "Bà Chu Thị Hồng Hà, SN 1973, Nông dân Việt Nam xuất sắc 2022 là hội viên Hội Nông dân xã Sơn Giang, huyện Hương Sơn (tỉnh Hà Tĩnh) nỗ lực vươn lên trở thành doanh nghiệp tư nhân nhung hươu Thuận Hà hàng đầu cả nước về cung cấp các sản phẩm từ hươu sao, doanh thu mỗi năm đạt gần 30 tỷ đồng.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "03/08/2022"
       },
       {
         "id": "1034770",
@@ -3847,26 +3972,6 @@ window.EVENTS = [
         "date": "02/08/2022"
       },
       {
-        "id": "830603",
-        "title": "Nông dân Việt Nam xuất sắc 2022 đến từ tỉnh Đồng Tháp đưa trái xoài xuất ngoại, giúp nông dân giảm nghèo làm giàu",
-        "url": "https://danviet.vn/nong-dan-viet-nam-suat-sac-2022-den-tu-tinh-dong-thap-la-nguoi-dua-trai-xoai-xuat-ngoai-2022072916023205-d830603.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/7/29/nen-165908720151677024325-0-0-798-1276-crop-1659087207855697477100.jpg",
-        "sapo": "Từ người chỉ biết làm vườn, chị Đinh Kim Nhung (SN 1971) ở ấp Tân Dân, xã Tân Thuận Tây, TP Cao Lãnh, tỉnh Đồng Tháp đã hình thành nhiều điểm thu mua trái xoài, rồi thành lập công ty, xây dựng nhà máy chế biến đưa xoài Cát Chu, xoài tượng da xanh xuất khẩu sang nhiều nước trên thế giới.",
-        "category": "Gương mặt điển hình",
-        "location": "",
-        "date": "30/07/2022"
-      },
-      {
-        "id": "830599",
-        "title": "Chính thức công bố danh sách 100 'Nông dân Việt Nam xuất sắc' năm 2022",
-        "url": "https://danviet.vn/cong-bo-danh-sach-100-nong-dan-viet-nam-xuat-sac-nam-2022-2022072914373731-d830599.html",
-        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/7/29/nong-dan-viet-nam-xuat-sac-2022-16590844317672133563244-0-0-1250-2000-crop-16590846714231743601433.jpeg",
-        "sapo": "Ngày 29/7 đồng chí Lương Quốc Đoàn, Ủy viên Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam, Trưởng ban Chỉ đạo Chương trình Tự hào Nông dân Việt Nam đã ký Quyết định số 5732-QĐ/HNDTW quyết định công bố danh sách 100 Nông dân Việt Nam xuất sắc năm 2022.",
-        "category": "Sự kiện & Vinh danh",
-        "location": "",
-        "date": "29/07/2022"
-      },
-      {
         "id": "1032206",
         "title": "Nữ tỷ phú trồng sầu riêng ở Đắk Lắk được bình chọn là Nông dân Việt Nam xuất sắc 2022",
         "url": "https://danviet.vn/nu-ty-phu-trong-sau-rieng-o-dak-lak-duoc-binh-chon-la-nong-dan-viet-nam-xuat-sac-2022-20220720210440072-d1032206.html",
@@ -3885,6 +3990,33 @@ window.EVENTS = [
         "category": "Sự kiện & Vinh danh",
         "location": "",
         "date": "03/05/2022"
+      }
+    ],
+    "articleCount": 44,
+    "featured": [
+      {
+        "tag": "Sự kiện & Vinh danh",
+        "highlight": "29/07/2022",
+        "title": "Chính thức công bố danh sách 100 'Nông dân Việt Nam xuất sắc' năm 2022",
+        "sapo": "Ngày 29/7 đồng chí Lương Quốc Đoàn, Ủy viên Trung ương Đảng, Bí thư Đảng đoàn, Chủ tịch Ban Chấp hành Trung ương Hội Nông dân Việt Nam, Trưởng ban Chỉ đạo Chương trình Tự hào Nông dân Việt Nam đã ký Quyết định số 5732-QĐ/HNDTW quyết định công bố danh sách 100 Nông dân Việt Nam xuất sắc năm 2022.",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/7/29/nong-dan-viet-nam-xuat-sac-2022-16590844317672133563244-0-0-1250-2000-crop-16590846714231743601433.jpeg",
+        "url": "https://danviet.vn/cong-bo-danh-sach-100-nong-dan-viet-nam-xuat-sac-nam-2022-2022072914373731-d830599.html"
+      },
+      {
+        "tag": "Gương mặt điển hình",
+        "highlight": "08/08/2022",
+        "title": "Nông dân xuất sắc 2022 đến từ Hà Giang là người làm du lịch giỏi, giúp bản Lô Lô Chải ngày càng trù phú",
+        "sapo": "Buổi sáng ở miền biên viễn cực Bắc của Tổ quốc, vợ chồng Sình Dỉ Gai ngồi trước hiên nhà trình tường cổ kính, họ pha sẵn ấm trà, gọt những trái lê chờ đón chúng tôi. Sau cái bắt tay ấm tình, anh say sưa tâm sự về bản thân mình và sự đổi thay của bản Lô Lô Chải đẹp như mơ.",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/7/220220503081835-16598852255461237661747-59-0-1184-1800-crop-16598852370621098942665.jpg",
+        "url": "https://danviet.vn/nong-dan-xuat-sac-2022-den-tu-ha-giang-la-nguoi-lam-du-lich-gioi-o-ban-lo-lo-chai-20220808004131447-d1035921.html"
+      },
+      {
+        "tag": "Gương mặt điển hình",
+        "highlight": "05/08/2022",
+        "title": "Nông dân Việt Nam xuất sắc 2022 tỉnh Thanh Hóa là người làm đổi thay các làng quê trồng lúa xứ Thanh",
+        "sapo": "Sau khi trở về từ quân ngũ, ông Nguyễn Hữu Lựu bắt tay vào làm kinh tế và thành lập doanh nghiệp chế biến nông sản, tạo ra chuỗi liên kết khép kín được chính quyền địa phương và người dân ủng hộ rất cao. Năm 2022, ông là 1 trong 100 nông dân điển hình cả nước được bình chọn nhận danh hiệu Nông dân Việt Nam xuất sắc.",
+        "img": "https://danviet.ex-cdn.com/files/f1/296231569849192448/2022/8/4/z36168241996445eef677204e5a48d633f9d4d6a651d67-1659574633310577327483-170-0-1420-2000-crop-16595754563331933407933.jpg",
+        "url": "https://danviet.vn/ty-phu-nong-dan-trong-lua-che-bien-kinh-doanh-gao-thanh-hoa-la-nong-dan-viet-nam-xuat-sac-2022-20220804081446518-d1035163.html"
       }
     ]
   }
