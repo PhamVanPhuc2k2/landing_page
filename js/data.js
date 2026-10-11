@@ -40,8 +40,26 @@ window.EVENTS = [
     "link": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-channel3095/",
     "linkLabel": "Xem thêm trên Dân Việt",
     "special": true,
-    "api": "https://cms.danviet.vn/?mod=iframe&act=channelNews&id=3095",
+    "api": "https://danviet.vn/api/chu-de/3095",
     "articles": [
+      {
+        "id": "1465746",
+        "title": "Nhịp sống Nông thôn mới: Những kỷ lục khó tin của 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới ",
+        "url": "https://danviet.vn/nhip-song-nong-thon-moi-nhung-ky-luc-kho-tin-cua-96-nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-d1465746.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/608w/files/news/2026/10/08/1-1903.png",
+        "sapo": "Radio online Nhịp sống nông thôn mới hôm nay có nội dung: Tối 12/10, tôn vinh 96 Nông dân Việt Nam xuất sắc 40 năm Đổi mới; Đồng Tháp hợp nhất Quỹ Hỗ trợ nông dân, mở rộng nguồn vốn cho nhà nông; Gia Lai chọn 11 dự án vào chung kết cuộc thi Nông dân khởi nghiệp sáng tạo; Nghệ An có hơn 142.000 hộ nông dân sản xuất, kinh doanh giỏi; Dự báo thời tiết nông vụ từ ngày 10 đến 18/10 và những lưu ý cho bà con trong sản xuất.",
+        "location": "",
+        "date": ""
+      },
+      {
+        "id": "1466252",
+        "title": "Tôn vinh 96 nông dân xuất sắc: Khát vọng làm giàu và \"sứ mệnh trăm tỷ\" trên đồng ruộng",
+        "url": "https://danviet.vn/ton-vinh-96-nong-dan-xuat-sac-khat-vong-lam-giau-va-su-menh-tram-ty-tren-dong-ruong-d1466252.html",
+        "img": "https://t.ex-cdn.com/danviet.vn/608w/files/content/2026/04/05/ngo-tri-long-0824.jpg",
+        "sapo": "Tối 12/10/2026, tại Hà Nội, 96 nông dân tiêu biểu sẽ được vinh danh trong Chương trình Tự hào Nông dân Việt Nam 40 năm Đổi mới. Sự kiện diễn ra nhân kỷ niệm 96 năm thành lập Hội Nông dân Việt Nam (14/10/1930 – 14/10/2026), mang ý nghĩa đặc biệt khi đất nước nhìn lại chặng đường 40 năm thực hiện công cuộc Đổi mới.",
+        "location": "",
+        "date": ""
+      },
       {
         "id": "1466241",
         "title": "Nông dân Việt Nam xuất sắc 40 năm Đổi mới ở Hà Nội nuôi cá rô đầu vuông, bán đi khắp các tỉnh, thành phố, thu 20 tỷ/năm",
@@ -1042,7 +1060,7 @@ window.EVENTS = [
         "date": ""
       }
     ],
-    "articleCount": 111,
+    "articleCount": 113,
     "featured": []
   },
   {

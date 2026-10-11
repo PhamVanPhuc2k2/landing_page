@@ -160,7 +160,15 @@
 
     /* ---------------- Lấy bài trực tiếp từ API CMS (năm có ev.api) ---------------- */
 
-    // API CMS Dân Việt: ?mod=iframe&act=channelNews&id=<chủ đề>&page=<n>, 20 bài/trang, đúng thứ tự CMS
+    // API Dân Việt: https://danviet.vn/api/chu-de/<id> (trang 1), .../<id>/p<n> (trang n);
+    // 20 bài/trang, đúng thứ tự CMS. Link dạng khác thì phân trang bằng ?page=<n>.
+    function apiPageUrl(apiUrl, n) {
+        if (/\/api\/chu-de\/\d+\/?$/.test(apiUrl)) {
+            return n === 1 ? apiUrl : apiUrl.replace(/\/$/, "") + "/p" + n;
+        }
+        return apiUrl + (apiUrl.indexOf("?") === -1 ? "?" : "&") + "page=" + n;
+    }
+
     function createApiSource(apiUrl) {
         var page = 0;
         var totalPages = null;
@@ -169,7 +177,7 @@
         source.fetchNext = function () {
             var controller = window.AbortController ? new AbortController() : null;
             var timer = setTimeout(function () { if (controller) controller.abort(); }, 8000);
-            var url = apiUrl + (apiUrl.indexOf("?") === -1 ? "?" : "&") + "page=" + (page + 1);
+            var url = apiPageUrl(apiUrl, page + 1);
             return fetch(url, controller ? { signal: controller.signal } : {})
                 .then(function (res) {
                     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -198,12 +206,14 @@
         var grid = eventEl.querySelector(".press__grid");
         var moreBtn = eventEl.querySelector(".press__more button");
         var list = ev.articles.slice(); // hiện ngay bản lưu sẵn trong data.js
+        var fallback = ev.articles.slice();
+        var exhausted = false; // API trả trang toàn bài trùng (vd. bị cache) -> thôi gọi, dùng bản lưu sẵn
         var live = ev.api ? createApiSource(ev.api) : null;
         var liveReady = false;
         var shown = 0;
 
         function total() {
-            return liveReady && live.total ? live.total : list.length;
+            return liveReady && live.total && !exhausted ? Math.max(live.total, list.length) : list.length;
         }
 
         function updateButton() {
@@ -227,11 +237,16 @@
 
         // Tải thêm trang API cho tới khi đủ bài để hiện
         function ensure(count) {
-            if (!liveReady || list.length >= count || !live.hasMore()) return Promise.resolve();
+            if (!liveReady || exhausted || list.length >= count || !live.hasMore()) return Promise.resolve();
             return live.fetchNext().then(function (items) {
                 var seen = {};
+                var added = 0;
                 list.forEach(function (a) { seen[a.id] = true; });
-                items.forEach(function (a) { if (!seen[a.id]) list.push(a); });
+                items.forEach(function (a) { if (!seen[a.id]) { seen[a.id] = true; list.push(a); added++; } });
+                if (!added) {
+                    exhausted = true;
+                    fallback.forEach(function (a) { if (!seen[a.id]) list.push(a); });
+                }
                 return ensure(count);
             });
         }

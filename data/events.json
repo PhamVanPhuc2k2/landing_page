@@ -35,7 +35,7 @@
       "link": "https://danviet.vn/nong-dan-viet-nam-xuat-sac-40-nam-doi-moi-channel3095/",
       "linkLabel": "Xem thêm trên Dân Việt",
       "source": {
-        "api": "https://cms.danviet.vn/?mod=iframe&act=channelNews&id=3095"
+        "api": "https://danviet.vn/api/chu-de/3095"
       }
     },
     {

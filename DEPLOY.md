@@ -3,14 +3,14 @@
 Trang là **web tĩnh** (HTML/CSS/JS): không cần Node, PHP, database, git hay cron.
 
 - **Năm 2026**: bài viết do **trình duyệt người xem gọi trực tiếp API CMS Dân Việt**
-  (`https://cms.danviet.vn/?mod=iframe&act=channelNews&id=3095`), đúng thứ tự biên tập sắp
+  (`https://danviet.vn/api/chu-de/3095`; trang 2, 3… là `/api/chu-de/3095/p2`, `/p3`…), đúng thứ tự biên tập sắp
   trong chủ đề. Bài mới đăng lên chủ đề là hiện ngay trên trang.
 - **Năm 2022 – 2025**: dữ liệu **tĩnh**: danh sách bài cố định nằm sẵn trong `js/data.js`.
 
 ## 1. Yêu cầu
 
 - Web server phục vụ file tĩnh (nginx, Apache…).
-- Trình duyệt người xem cần truy cập được `cms.danviet.vn` (API) và `*.ex-cdn.com` (ảnh bài viết).
+- Trình duyệt người xem cần truy cập được `danviet.vn/api/…` (API) và `*.ex-cdn.com` (ảnh bài viết).
   Server **không** cần gọi ra ngoài.
 - Python 3 (chỉ khi cần build lại `js/data.js` sau khi sửa nội dung; có thể chạy trên máy dev).
 
@@ -87,10 +87,10 @@ rồi chạy `python3 scripts/build_data.py` và copy `js/data.js` lên server. 
 `data/events.json`, đặt `source` của năm đó:
 
 ```json
-"source": { "api": "https://cms.danviet.vn/?mod=iframe&act=channelNews&id=3099" }
+"source": { "api": "https://danviet.vn/api/chu-de/3099" }
 ```
 
-Mã chủ đề (`id=`) là số ở cuối link chủ đề, ví dụ `...-channel3099/` → `3099`. Chạy
+Mã chủ đề là số ở cuối link chủ đề, ví dụ `...-channel3099/` → `3099`. Chạy
 `python3 scripts/build_data.py --refresh` để lấy luôn bản dự phòng, rồi copy `js/data.js` lên server.
 
 **Cập nhật giao diện**: sửa SCSS thì build lại CSS

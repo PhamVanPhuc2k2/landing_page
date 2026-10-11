@@ -15,6 +15,7 @@ Chỉ dùng thư viện chuẩn của Python.
 """
 import json
 import os
+import re
 import sys
 import tempfile
 import time
@@ -52,11 +53,18 @@ def load_previous():
     return {e["year"]: e for e in json.loads(s[s.index(k) + len(k):].rstrip().rstrip(";"))}
 
 
+def api_page_url(api_url, n):
+    """https://danviet.vn/api/chu-de/<id> (trang 1), .../<id>/p<n> (trang n); dạng khác dùng ?page=<n>."""
+    if re.search(r"/api/chu-de/\d+/?$", api_url):
+        return api_url if n == 1 else api_url.rstrip("/") + f"/p{n}"
+    return f"{api_url}{'&' if '?' in api_url else '?'}page={n}"
+
+
 def fetch_api(api_url):
     """Lấy toàn bộ bài của 1 chủ đề qua API CMS (20 bài/trang) — chỉ dùng với --refresh."""
     items, page, total_pages = [], 1, 1
     while page <= total_pages and page <= 50:
-        req = urllib.request.Request(f"{api_url}&page={page}", headers=UA)
+        req = urllib.request.Request(api_page_url(api_url, page), headers=UA)
         with urllib.request.urlopen(req, timeout=30) as r:
             data = json.loads(r.read().decode("utf-8"))
         if not data.get("success"):
