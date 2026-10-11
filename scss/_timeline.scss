@@ -2,6 +2,8 @@
 
 .events {
     padding: 100px 0;
+    // Chặn tràn ngang do hiệu ứng; dùng clip (không phải hidden) để thanh chọn năm vẫn sticky được
+    overflow-x: clip;
 }
 
 // Thanh chọn năm, dính đầu trang khi cuộn

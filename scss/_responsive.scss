@@ -100,18 +100,22 @@
     .stat__value {
         font-size: 2.25rem;
     }
+    // Hiệu ứng trượt ngang làm phần tử lệch ra ngoài mép màn hình hẹp (trang bị tràn ngang,
+    // nút "lên đầu trang" lệch ra ngoài) -> trên mobile trượt từ dưới lên
+    .reveal--left,
+    .reveal--right {
+        transform: translateY(24px);
+    }
+
+    // 5 năm chia đều chiều ngang, hiện đủ không cần vuốt
     .year-nav {
-        justify-content: flex-start;
-        overflow-x: auto;
-        scrollbar-width: none;
-        &::-webkit-scrollbar {
-            display: none;
-        }
+        gap: 6px;
     }
     .year-nav__item {
-        flex-shrink: 0;
-        min-width: 80px;
-        font-size: 1.0625rem;
+        flex: 1 1 0;
+        min-width: 0;
+        padding: 8px 0;
+        font-size: 1rem;
     }
     .event {
         padding: 60px 0 0 0;

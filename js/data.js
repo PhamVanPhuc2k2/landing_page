@@ -3,9 +3,9 @@
  * Sửa nội dung từng năm ở data/events.json; bài viết lấy từ các chủ đề trên Dân Việt.
  */
 window.SITE = {
-    "kicker": "Lưu trữ truyền thông 5 năm của chương trình (2022 – 2026)",
+    "kicker": "Lưu trữ truyền thông",
     "title": "Chuỗi chương trình\nTự hào Nông dân Việt Nam",
-    "desc": "Tổng hợp toàn diện chuỗi sự kiện thường niên do Báo Điện tử Dân Việt tổ chức qua 5 năm. Mỗi năm gắn liền với một bước chuyển dịch lớn của nông nghiệp nông thôn Việt Nam."
+    "desc": "Tổng hợp toàn diện chuỗi sự kiện thường niên do Báo Điện tử Dân Việt tổ chức qua 14 năm. Mỗi năm gắn liền với một bước chuyển dịch lớn của nông nghiệp nông thôn Việt Nam."
 };
 
 window.EVENTS = [

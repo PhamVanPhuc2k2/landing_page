@@ -301,7 +301,9 @@ html.intro .curtain {
     -webkit-text-fill-color: transparent;
 }
 .curtain__sub {
-    letter-spacing: 0.4em;
+    font-weight: 600;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
     color: $gold-300;
 }
 .curtain__line {
