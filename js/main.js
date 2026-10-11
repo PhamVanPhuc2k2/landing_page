@@ -158,34 +158,113 @@
         btn.classList.add("is-pressed");
     }
 
+    /* ---------------- Lấy bài trực tiếp từ API CMS (năm có ev.api) ---------------- */
+
+    // API CMS Dân Việt: ?mod=iframe&act=channelNews&id=<chủ đề>&page=<n>, 20 bài/trang, đúng thứ tự CMS
+    function createApiSource(apiUrl) {
+        var page = 0;
+        var totalPages = null;
+        var source = { total: null, hasMore: function () { return totalPages === null || page < totalPages; } };
+
+        source.fetchNext = function () {
+            var controller = window.AbortController ? new AbortController() : null;
+            var timer = setTimeout(function () { if (controller) controller.abort(); }, 8000);
+            var url = apiUrl + (apiUrl.indexOf("?") === -1 ? "?" : "&") + "page=" + (page + 1);
+            return fetch(url, controller ? { signal: controller.signal } : {})
+                .then(function (res) {
+                    if (!res.ok) throw new Error("HTTP " + res.status);
+                    return res.json();
+                })
+                .then(function (data) {
+                    clearTimeout(timer);
+                    if (!data || !data.success || !Array.isArray(data.data)) throw new Error("API không hợp lệ");
+                    page += 1;
+                    totalPages = Number(data.total_pages) || page;
+                    source.total = Number(data.total) || null;
+                    return data.data.map(function (a) {
+                        return { id: String(a.id), title: a.title, url: a.link, img: a.image || "", sapo: a.sapo || "", date: "" };
+                    });
+                }, function (err) {
+                    clearTimeout(timer);
+                    throw err;
+                });
+        };
+        return source;
+    }
+
     /* ---------------- Danh sách bài: đúng thứ tự trong chủ đề CMS + xem thêm ---------------- */
 
     function setupPress(eventEl, ev) {
         var grid = eventEl.querySelector(".press__grid");
         var moreBtn = eventEl.querySelector(".press__more button");
+        var list = ev.articles.slice(); // hiện ngay bản lưu sẵn trong data.js
+        var live = ev.api ? createApiSource(ev.api) : null;
+        var liveReady = false;
         var shown = 0;
 
-        function draw(reset) {
-            var list = ev.articles;
+        function total() {
+            return liveReady && live.total ? live.total : list.length;
+        }
+
+        function updateButton() {
+            moreBtn.parentNode.style.display = shown < total() ? "" : "none";
+            moreBtn.disabled = false;
+            moreBtn.textContent = "Xem thêm";
+        }
+
+        function draw(reset, count) {
             if (reset) {
                 grid.querySelectorAll(".reveal-card").forEach(function (c) { revealIO.unobserve(c); });
                 grid.innerHTML = "";
                 shown = 0;
             }
-            var next = list.slice(shown, shown + pageSize());
+            var next = list.slice(shown, shown + (count || pageSize()));
             grid.insertAdjacentHTML("beforeend", next.map(renderArticle).join(""));
             observeReveal(grid);
             shown += next.length;
-            var remaining = list.length - shown;
-            moreBtn.parentNode.style.display = remaining > 0 ? "" : "none";
-            moreBtn.textContent = "Xem thêm";
+            updateButton();
+        }
+
+        // Tải thêm trang API cho tới khi đủ bài để hiện
+        function ensure(count) {
+            if (!liveReady || list.length >= count || !live.hasMore()) return Promise.resolve();
+            return live.fetchNext().then(function (items) {
+                var seen = {};
+                list.forEach(function (a) { seen[a.id] = true; });
+                items.forEach(function (a) { if (!seen[a.id]) list.push(a); });
+                return ensure(count);
+            });
         }
 
         moreBtn.addEventListener("click", function () {
             press(moreBtn);
-            draw(false);
+            var want = shown + pageSize();
+            if (liveReady && list.length < want && live.hasMore()) {
+                moreBtn.disabled = true;
+                moreBtn.textContent = "Đang tải…";
+            }
+            ensure(want).catch(function (err) {
+                console.warn("Không tải thêm được bài từ API:", err);
+            }).then(function () { draw(false); });
         });
+
         draw(true);
+
+        if (!live) return;
+        live.fetchNext().then(function (items) {
+            if (!items.length) return; // chủ đề trống: giữ bản lưu sẵn
+            var samePrefix = items.length >= shown && list.slice(0, shown).every(function (a, i) { return items[i].id === a.id; });
+            list = items;
+            liveReady = true;
+            if (samePrefix) {
+                updateButton(); // bài đang hiện không đổi: không vẽ lại cho khỏi giật
+            } else {
+                var keep = Math.max(shown, pageSize());
+                ensure(keep).catch(function () {}).then(function () { draw(true, keep); });
+            }
+        }).catch(function (err) {
+            console.warn("Không gọi được API, dùng dữ liệu lưu sẵn:", err);
+        });
     }
 
     /* ---------------- Đếm số khi cuộn tới ---------------- */

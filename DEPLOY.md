@@ -1,88 +1,49 @@
 # Hướng dẫn chạy landing page trên server riêng
 
-Trang là **web tĩnh** (HTML/CSS/JS), không cần Node, PHP hay database.
-Danh sách bài báo được một script Python lấy từ các chủ đề trên Báo Điện tử Dân Việt
-rồi ghi vào `js/data.js`. Trên server, script này chạy định kỳ bằng **cron**.
-Không cần git.
+Trang là **web tĩnh** (HTML/CSS/JS): không cần Node, PHP, database, git hay cron.
+
+- **Năm 2026**: bài viết do **trình duyệt người xem gọi trực tiếp API CMS Dân Việt**
+  (`https://cms.danviet.vn/?mod=iframe&act=channelNews&id=3095`), đúng thứ tự biên tập sắp
+  trong chủ đề. Bài mới đăng lên chủ đề là hiện ngay trên trang.
+- **Năm 2022 – 2025**: dữ liệu **tĩnh**: danh sách bài cố định nằm sẵn trong `js/data.js`.
 
 ## 1. Yêu cầu
 
 - Web server phục vụ file tĩnh (nginx, Apache…).
-- **Python 3.8 trở lên**. Script chỉ dùng thư viện chuẩn, không cần `pip install`.
-- Server được phép **kết nối ra ngoài** tới `https://danviet.vn`. Ảnh bài viết do trình duyệt
-  của người xem tải trực tiếp từ `*.ex-cdn.com`.
-- Tài khoản chạy cron có **quyền ghi** vào `js/data.js` trong thư mục web và vào file cache.
+- Trình duyệt người xem cần truy cập được `cms.danviet.vn` (API) và `*.ex-cdn.com` (ảnh bài viết).
+  Server **không** cần gọi ra ngoài.
+- Python 3 (chỉ khi cần build lại `js/data.js` sau khi sửa nội dung; có thể chạy trên máy dev).
 
-## 2. Bố trí thư mục (khuyến nghị)
-
-Để code riêng, thư mục web riêng. Như vậy script và dữ liệu thô không lộ ra web:
+## 2. Các file cần đưa lên thư mục web
 
 ```
-/opt/landing_page/              <- code (không public)
-├── scripts/update_data.py      script lấy bài
-└── data/
-    ├── events.json             nội dung viết tay từng năm + mã chủ đề
-    └── article-cache.json      cache ngày đăng/sapo/ảnh (script tự cập nhật)
-
-/var/www/landing/               <- thư mục web (root của nginx)
+/var/www/landing/            <- root của nginx
 ├── index.html
 ├── css/style.css
 └── js/
     ├── main.js
     ├── effects.js
-    └── data.js                 do script tạo — không sửa tay
+    └── data.js              nội dung từng năm + bài tĩnh/dự phòng (tạo bởi scripts/build_data.py)
 ```
 
-Thư mục web chỉ cần đúng 5 file trên. Các thư mục `images/`, `lib/` và `scss/` không dùng khi chạy.
-`scss/` là mã nguồn để build ra `css/style.css`.
+Chỉ cần đúng 5 file trên. Các thư mục còn lại trong dự án **không** đưa lên web:
 
-## 3. Cài đặt lần đầu
+| Thư mục / file | Dùng để |
+|---|---|
+| `scss/` | Mã nguồn CSS, build ra `css/style.css` |
+| `data/events.json` | Nội dung viết tay từng năm (nguồn để build `js/data.js`) |
+| `scripts/build_data.py` | Build `js/data.js` từ `data/events.json` |
+| `_duyet/` | File gửi khách duyệt |
+| `images/`, `lib/` | Không dùng |
 
 ```bash
-# Code
-sudo mkdir -p /opt/landing_page
-sudo cp -r scripts data /opt/landing_page/
-
-# Web
 sudo mkdir -p /var/www/landing/css /var/www/landing/js
 sudo cp index.html /var/www/landing/
 sudo cp css/style.css /var/www/landing/css/
 sudo cp js/main.js js/effects.js js/data.js /var/www/landing/js/
-
-# Cho tài khoản chạy cron (ví dụ www-data) quyền ghi
-sudo chown -R www-data: /opt/landing_page/data /var/www/landing/js
 ```
 
-Chạy thử bằng tay:
-
-```bash
-sudo -u www-data env OUTPUT_DIR=/var/www/landing \
-  python3 /opt/landing_page/scripts/update_data.py
-```
-
-Lần chạy thành công in ra số bài từng năm và dòng `Đã ghi /var/www/landing/js/data.js`.
-Mỗi lần chạy mất khoảng 1–2 phút.
-
-## 4. Lịch chạy tự động (cron)
-
-`sudo crontab -u www-data -e`, thêm dòng:
-
-```
-17 * * * * OUTPUT_DIR=/var/www/landing flock -n /tmp/landing-update.lock python3 /opt/landing_page/scripts/update_data.py >> /var/log/landing-update.log 2>&1
-```
-
-- Chạy mỗi giờ, vào phút 17.
-- `flock` chặn hai lượt chạy chồng lên nhau.
-- Tạo sẵn file log và cấp quyền: `sudo touch /var/log/landing-update.log && sudo chown www-data: /var/log/landing-update.log`.
-
-Biến môi trường của script:
-
-| Biến | Ý nghĩa | Mặc định |
-|---|---|---|
-| `OUTPUT_DIR` | Thư mục web; script ghi `{OUTPUT_DIR}/js/data.js` | thư mục chứa code |
-| `CACHE_FILE` | File cache thông tin bài viết | `data/article-cache.json` cạnh script |
-
-## 5. Cấu hình nginx
+## 3. Cấu hình nginx
 
 ```nginx
 server {
@@ -90,56 +51,48 @@ server {
     root /var/www/landing;
     index index.html;
 
-    # data.js đổi mỗi giờ: không cho trình duyệt giữ bản cũ
+    # Link CSS/JS trong index.html có ?v=... (đổi mỗi lần sửa) nên cache dài được
+    location ~* \.(css|js)$ {
+        add_header Cache-Control "public, max-age=86400";
+    }
+
+    # data.js đổi khi build lại nội dung: không giữ bản cũ
     location = /js/data.js {
         add_header Cache-Control "no-cache";
     }
-
-    # CSS/JS giao diện ít đổi: cache ngắn
-    location ~* \.(css|js)$ {
-        add_header Cache-Control "public, max-age=3600";
-    }
 }
 ```
 
-Nếu buộc phải để code chung thư mục web, chặn thêm các thư mục không public:
+## 4. Năm 2026 lấy bài từ API thế nào
 
-```nginx
-location ~ ^/(scripts|data|scss|_duyet|\.github)/ { deny all; }
+- Khi mở trang, trình duyệt hiện ngay danh sách lưu sẵn trong `data.js`, đồng thời gọi API trang 1
+  (20 bài). Có kết quả là thay bằng dữ liệu mới nhất.
+- Bấm "Xem thêm" tự tải trang API tiếp theo khi cần; hết bài thì nút tự ẩn.
+- **API lỗi hoặc chậm quá 8 giây**: trang vẫn hiển thị bình thường bằng danh sách lưu sẵn.
+
+Danh sách lưu sẵn của 2026 sẽ cũ dần (không có cron cập nhật). Muốn chụp lại bản mới nhất làm dự phòng:
+
+```bash
+python3 scripts/build_data.py --refresh
 ```
 
-## 6. Script xử lý lỗi thế nào
+rồi copy `js/data.js` lên server. Không bắt buộc: khi API chạy, người xem luôn thấy bài mới nhất.
 
-- Ghi file **nguyên tử**: script ghi ra file tạm rồi đổi tên một lần, nên người xem không bao giờ nhận `data.js` ghi dở.
-- Năm nào lấy được **0 bài** hoặc **ít hơn một nửa** lần trước (Dân Việt lỗi, đổi giao diện, mất mạng…)
-  thì **giữ nguyên dữ liệu cũ** của năm đó. Log ghi dòng `::warning::…`.
-- Kiểm tra nhanh: `tail -n 30 /var/log/landing-update.log`. Nếu cảnh báo lặp lại nhiều giờ liền,
-  có thể Dân Việt đã đổi giao diện chuyên trang và script cần sửa lại.
+## 5. Thao tác thường gặp
 
-## 7. Thao tác thường gặp
+**Sửa tên, mô tả, ngày, địa điểm, số liệu, ảnh bìa, link của một năm**: sửa `data/events.json`,
+rồi chạy `python3 scripts/build_data.py` và copy `js/data.js` lên server. Không sửa tay `js/data.js`.
 
-**Thêm hoặc đổi chủ đề cho một năm** (ví dụ khi Dân Việt tạo xong chủ đề 2023): mở
-`/opt/landing_page/data/events.json`, ở năm đó điền mã chủ đề vào `"channel"`.
-Mã chủ đề là số ở cuối link, ví dụ `...-channel2990/` → `2990`. Lượt chạy kế tiếp sẽ dùng chủ đề mới.
-
-**Sửa tên, mô tả, ngày, địa điểm, số liệu, ảnh bìa của một năm**: sửa trong `data/events.json`,
-không sửa `js/data.js`. Ô `"$count"` trong `stats` được tự thay bằng số bài.
-
-**Dòng nổi bật trên ảnh tiêu điểm** (ví dụ "Doanh thu 9 tỷ/năm"): thêm vào mục `highlights`
-trong `data/events.json`, đặt theo mã bài (số sau `-d` trong link bài):
+**Chuyển một năm khác sang lấy bài qua API** (ví dụ khi chủ đề 2023 đã có bài): trong
+`data/events.json`, đặt `source` của năm đó:
 
 ```json
-"highlights": {
-  "1465645": { "highlight": "Doanh thu 9 tỷ/năm", "tag": "Quảng Ngãi • 2 lần vinh danh" }
-}
+"source": { "api": "https://cms.danviet.vn/?mod=iframe&act=channelNews&id=3099" }
 ```
 
-**Cập nhật giao diện**: copy lại `index.html`, `css/style.css`, `js/main.js`, `js/effects.js`
-vào thư mục web. Nếu sửa SCSS thì build lại CSS trước:
-`npx sass --no-source-map scss/style.scss css/style.css`.
+Mã chủ đề (`id=`) là số ở cuối link chủ đề, ví dụ `...-channel3099/` → `3099`. Chạy
+`python3 scripts/build_data.py --refresh` để lấy luôn bản dự phòng, rồi copy `js/data.js` lên server.
 
-## 8. Khi đã chuyển hẳn lên server
-
-Tắt lịch chạy trên GitHub để không còn hai nơi cùng cập nhật: trên GitHub vào **Actions →
-"Cập nhật bài viết từ Dân Việt" → Disable workflow**, hoặc xoá file
-`.github/workflows/update-data.yml`.
+**Cập nhật giao diện**: sửa SCSS thì build lại CSS
+(`npx sass --no-source-map scss/style.scss css/style.css`), tăng số `?v=` của file đó trong
+`index.html`, rồi copy file đã sửa lên server.
